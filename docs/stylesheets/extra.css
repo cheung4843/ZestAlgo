@@ -1,0 +1,30 @@
+/* Apply the style to bold elements */
+strong {
+    color: #EBCB8B !important;
+}
+  
+/* Apply the style to italic elements */
+em {
+    color: #A3BE8C !important;
+    font-style: normal !important;
+}
+
+
+h1 {
+  color: #BF616A !important;
+}
+
+h2 {
+  color: #EBCB8B !important;
+}
+
+h3 {
+  color: #A3BE8C !important;
+}
+
+h4 {
+  color: #B48EAD !important;
+}
+
+
+  

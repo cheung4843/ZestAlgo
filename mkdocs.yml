@@ -1,0 +1,93 @@
+site_name: LMcps Book
+site_url: https://example.com/
+nav:
+  - Home: index.md
+  - Fundamental: 
+    - fundamental\index.md
+    - Say Hello to Python: fundamental\say_hello.md
+  - About: about.md
+  - License: license.md
+
+markdown_extensions:
+  - toc:
+      permalink: "¶"
+      baselevel: 1
+      separator: "_"
+  # callout:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  # 程式碼高亮
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  
+
+theme:
+  name: material
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  logo: imgs/lmcps.png
+  favicon: imgs/lmcps_brand.png
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+    
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    
+  accent: yellow
+  primary: light blue
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
+    - python
+  nav_style: dark
+  language: zh-TW
+  anyanalytics:
+    gtag: null
+  shortcuts:
+    help: 191 # ?
+    next: 78 # n
+    previous: 80 # p
+    search: 83 # s
+
+extra_css:
+  - stylesheets/extra.css
+
+
