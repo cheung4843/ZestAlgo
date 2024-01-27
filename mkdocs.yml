@@ -1,5 +1,6 @@
 site_name: LMcps Book
-site_url: https://example.com/
+site_url: https://cheung4843.github.io/LMcpsBook/
+repo_url: https://github.com/cheung4843/LMcpsBook
 nav:
   - Home: index.md
   - Fundamental: 
@@ -81,7 +82,6 @@ theme:
     - yaml
     - rust
     - python
-  nav_style: dark
   language: zh-TW
   anyanalytics:
     gtag: null
@@ -93,5 +93,6 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
 
 

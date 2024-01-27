@@ -78,7 +78,7 @@ my special
 x = 4843
 print(x)
 
-x = "Memory Reboot (4K Music Video)"
+x = "Memory Reboot"
 print(x)
 
 x = '4843'
@@ -88,6 +88,17 @@ print(x)
 或許你可能會覺得神奇，為什麼 `x` 可以變成數字，又可以變成字串，還有為什麼第一個與第三個的輸出會是相同的。
 
 再來用一些 old-school 的比喻，你可以將 `x` 想像成一個箱子，而等號右邊的「值」就是箱子裡裝的東西。既然箱子裡面的東西可以變，那我是不是可以說 `x` 是一個變數呢?
+
+但請你先忘掉這個比喻，因為這個比喻並不完美，但我想你應該能夠理解，`x` 是一個變數，而 `=` 是一個**指派運算子(assignment operator)**，他會將等號右邊的東西指派給等號左邊的變數。
+
+請觀看下面的動畫。
+
+<!-- ![](../python/media/cat2.jpg) -->
+
+<video autoplay muted loop controls>
+  <source src="../../python/media/Variable_1.mp4" type="video/mp4">
+</video>
+
 
 [VØJ, Narvent - Memory Reboot (4K Music Video)](https://youtu.be/wL8DVHuWI7Y?si=1_yzspgq_h2puGeu)
 
