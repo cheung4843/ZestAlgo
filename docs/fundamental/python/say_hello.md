@@ -97,10 +97,10 @@ print(x)
 
 請觀看下面的動畫。
 
-<!-- ![](../python/media/cat2.jpg) -->
+<!-- ![](../python/media/cat_2.jpg) -->
 
 <video autoplay muted loop controls>
-  <source src="../../python/media/Variable_1.mp4" type="video/mp4">
+  <source src="../../python/media/variable_1.mp4" type="video/mp4">
 </video>
 
 
