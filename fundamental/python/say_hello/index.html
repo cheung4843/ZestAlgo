@@ -555,6 +555,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Variable and Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice
+    </span>
+  </a>
+  
 </li>
       
     </ul>
@@ -722,6 +755,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Variable and Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice
+    </span>
+  </a>
+  
 </li>
       
     </ul>
@@ -823,6 +889,7 @@
 </div>
 <p>@EditTime : 2024-01-25 19:55</p>
 <h2 id="variable_and_input">Variable and Input<a class="headerlink" href="#variable_and_input" title="Permanent link">¶</a></h2>
+<h3 id="variable">Variable<a class="headerlink" href="#variable" title="Permanent link">¶</a></h3>
 <p>接下來，來點好玩的。</p>
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
 <span class="normal"><a href="#__codelineno-5-2">2</a></span>
@@ -842,7 +909,11 @@
 </span></code></pre></div></td></tr></table></div>
 <p>或許你可能會覺得神奇，為什麼 <code>x</code> 可以變成數字，又可以變成字串，還有為什麼第一個與第三個的輸出會是相同的。</p>
 <p>再來用一些 old-school 的比喻，你可以將 <code>x</code> 想像成一個箱子，而等號右邊的「值」就是箱子裡裝的東西。既然箱子裡面的東西可以變，那我是不是可以說 <code>x</code> 是一個變數呢?</p>
-<p>但請你先忘掉這個比喻，因為這個比喻並不完美，但我想你應該能夠理解，<code>x</code> 是一個變數，而 <code>=</code> 是一個<strong>指派運算子(assignment operator)</strong>，他會將等號右邊的東西指派給等號左邊的變數。</p>
+<p>但請你先忘掉這個比喻，因為這個比喻並不完美，但我想你應該能夠理解，<code>x</code> 是一個變數，而 <code>=</code> 是一個<strong>指派運算子(Assignment Operator)</strong>，他會將等號右邊的東西指派給等號左邊的變數，或者說 <code>x</code> 會指向等號右邊的<strong>物件(Object)</strong>。</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>在Python中，一切都是物件。</p>
+</div>
 <p>請觀看下面的動畫。</p>
 <!-- ![](../python/media/cat2.jpg) -->
 
@@ -851,20 +922,58 @@
 </video>
 
 <p><a href="https://youtu.be/wL8DVHuWI7Y?si=1_yzspgq_h2puGeu">VØJ, Narvent - Memory Reboot (4K Music Video)</a></p>
-<p>但是如果每次想要修改 <code>x</code> 裡面的東西，難道都要在程式碼中修改嗎?能不能我自己來輸入呢?</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#__codelineno-6-2">2</a></span>
-<span class="normal"><a href="#__codelineno-6-3">3</a></span>
-<span class="normal"><a href="#__codelineno-6-4">4</a></span>
-<span class="normal"><a href="#__codelineno-6-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number: &quot;</span><span class="p">)</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="n">y</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter another number: &quot;</span><span class="p">)</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="n">z</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum is: &quot;</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+<p>再來介紹幾種不同的變數類型。</p>
+<p><div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span>
+<span class="normal"><a href="#__codelineno-6-12">12</a></span>
+<span class="normal"><a href="#__codelineno-6-13">13</a></span>
+<span class="normal"><a href="#__codelineno-6-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">114514</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="n">b</span> <span class="o">=</span> <span class="mf">1919810.0</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="n">c</span> <span class="o">=</span> <span class="mf">10e3</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="n">d</span> <span class="o">=</span> <span class="s2">&quot;cheung4843&quot;</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="n">e</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="n">f</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">f</span><span class="p">))</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13"></a><span class="n">h</span> <span class="o">=</span> <span class="kc">None</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">h</span><span class="p">))</span>
 </span></code></pre></div></td></tr></table></div>
-<p>喔幹，怎麼一下子多出那麼多東西，別慌，我來解釋，但請你先回想在前一節中學過的東西，你可以發現 <code class="language-python highlight"><span class="nb">input</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">type</span></code> 都是函式。而 <code class="language-python highlight"><span class="nb">input</span></code> 括號中的字串會顯示在控制台中提示你要輸入什麼，<code class="language-python highlight"><span class="nb">type</span></code> 則告訴你括號中的東西是什麼<strong>類別(Class)</strong>，最後，<code class="language-python highlight"><span class="nb">int</span></code> 則是把括號中的東西的類別轉換成整數。</p>
-<p>那為什麼印出<code class="language-python highlight"><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> 得到 <code>&lt;class 'str'&gt;</code> 呢?代表 <code>x</code> 是一個字串，這是因為 <code class="language-python highlight"><span class="nb">input</span></code> 總是將你輸入進來的東西當成字串，但我想要讓 <code>z = x + y</code> 這個數學式子成立，所以需要用 <code class="language-python highlight"><span class="nb">int</span></code> 來將字串轉換成整數再進行運算。</p>
-<p>那下面這個程式碼的輸出結果是什麼呢?</p>
+<code class="language-python highlight"><span class="nb">type</span></code> 告訴你括號中的東西是什麼<strong>類別(Class)</strong>。</p>
+<p><code>b</code> 與 <code>c</code> 都是<strong>浮點數(Float)</strong>，也就是小數點的數字，而 <code>d</code> 則是字串，<code>e</code> 與 <code>f</code> 則是<strong>布林(Boolean)</strong>，而 <code>h</code> 則是空值。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol>
+<li><code class="language-python highlight"><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> 回傳 <code>x</code> 的類別。</li>
+<li><code class="language-python highlight"><span class="nb">int</span></code> 整數。</li>
+<li><code class="language-python highlight"><span class="nb">float</span></code> 浮點數。</li>
+<li><code class="language-python highlight"><span class="nb">str</span></code> 字串。</li>
+<li><code class="language-python highlight"><span class="nb">bool</span></code> 布林。</li>
+<li><code class="language-python highlight"><span class="kc">None</span></code> 空值。</li>
+</ol>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<ol>
+<li><code class="language-python highlight"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mf">4.0</span><span class="p">))</span></code> 會印出什麼?</li>
+<li><code class="language-python highlight"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="kc">True</span><span class="p">))</span></code> 會印出什麼?</li>
+</ol>
+</div>
+<p>@EditTime : 2024-01-27 16:44</p>
+<h3 id="input">Input<a class="headerlink" href="#input" title="Permanent link">¶</a></h3>
+<p>但是如果每次想要修改 <code>x</code> 裡面的東西，難道都要在程式碼中修改嗎?能不能我自己來輸入呢?</p>
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
 <span class="normal"><a href="#__codelineno-7-2">2</a></span>
 <span class="normal"><a href="#__codelineno-7-3">3</a></span>
@@ -872,33 +981,62 @@
 <span class="normal"><a href="#__codelineno-7-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number: &quot;</span><span class="p">)</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
 </span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="n">y</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter another number: &quot;</span><span class="p">)</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="n">z</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum is: &quot;</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<p>沒錯，字串的相加，就是相連。那你要不要試試看相減?</p>
-<p>那如果我今天想要一次輸入好幾個字串，每一個字串以空格來隔開呢?
-但在這之前，我們先來看一個小程式 : </p>
+<p>喔幹，怎麼一下子多出那麼多東西，別慌，我來解釋，但請你先回想在前一節中學過的東西，你可以發現 <code class="language-python highlight"><span class="nb">input</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span></code> 都是函式。而 <code class="language-python highlight"><span class="nb">input</span></code> 括號中的字串會顯示在控制台中提示你要輸入什麼，<code class="language-python highlight"><span class="nb">int</span></code> 則是把括號中的東西的類別轉換成整數。</p>
+<p>那為什麼印出<code class="language-python highlight"><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> 得到 <code>&lt;class 'str'&gt;</code> 呢?代表 <code>x</code> 是一個字串，這是因為 <code class="language-python highlight"><span class="nb">input</span></code> 總是將你輸入進來的東西當成字串，但我想要讓 <code>z = x + y</code> 這個數學式子成立，所以需要用 <code class="language-python highlight"><span class="nb">int</span></code> 來將字串轉換成整數再進行運算。</p>
+<p>那下面這個程式碼的輸出結果是什麼呢?</p>
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
 <span class="normal"><a href="#__codelineno-8-2">2</a></span>
-<span class="normal"><a href="#__codelineno-8-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number: &quot;</span><span class="p">)</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="n">y</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter another number: &quot;</span><span class="p">)</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum is: &quot;</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<p>沒錯，字串的相加，就是相連。那你要不要試試看相減?</p>
+<p>接下來我們來做個有趣的實驗，順便認識一下 <strong>f-string</strong> 
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span>
+<span class="normal"><a href="#__codelineno-9-5">5</a></span>
+<span class="normal"><a href="#__codelineno-9-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mf">3.5</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The value of b is </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s1">, and its type is </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="n">c</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The value of c is </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1">, and its type is </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span> <span class="o">==</span> <span class="n">c</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div></p>
+<p>那 <code class="language-python highlight"><span class="n">f</span><span class="o">-</span><span class="n">string</span></code> 是什麼東西呢?他是一種<strong>字串格式化(String Formatting)</strong>的方法，他會將括號內的東西轉換成字串，並將字串中的 <code>{}</code> 替換成括號內的東西。</p>
+<p>而執行完程式碼後，你會發現 <code>b</code> 與 <code>c</code> 的類別不同，但他們的值卻相同，這是因為 <code class="language-python highlight"><span class="nb">int</span><span class="p">()</span></code> 與 <code class="language-python highlight"><span class="nb">float</span><span class="p">()</span></code> 都是將括號內的東西轉換成整數與浮點數，而 <code class="language-python highlight"><span class="nb">int</span><span class="p">()</span></code> 會將浮點數的小數點捨去，而 <code class="language-python highlight"><span class="nb">float</span><span class="p">()</span></code> 則會將整數轉換成浮點數。</p>
+<p>那麼 <code>b == c</code> 是什麼意思呢?他是一個<strong>比較運算子(Comparison Operator)</strong>，他會比較等號左右兩邊的東西是否相等，如果相等，則回傳 <code>True</code>，否則回傳 <code>False</code>。</p>
+<p>那如果我今天想要一次輸入好幾個字串，每一個字串以空格來隔開呢?
+但在這之前，我們先來看一個小程式 : </p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <p>我知道怪怪的，為什麼字串後面接了一個 <code class="language-python highlight"><span class="o">.</span><span class="n">split</span><span class="p">()</span></code> 呢?在這裡他很像是函式，但又不是函式，那他叫什麼呢?他被稱為 <code>"Hello World"</code> 這個字串的<strong>方法(Method)</strong>，但未來你可能還會聽到<strong>類別方法(Class Method)</strong>，以及<strong>靜態方法(Static Method)</strong> 等名詞，我怕你會搞混，所以你就先認逗點後面的是「方法」就好了。</p>
 <p>而 <code class="language-python highlight"><span class="o">.</span><span class="n">split</span><span class="p">()</span></code> 會把字串以括號內的東西來切割字串並回傳(那你想想括號內什麼都沒放，預設會是什麼?)，而看看等號左邊，我用 <code>a, b</code> 去接著，這稱為<em>開箱(Unpacking)</em></p>
 <p>那現在你應該能看懂下面的程式碼了，因為 <code class="language-python highlight"><span class="nb">input</span><span class="p">()</span></code> 也會回傳一個字串，因此他也能夠使用 <code>.split()</code> </p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#__codelineno-9-2">2</a></span>
-<span class="normal"><a href="#__codelineno-9-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ol>
 <li><code class="language-python highlight"><span class="nb">input</span><span class="p">()</span></code> 接受輸入，回傳一個字串。</li>
 <li><code class="language-python highlight"><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> 將 <code>x</code> 轉換成整數。</li>
-<li><code class="language-python highlight"><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> 回傳 <code>x</code> 的類別。</li>
+<li><code class="language-python highlight"><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> 將 <code>x</code> 轉換成浮點數。</li>
 <li><code class="language-python highlight"><span class="nb">str</span><span class="o">.</span><span class="n">split</span><span class="p">()</span></code> 以括號內的東西來切割字串，並回傳。</li>
 </ol>
 </div>
@@ -908,30 +1046,55 @@
 <ol>
 <li><code class="language-python highlight"><span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()))</span></code> 會印出什麼?</li>
 <li><code>124.spilt("1")</code> 是合法的嗎?</li>
+<li><code class="language-python highlight"><span class="nb">bool</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></code> 與 <code class="language-python highlight"><span class="nb">bool</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span></code> 會回傳什麼?</li>
 <li>看以下的程式碼，為什麼它們的功能相同，<code>a</code> 與 <code>b</code> 成功互換了呢?</li>
 </ol>
 </div>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
-<span class="normal"><a href="#__codelineno-10-2">2</a></span>
-<span class="normal"><a href="#__codelineno-10-3">3</a></span>
-<span class="normal"><a href="#__codelineno-10-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="hll"><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
-</span></span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="hll"><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
+</span></span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
-<span class="normal"><a href="#__codelineno-11-2">2</a></span>
-<span class="normal"><a href="#__codelineno-11-3">3</a></span>
-<span class="normal"><a href="#__codelineno-11-4">4</a></span>
-<span class="normal"><a href="#__codelineno-11-5">5</a></span>
-<span class="normal"><a href="#__codelineno-11-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="hll"><span class="n">tmp</span> <span class="o">=</span> <span class="n">a</span>
-</span></span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="hll"><span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
-</span></span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="hll"><span class="n">b</span> <span class="o">=</span> <span class="n">tmp</span>
-</span></span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span>
+<span class="normal"><a href="#__codelineno-13-5">5</a></span>
+<span class="normal"><a href="#__codelineno-13-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="hll"><span class="n">tmp</span> <span class="o">=</span> <span class="n">a</span>
+</span></span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="hll"><span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+</span></span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="hll"><span class="n">b</span> <span class="o">=</span> <span class="n">tmp</span>
+</span></span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <p>@EditTime : 2024-01-25 22:17</p>
+<h2 id="practice">Practice<a class="headerlink" href="#practice" title="Permanent link">¶</a></h2>
+<p>在這篇文章中，你學到了:</p>
+<div class="admonition summary">
+<p class="admonition-title">Summary</p>
+<ol>
+<li>如何使用 <code class="language-python highlight"><span class="nb">print</span><span class="p">()</span></code> 與 <code class="language-python highlight"><span class="nb">input</span><span class="p">()</span></code>。</li>
+<li>知道變數的概念。</li>
+<li>知道 <code class="language-python highlight"><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> 與 <code class="language-python highlight"><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> 的用途。</li>
+<li>知道 <code class="language-python highlight"><span class="nb">str</span><span class="o">.</span><span class="n">split</span><span class="p">()</span></code> 的用途。</li>
+<li>知道如何使用 <code class="language-python highlight"><span class="n">f</span><span class="o">-</span><span class="n">string</span></code>。</li>
+</ol>
+</div>
+<p>那現在你可以試試看以下的題目了。</p>
+<div class="admonition success">
+<p>ZeroJudge - <a href="https://zerojudge.tw/ShowProblem?problemid=a001">a001. 哈囉</a></p>
+</div>
+<details class="abstract">
+<summary>Reference code</summary>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;hello, </span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<p>@EditTime : 2024-01-27 17:02</p>
 
 
 
