@@ -16,9 +16,10 @@ print("Welcome to LMcps!")
 ## Content
 這本書著重於應用面，並且實作為主，也並非帶你打競程，而是帶你了解重要的資料結構與演算法。實作語言以Python為主，會有少數C++的實作。
 
+## Wait to be done
+1. 心得分享專區
+2. 專業用語
+
 ## Contributors
 !!! success
     1. 第二任社長
-
-
-

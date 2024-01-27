@@ -8,6 +8,7 @@ nav:
     - Python:
       - fundamental/python/index.md
       - Say Hello to Python: fundamental/python/say_hello.md
+      - Operators: fundamental/python/operators.md
     - C++:
       - fundamental/cpp/index.md
   - About: about.md
