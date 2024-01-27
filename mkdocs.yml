@@ -3,8 +3,12 @@ site_url: https://example.com/
 nav:
   - Home: index.md
   - Fundamental: 
-    - fundamental\index.md
-    - Say Hello to Python: fundamental\say_hello.md
+    - fundamental/index.md
+    - Python:
+      - fundamental/python/index.md
+      - Say Hello to Python: fundamental/python/say_hello.md
+    - C++:
+      - fundamental/cpp/index.md
   - About: about.md
   - License: license.md
 
