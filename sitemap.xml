@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://example.com/</loc>
+         <loc>https://cheung4843.github.io/LMcpsBook/</loc>
          <lastmod>2024-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/about/</loc>
+         <loc>https://cheung4843.github.io/LMcpsBook/about/</loc>
          <lastmod>2024-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/license/</loc>
+         <loc>https://cheung4843.github.io/LMcpsBook/license/</loc>
          <lastmod>2024-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/fundamental/</loc>
+         <loc>https://cheung4843.github.io/LMcpsBook/fundamental/</loc>
          <lastmod>2024-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/fundamental/cpp/</loc>
+         <loc>https://cheung4843.github.io/LMcpsBook/fundamental/cpp/</loc>
          <lastmod>2024-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/fundamental/python/</loc>
+         <loc>https://cheung4843.github.io/LMcpsBook/fundamental/python/</loc>
          <lastmod>2024-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/fundamental/python/say_hello/</loc>
+         <loc>https://cheung4843.github.io/LMcpsBook/fundamental/python/say_hello/</loc>
          <lastmod>2024-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
