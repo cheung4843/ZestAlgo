@@ -14,7 +14,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../cpp/">
+        <link rel="next" href="../operators/">
       
       
       <link rel="icon" href="../../../imgs/lmcps_brand.png">
@@ -444,6 +444,8 @@
       
         
       
+        
+      
     
     
     
@@ -594,6 +596,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operators
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -909,16 +932,16 @@
 </span></code></pre></div></td></tr></table></div>
 <p>或許你可能會覺得神奇，為什麼 <code>x</code> 可以變成數字，又可以變成字串，還有為什麼第一個與第三個的輸出會是相同的。</p>
 <p>再來用一些 old-school 的比喻，你可以將 <code>x</code> 想像成一個箱子，而等號右邊的「值」就是箱子裡裝的東西。既然箱子裡面的東西可以變，那我是不是可以說 <code>x</code> 是一個變數呢?</p>
-<p>但請你先忘掉這個比喻，因為這個比喻並不完美，但我想你應該能夠理解，<code>x</code> 是一個變數，而 <code>=</code> 是一個<strong>指派運算子(Assignment Operator)</strong>，他會將等號右邊的東西指派給等號左邊的變數，或者說 <code>x</code> 會指向等號右邊的<strong>物件(Object)</strong>。</p>
+<p>但請你先忘掉這個比喻，因為這個比喻並不完美，但我想你應該能夠理解，<code>x</code> 是一個變數，而 <code>=</code> 是<strong>指派運算子(Assignment Operator)</strong>，他會將等號右邊的東西指派給等號左邊的變數，或者說 <code>x</code> 會指向等號右邊的<strong>物件(Object)</strong>。</p>
 <div class="admonition quote">
 <p class="admonition-title">Quote</p>
 <p>在Python中，一切都是物件。</p>
 </div>
 <p>請觀看下面的動畫。</p>
-<!-- ![](../python/media/cat2.jpg) -->
+<!-- ![](../python/media/cat_2.jpg) -->
 
 <video autoplay muted loop controls>
-  <source src="../../python/media/Variable_1.mp4" type="video/mp4">
+  <source src="../../python/media/variable_1.mp4" type="video/mp4">
 </video>
 
 <p><a href="https://youtu.be/wL8DVHuWI7Y?si=1_yzspgq_h2puGeu">VØJ, Narvent - Memory Reboot (4K Music Video)</a></p>
@@ -1013,7 +1036,7 @@
 </span></code></pre></div></td></tr></table></div></p>
 <p>那 <code class="language-python highlight"><span class="n">f</span><span class="o">-</span><span class="n">string</span></code> 是什麼東西呢?他是一種<strong>字串格式化(String Formatting)</strong>的方法，他會將括號內的東西轉換成字串，並將字串中的 <code>{}</code> 替換成括號內的東西。</p>
 <p>而執行完程式碼後，你會發現 <code>b</code> 與 <code>c</code> 的類別不同，但他們的值卻相同，這是因為 <code class="language-python highlight"><span class="nb">int</span><span class="p">()</span></code> 與 <code class="language-python highlight"><span class="nb">float</span><span class="p">()</span></code> 都是將括號內的東西轉換成整數與浮點數，而 <code class="language-python highlight"><span class="nb">int</span><span class="p">()</span></code> 會將浮點數的小數點捨去，而 <code class="language-python highlight"><span class="nb">float</span><span class="p">()</span></code> 則會將整數轉換成浮點數。</p>
-<p>那麼 <code>b == c</code> 是什麼意思呢?他是一個<strong>比較運算子(Comparison Operator)</strong>，他會比較等號左右兩邊的東西是否相等，如果相等，則回傳 <code>True</code>，否則回傳 <code>False</code>。</p>
+<p>那麼 <code>b == c</code> 是什麼意思呢?其中 <code>==</code> 是<strong>比較運算子(Comparison Operator)</strong>，他會比較等號左右兩邊的東西是否相等，如果相等，則回傳 <code>True</code>，否則回傳 <code>False</code>。</p>
 <p>那如果我今天想要一次輸入好幾個字串，每一個字串以空格來隔開呢?
 但在這之前，我們先來看一個小程式 : </p>
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
@@ -1073,8 +1096,8 @@
 <p>@EditTime : 2024-01-25 22:17</p>
 <h2 id="practice">Practice<a class="headerlink" href="#practice" title="Permanent link">¶</a></h2>
 <p>在這篇文章中，你學到了:</p>
-<div class="admonition summary">
-<p class="admonition-title">Summary</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <ol>
 <li>如何使用 <code class="language-python highlight"><span class="nb">print</span><span class="p">()</span></code> 與 <code class="language-python highlight"><span class="nb">input</span><span class="p">()</span></code>。</li>
 <li>知道變數的概念。</li>
@@ -1147,13 +1170,13 @@
         
         
           
-          <a href="../../cpp/" class="md-footer__link md-footer__link--next" aria-label="下一頁: C++">
+          <a href="../operators/" class="md-footer__link md-footer__link--next" aria-label="下一頁: Operators">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一頁
               </span>
               <div class="md-ellipsis">
-                C++
+                Operators
               </div>
             </div>
             <div class="md-footer__button md-icon">
