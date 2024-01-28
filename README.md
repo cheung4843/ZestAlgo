@@ -62,8 +62,9 @@ LMcps Book
 * `docs: xxx`：
 
 ### 4. 依賴項目
-此專案使用mkdocs+github-page進行架設，請確保你再擁有python的情況下透過下列指令安裝必要依賴項目。
+此專案使用python+mkdocs+mkdocs-material進行寫作，請確保你擁有必要的相關套件在進行寫作。
 
+你可以透過下列指令安裝相關套件。
 ```bash
 $ pip install mkdocs mkdocs-material                                                                                                                                ─╯
 ```
