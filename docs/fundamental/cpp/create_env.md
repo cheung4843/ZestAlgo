@@ -8,12 +8,23 @@
 
 ## Windows
 GNU C++ Compiler (G++)本身是沒有支援Windows的，但我們可以透過使用wsl2或者別人用好的移植版本進行使用，這邊我們會安裝別人寫好的移植版。
-### 1.下載mingw並安裝
-前往[這個連結]()安裝
+### 1.下載並安裝mingw
+1. 前往[這個連結]()安裝mingw
+2. 勾選 ``mingw32-gcc-g++``
+   ![](./media/install1.png)
+3. ``installation`` > ``apply change``
+   ![](./media/install2.png)
+4. 按下``apply``安裝
+   
+    ![](./media/install3.png)
+
 
 ### 2.加入環境變數
+1. 尋找安裝位置，以我為例，是安裝在``C:\\Mingw``裡面，找到裡面的``bin``資料夾，點進去並複製路徑。
+    ![](./media/env1.png)
 
 ### 3.測試指令
+開啟提示命令字元後，打入````
 
 
 ## macOS
