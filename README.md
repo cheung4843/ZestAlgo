@@ -3,6 +3,18 @@
 [Book link](https://cheung4843.github.io/LMcpsBook/)
 
 
+## 環境設定
+* python 3.12.1
+* mkdocs 1.5.3
+* mkdocs-material 9.5.5
+
+請先確保電腦有安裝 python 3.12.1 或以上的版本，接著安裝 mkdocs 與 mkdocs-material。
+
+```bash
+pip install mkdocs
+pip install mkdocs-material
+```
+
 ## 協作規範
 
 ### 1. 資料夾規範
