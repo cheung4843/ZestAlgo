@@ -57,10 +57,19 @@ LMcps Book
 
 
 ### 3. Commit 規範
-* `add: xxx`：
+第一行根據操作類型分為三種，分別為 `add`、`modified`、`delete`，第二行為說明修改的詳細內容。
 
-* `docs: xxx`：
+* add: file name 1, file name 2,...etc
+* modified: file name 1, file name 2, ... etc
+* delete: file name 1 , file name 2, ... etc
 
+
+例如: 
+
+```git
+modified: say_hello.md
+修正部分拼字錯誤。
+```
 
 ## 貢獻者
 

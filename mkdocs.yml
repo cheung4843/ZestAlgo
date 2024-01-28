@@ -35,10 +35,12 @@ markdown_extensions:
 
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github-alt
   features:
     - announce.dismiss
-    - content.action.edit
-    - content.action.view
+    # - content.action.edit
+    # - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.tooltips
