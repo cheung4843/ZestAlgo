@@ -248,7 +248,10 @@ print(x, y, z)
 
 
 ## Bonus: f-string for float
+
 為了能讓你練習一些題目，我先在這裡介紹如何印出浮點數到指定位數。
+
+在 [Say Hello to Python - Input](say_hello.md#input) 中，有稍微提過，如果你完全沒印象，請你回去複習一下。
 
 給你浮點數 `x` ，請你印出 `x` 的平方根與平方，並且只印出小數點後兩位。
 
@@ -265,8 +268,116 @@ The square of 3.1415926 is 9.87
 
 @EditTime : 2024-01-27 11:52
 
-## Practice
+## Bonus: map for input
+再次複習 [Say Hello to Python - Mutiple Input](say_hello.md#multiple_input) 中的例子，我們可以用 `split()` 來將輸入的字串切割成多個字串。
 
+但是如果我們想要將這些字串轉換成整數，我們可以怎麼做呢?
+
+```python linenums="1"
+a, b, c = input().split()
+print(int(a) + int(b) + int(c))
+```
+
+```linenums="1" title="input"
+1 2 3
+```
+
+```linenums="1" title="ouput"
+6
+```
+
+雖然這樣寫也可以，但是如果我們想要輸入很多個數字，這樣寫就會很麻煩，這時候我們可以用 `map()` 來幫助我們。
+
+```python linenums="1"
+a, b, c = map(int, input().split())
+print(a + b + c)
+```
+
+```linenums="1" title="input"
+4 5 6
+```
+
+```linenums="1" title="ouput"
+15
+```
+
+`#!python map(function, iterable)` 會將 `iterable` 中的每一個元素都丟進 `function` 中，在這裡的 `iterable` 是 `#!python input().split()`，而 `function` 是 `#!python int`，因此 `#!python map(int, input().split())` 會將 `#!python input().split()` 中的每一個元素都轉換成整數。
+
+你可以嘗試將使用別的函式，例如 `#!python float` 或 `#!python str`，但請你記得不要加上括號，因為我們只是要將函式的名稱傳進去，而不是要執行函式。
+
+我們使用 *Unpacking* 的方式來將 `#!python map()` 的結果指派給變數。我相信你還記得什麼是 *Unpacking* 吧?
+
+如果你不太能理解，也沒關係，先學會怎麼用就好。
+
+## Practice
+有了這些本章的基礎後，其實已經可以做很多題目了，我們來做一些練習題吧!
+
+!!! success
+    Itsa - [[C_MM01-易] 計算梯型面積](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=2913)
+
+??? abstract "Reference code"
+    ```python linenums="1"
+    a, b, h = map(int, input().split())
+    area = (a + b) * h / 2
+    print(f"Trapezoid area:{area}")
+    ```
+
+!!! success
+    Itsa - [[C_MM02-易] 計算三角形面積](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=2914)
+
+??? abstract "Reference code"
+    ```python linenums="1"
+
+    a, b = map(int, input().split())
+    area = a * b / 2
+    print(area)
+    ```
+
+!!! success
+    Itsa - [[C_MM04-易] 計算總和、乘積、差、商和餘數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=2916)
+
+??? abstract "Reference code"
+    ```python linenums="1"
+
+    a, b = map(int, input().split())
+
+    print(f"{a}+{b}={a + b}")
+    print(f"{a}*{b}={a * b}")
+    print(f"{a}-{b}={a - b}")
+    print(f"{a}/{b}={a // b}...{a % b}")
+    ```
+
+!!! success
+    Itsa - [[C_MM06-易] 英哩轉公里](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6870)
+
+??? abstract "Reference code"
+    ```python linenums="1"
+
+    mile = int(input())
+    km = mile * 1.6
+    print(f"{km:.1f}")
+    ```
+
+## Assignment
+!!! success
+    Itsa - [[C_MM07-易] 計算平方值與立方值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6873)
+
+!!! success
+    Itsa - [[C_MM08-易] 計算兩數和的平方值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6876)
+
+!!! success
+    Itsa - [[C_MM09-易] 計算 i 次方的值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6879)
+
+!!! success
+    Itsa - [[C_MM10-易] 攝氏溫度轉華式溫度](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6882)
+
+!!! success
+    Itsa - [[C_MM11-易] 購票計算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6885)
+
+!!! success
+    Itsa - [[C_MM12-易] 相遇時間計算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6888)
+
+@EditTime : 2024-01-28 22:03
 
 
 

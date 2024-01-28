@@ -186,6 +186,8 @@ print(b == c)
 
 那麼 `b == c` 是什麼意思呢?其中 `==` 是**比較運算子(Comparison Operator)**，他會比較等號左右兩邊的東西是否相等，如果相等，則回傳 `True`，否則回傳 `False`。
 
+#### Multiple Input
+
 那如果我今天想要一次輸入好幾個字串，每一個字串以空格來隔開呢?
 但在這之前，我們先來看一個小程式 : 
 
@@ -256,6 +258,7 @@ print(a, b)
 
 ??? abstract "Reference code"
     ```python linenums="1"
+    
     word = input()
     print(f'hello, {word}')
     ```
