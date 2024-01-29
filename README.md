@@ -33,12 +33,25 @@ LMcps Book
 │  │  │  index.md
 │  │  │
 │  │  ├─cpp
+│  │  │  │  create_env.md
 │  │  │  │  index.md
 │  │  │  │
 │  │  │  └─media
+│  │  │          env1.png
+│  │  │          env2.png
+│  │  │          env3.png
+│  │  │          env4.png
+│  │  │          install1.png
+│  │  │          install2.png
+│  │  │          install3.png
+│  │  │          vscode_ext.mp4
+│  │  │          warning.png
+│  │  │
 │  │  └─python
 │  │      │  index.md
+│  │      │  operators.md
 │  │      │  say_hello.md
+│  │      │  selection_structures.md
 │  │      │
 │  │      └─media
 │  │              cat_2.jpg
@@ -52,6 +65,7 @@ LMcps Book
 │  │
 │  └─stylesheets
 │          extra.css
+│
 └─site
 ```
 
