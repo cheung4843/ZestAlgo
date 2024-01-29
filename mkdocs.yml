@@ -11,6 +11,7 @@ nav:
       - Operators: fundamental/python/operators.md
     - C++:
       - fundamental/cpp/index.md
+      - 0. 環境架設: fundamental/cpp/create_env.md
   - About: about.md
   - License: license.md
 
