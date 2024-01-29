@@ -325,7 +325,7 @@ print(a + b + c)
 ## Practice
 有了這些本章的基礎後，其實已經可以做很多題目了，我們來做一些練習題吧!
 
-!!! success
+!!! success ""
     Itsa - [[C_MM01-易] 計算梯型面積](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=2913)
 
 ??? abstract "Reference code"
@@ -335,7 +335,7 @@ print(a + b + c)
     print(f"Trapezoid area:{area}")
     ```
 
-!!! success
+!!! success ""
     Itsa - [[C_MM02-易] 計算三角形面積](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=2914)
 
 ??? abstract "Reference code"
@@ -346,7 +346,7 @@ print(a + b + c)
     print(area)
     ```
 
-!!! success
+!!! success ""
     Itsa - [[C_MM04-易] 計算總和、乘積、差、商和餘數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=2916)
 
 ??? abstract "Reference code"
@@ -360,7 +360,7 @@ print(a + b + c)
     print(f"{a}/{b}={a // b}...{a % b}")
     ```
 
-!!! success
+!!! success ""
     Itsa - [[C_MM06-易] 英哩轉公里](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6870)
 
 ??? abstract "Reference code"
@@ -372,22 +372,22 @@ print(a + b + c)
     ```
 
 ## Assignment
-!!! success
+!!! success ""
     Itsa - [[C_MM07-易] 計算平方值與立方值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6873)
 
-!!! success
+!!! success ""
     Itsa - [[C_MM08-易] 計算兩數和的平方值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6876)
 
-!!! success
+!!! success ""
     Itsa - [[C_MM09-易] 計算 i 次方的值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6879)
 
-!!! success
+!!! success ""
     Itsa - [[C_MM10-易] 攝氏溫度轉華式溫度](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6882)
 
-!!! success
+!!! success ""
     Itsa - [[C_MM11-易] 購票計算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6885)
 
-!!! success
+!!! success ""
     Itsa - [[C_MM12-易] 相遇時間計算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6888)
 
 @EditTime : 2024-01-28 22:03
