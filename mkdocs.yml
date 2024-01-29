@@ -10,6 +10,7 @@ nav:
       - Say Hello to Python: fundamental/python/say_hello.md
       - Operators: fundamental/python/operators.md
       - Selection Structures: fundamental/python/selection_structures.md
+      - Repetition Structures: fundamental/python/repetition_structures.md
     - C++:
       - fundamental/cpp/index.md
       - 0. 環境架設: fundamental/cpp/create_env.md
@@ -21,6 +22,9 @@ markdown_extensions:
       permalink: "¶"
       baselevel: 1
       separator: "_"
+  # MathJax
+  - pymdownx.arithmatex:
+      generic: true
   # callout:
   - admonition
   - pymdownx.details
@@ -98,6 +102,12 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
+# MathJax
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 
 

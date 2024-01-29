@@ -83,11 +83,12 @@ LMcps Book
 
 
 ### 3. Commit 規範
-第一行根據操作類型分為三種，分別為 `add`、`modified`、`delete`，第二行為說明修改的詳細內容。
+第一行根據操作類型分為四種，分別為 `add`、`modified`、`delete`、`feat`，第二行為說明修改的詳細內容。
 
 * add: file name 1, file name 2,...etc
 * modified: file name 1, file name 2, ... etc
 * delete: file name 1 , file name 2, ... etc
+* feat: file name 1, file name 2, ... etc
 
 
 例如: 
@@ -96,6 +97,8 @@ LMcps Book
 modified: say_hello.md
 修正部分拼字錯誤。
 ```
+
+留意: `feat` 是指新增功能，例如可以使用MathJax，或是允許快速查看原始碼等。
 
 ## 貢獻者
 
