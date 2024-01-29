@@ -9,7 +9,7 @@
 ## Windows
 GNU C++ Compiler (G++)本身是沒有支援Windows的，但我們可以透過使用wsl2或者別人用好的移植版本進行使用，這邊我們會安裝別人寫好的移植版。
 ### 1.下載並安裝mingw
-1. 前往[這個連結]()安裝mingw
+1. 前往[這個連結](https://sourceforge.net/projects/mingw/)安裝mingw
 2. 勾選 ``mingw32-gcc-g++``
    ![](./media/install1.png)
 3. ``installation`` > ``apply change``
@@ -47,7 +47,7 @@ macos本身就有提供clangd作為編譯器使用，在安裝xcode後應該就�
 
 ## Visual Studio Code
 ### 1. 安裝Visual Studio Code
-前往[這個網站]()下載屬於你系統的visual studio code安裝檔。
+前往[這個網站](https://code.visualstudio.com/)下載屬於你系統的visual studio code安裝檔。
 ### 2. 安裝 extension
 1. 點入extension頁面分別安裝``C/C++`` ``clangd`` 這兩個extension，並重啟vscode
     <video autoplay muted loop controls><source src="../../cpp/media/vscode_ext.mp4" type="video/mp4"></video>
