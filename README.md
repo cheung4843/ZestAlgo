@@ -85,8 +85,7 @@ modified: say_hello.md
 
 ## 貢獻者
 
-[cheung4843](https://github.com/cheung4843)
-
-[Bloodnighttw](https://github.com/bloodnighttw)
-
+<a href="https://github.com/cheung4843/LMcpsBook/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=cheung4843/LMcpsBook"/>
+</a>
 

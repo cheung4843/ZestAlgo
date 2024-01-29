@@ -21,6 +21,7 @@ print("Welcome to LMcps!")
 2. 專業用語
 
 ## Contributors
-!!! success
-    1. 第二任社長
-    2. 第二任副社長
+
+<a href="https://github.com/cheung4843/LMcpsBook/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=cheung4843/LMcpsBook"/>
+</a>
