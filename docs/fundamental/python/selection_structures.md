@@ -292,6 +292,73 @@ Spring
     else:
         print(1 << i)
     ```
+!!! success ""
+    Itsa - [[C_MM13-易] 停車費計算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6891)
 
+??? abstract "Reference code"
 
+    ```python linenums="1"
 
+    h1, m1 = map(int, input().split())
+    h2, m2 = map(int, input().split())
+
+    paid = 0
+    minutes = (h2 - h1) * 60 + (m2 - m1)
+    if minutes > 240:
+        paid += ((minutes - 240) // 30) * 60
+        minutes = 240
+    if minutes > 120:
+        paid += ((minutes - 120) // 30) * 40
+        minutes = 120
+    paid += (minutes // 30) * 30
+
+    print(paid)
+    ```
+
+!!! success ""
+    Itsa - [[C_MM15-易] 判斷座標是否在正方形的範圍內](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6897)
+
+??? abstract "Reference code"
+
+    ```python linenums="1"
+
+    x, y = map(int, input().split())
+
+    if 0 <= x <= 100 and 0 <= y <= 100:
+        print("inside")
+    else:
+        print("outside")
+    ```
+
+## Assignment
+!!! success ""
+    Itsa - [[C_MM16-易] 判斷座標是否在圓形的範圍內](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6900)
+
+!!! success ""
+    Itsa - [[C_MM19-易] 電話費計算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6909)
+
+!!! success ""
+    Itsa - [[C_MM24-易] 計算薪水](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6922)
+
+!!! success ""
+    Itsa - [[C_MM32-易] Armstrong數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6941)
+
+!!! success ""
+    Itsa - [[C_MM35-易] 平、閏年判定](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6947)
+
+!!! success ""
+    Itsa - [[C_MM36-易] 季節判定](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6949)
+
+!!! success ""
+    Itsa - [[C_MM37-易] 判斷座標位於何處](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6951)
+
+!!! success ""
+    Itsa - [[C_MM38-易] 判斷3整數是否能構成三角形之三邊長](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6953)
+
+!!! success ""
+    Itsa - [[C_MM39-易] 判斷是何種三角形](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6955)
+
+!!! success ""
+    Itsa - [[C_MM46-易] 複數運算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6970)
+
+@EditTime : 2024-01-29 14:38
