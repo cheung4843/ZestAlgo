@@ -19,11 +19,11 @@ GNU C++ Compiler (G++)本身是沒有支援Windows的，但我們可以透過使
     ![](./media/install3.png)
 
 
-### 2.加入環境變數
-1. 尋找安裝位置，以我為例，是安裝在``C:\\Mingw``裡面，找到裡面的``bin``資料夾，點進去並複製路徑。
+### 2. 加入環境變數
+1. 尋找安裝位置，以我為例，是安裝在``C:\MinGW``裡面，找到裡面的``bin``資料夾，點進去並複製路徑。
     ![](./media/env1.png)
 
-### 3.測試指令
+### 3. 測試指令
 開啟提示命令字元後，打入````
 
 
@@ -46,4 +46,12 @@ macos本身就有提供clangd作為編譯器使用，在安裝xcode後應該就�
 
 
 ## Visual Studio Code
-
+### 1. 安裝Visual Studio Code
+前往[這個網站]()下載屬於你系統的visual studio code安裝檔。
+### 2. 安裝 extension
+1. 點入extension頁面分別安裝``C/C++`` ``clangd`` 這兩個extension，並重啟vscode
+    <video autoplay muted loop controls><source src="../../cpp/media/vscode_ext.mp4" type="video/mp4"></video>
+2. 你可能遇到這樣的警告訊息，請按下 ``Disable Intellisence``
+   ![](./media/warning.png)
+### 其他
+如果遇到字體非等寬，請尋找一個等寬字體並使用，等寬字體可以讓你的程式碼可讀性更佳。
