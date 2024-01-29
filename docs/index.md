@@ -23,3 +23,4 @@ print("Welcome to LMcps!")
 ## Contributors
 !!! success
     1. 第二任社長
+    2. 第二任副社長
