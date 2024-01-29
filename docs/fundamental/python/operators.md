@@ -323,7 +323,7 @@ print(a + b + c)
 如果你不太能理解，也沒關係，先學會怎麼用就好。
 
 ## Practice
-有了這些本章的基礎後，其實已經可以做很多題目了，我們來做一些練習題吧!
+有了本章的基礎後，其實已經可以做很多題目了，我們來做一些練習題吧!
 
 !!! success ""
     Itsa - [[C_MM01-易] 計算梯型面積](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=2913)
@@ -379,9 +379,6 @@ print(a + b + c)
     Itsa - [[C_MM08-易] 計算兩數和的平方值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6876)
 
 !!! success ""
-    Itsa - [[C_MM09-易] 計算 i 次方的值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6879)
-
-!!! success ""
     Itsa - [[C_MM10-易] 攝氏溫度轉華式溫度](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6882)
 
 !!! success ""
@@ -389,6 +386,9 @@ print(a + b + c)
 
 !!! success ""
     Itsa - [[C_MM12-易] 相遇時間計算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6888)
+
+!!! success ""
+    Itsa - [[C_MM14-易] 計算時間的組合](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6894)
 
 @EditTime : 2024-01-28 22:03
 

@@ -99,7 +99,7 @@ print(x)
 
 <!-- ![](../python/media/cat_2.jpg) -->
 
-<video autoplay muted loop controls>
+<video muted controls>
   <source src="../../python/media/variable_1.mp4" type="video/mp4">
 </video>
 
