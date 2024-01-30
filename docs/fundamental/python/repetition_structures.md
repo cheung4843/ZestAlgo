@@ -324,75 +324,15 @@ step = 0
     這題會出現在這裡，單純是因為要重複輸入。
 
 !!! success ""
-    Itsa - [[C_MM21-易] 算階乘](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6915)
-
-
-??? abstract "Reference code"
-    ```python linenums="1"
-    
-    ```
-
-!!! success ""
-    Itsa - [[C_MM25-易] 計算正整數被3整除之數值之總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6925)
-
-
-??? abstract "Reference code"
-    ```python linenums="1"
-    
-    ```
-
-!!! success ""
     Itsa - [[C_MM26-易] 輸出 1x1、2x2、...、NxN之結果](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6928)
 
 
 ??? abstract "Reference code"
     ```python linenums="1"
-    
-    ```
+    N = int(input())
 
-!!! success ""
-    Itsa - [[C_MM27-易] 計算兩整數間所有整數的總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6931)
-
-
-??? abstract "Reference code"
-    ```python linenums="1"
-    
-    ```
-
-!!! success ""
-    Itsa - [[C_MM28-易] 計算1到N之間屬於5和7的倍數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6933)
-
-
-??? abstract "Reference code"
-    ```python linenums="1"
-    
-    ```
-
-!!! success ""
-    Itsa - [[C_MM29-易] 最大質數問題](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6935)
-
-
-??? abstract "Reference code"
-    ```python linenums="1"
-    
-    ```
-
-!!! success ""
-    Itsa - [[C_MM30-易] 質數判別](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6937)
-
-
-??? abstract "Reference code"
-    ```python linenums="1"
-    
-    ```
-
-!!! success ""
-    Itsa - [[C_MM31-易] 計算1~N內能被2跟3整除，但不能被12整除的整數總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6939)
-
-
-??? abstract "Reference code"
-    ```python linenums="1"
-    
+    for i in range(1, N + 1):
+        print(f"{i}*{i}={i * i}")
     ```
 
 !!! success ""
@@ -401,35 +341,65 @@ step = 0
 
 ??? abstract "Reference code"
     ```python linenums="1"
-    
+    N = int(input())
+
+    for i in range(6, N + 1, 2):
+        s = 0
+        for j in range(1, i):
+            if i % j == 0:
+                s += j
+        if s == i:
+            if i == 6:
+                print(i, end='')
+            else:
+                print(' ' + str(i), end='')
+    print()
     ```
+    這是暴力解，會*TLE*，下一章會介紹如何最佳化，
+    但如果使用 C++ 的話，相同邏輯的程式碼是可以*AC*的。
 
 !!! success ""
     Itsa - [[C_MM34-易] 因數問題](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6945)
 
-
 ??? abstract "Reference code"
     ```python linenums="1"
-    
-    ```
+    N = int(input())
 
-!!! success ""
-    Itsa - [[C_MM40-易] 1~N之間的總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6957)
-
-
-??? abstract "Reference code"
-    ```python linenums="1"
-    
-    ```
-
-!!! success ""
-    Itsa - [[C_MM49-易] 連續1的倍數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6979)
-
-
-??? abstract "Reference code"
-    ```python linenums="1"
-    
+    print(1, end="")
+    for i in range(2, N + 1):
+        if N % i == 0:
+            print(f" {i}", end="")
+    print()
     ```
 
 @EditTime : 2024-01-30 18:40
 
+## Assignment
+!!! success ""
+    Itsa - [[C_MM21-易] 算階乘](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6915)
+
+!!! success ""
+    Itsa - [[C_MM25-易] 計算正整數被3整除之數值之總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6925)
+
+!!! success ""
+    Itsa - [[C_MM27-易] 計算兩整數間所有整數的總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6931)
+
+!!! success ""
+    Itsa - [[C_MM28-易] 計算1到N之間屬於5和7的倍數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6933)
+
+!!! success ""
+    Itsa - [[C_MM29-易] 最大質數問題](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6935)
+
+!!! success ""
+    Itsa - [[C_MM30-易] 質數判別](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6937)
+
+!!! success ""
+    Itsa - [[C_MM31-易] 計算1~N內能被2跟3整除，但不能被12整除的整數總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6939)
+
+!!! success ""
+    Itsa - [[C_MM40-易] 1~N之間的總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6957)
+
+!!! success ""
+    Itsa - [[C_MM49-易] 連續1的倍數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6979)
+
+@EditTime : 2024-01-30 21:51
