@@ -1,4 +1,9 @@
 # Selection Structures
+## Introduction
+在我們人生中，我們會面臨很多選擇，會根據當下的情況，做出不同的決定，而程式也是一樣，我們可以根據不同的情況，執行不同的程式碼，這稱為**選擇結構(Selection Structures)**，是流程控制的一種。
+
+例如，我根據學測成績，來決定要填哪些志願，或是我根據天氣，來決定要不要帶傘。
+
 ## if ... elif ... else
 
 在往下之前，請你先回想 [Operators - Comparison Operators](operators.md#comparison_operators) 的內容，我們可以透過比較運算子來得到一個布林值，而 `if` 會根據 `True` 或 `False` 來決定是否執行某段程式碼。

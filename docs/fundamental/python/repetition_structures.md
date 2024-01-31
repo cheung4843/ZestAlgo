@@ -1,6 +1,20 @@
 # Repetition Structures
-## for loop
-首先，我們來看看 `for` 迴圈的用法。並舉個簡單的例子，印出 1 到 5:
+## Introduction
+電腦最會做的事，就是重複的事情，所以這裡要跟你介紹**迴圈(Loop)**，迴圈可以讓我們重複執行一段程式碼，而不用一行一行的寫出來。
+
+如果你要印 $100$ 次 `Hello World!`，你會怎麼做呢?
+
+```python linenums="97"
+# ...
+print("Hello World!")
+print("Hello World!")
+print("Hello World!")
+```
+
+你會真的寫 $100$ 行嗎?當然不會，不然你會氣死，然後把電腦砸了。
+
+## For Loop
+首先，我們來看看 `for` 迴圈的用法。並舉個簡單的例子，印出 $1$ 到 $5$:
 
 ```python linenums="1"
 for i in range(1, 6, 1):
@@ -15,9 +29,26 @@ for i in range(1, 6, 1):
 
 `#!python range`，這個函式可以產生一個數列，並且可以指定起始值、結束值、間隔值。這個函式的用法如下:
 
-如果只有一個參數，那就是結束值，起始值預設為 0，間隔值預設為 1。
+如果只有一個參數，那就是結束值，起始值預設為 $0$，間隔值預設為 $1$。
 
 `#!python range(start=0, stop, step=1)` 並且注意，`stop` 是不包含在數列中的。
+
+### Foreach
+舉個例子，我想把字串 `"Speed_of_Light"` 中的每個字元都印出來。
+
+```python linenums="1"
+for c in "Speed_of_Light":
+    print(c, end=' ')
+```
+
+```linenums="1" title="ouput"
+S p e e d _ o f _ L i g h t 
+```
+[DJ OKAWARI feat. 二宮愛 「Speed of Light」](https://youtu.be/L2LB12IxLDU?si=VkiTkjTo5AN74FVf)
+
+這裡的迴圈更接近概念上的 **Foreach**，每次迴圈都會取出字串中的一個字元，並且將他放到 `c` 中，這個概念請你記起來。
+
+### Break and Continue
 
 再舉個例子，計算 $\sum_{i=1}^n{i}=1+2+\cdots+n$
 
@@ -188,10 +219,10 @@ for i in range(n, 0, -1):
 
 @EditTime : 2024-01-30 16:33
 
-## while loop
+## While loop
 接著來介紹 `while` 迴圈，他的使用場景是當你不知道迴圈要執行幾次的時候，就可以用 `while` 迴圈，但是別寫出*無窮迴圈(Infinite Loop)*喔。
 
-但在往下之前，先來看如何用 `while` 迴圈來印出 1 到 5。
+但在往下之前，先來看如何用 `while` 迴圈來印出 $1$ 到 $5$。
 
 ```python linenums="1"
 i = 1
