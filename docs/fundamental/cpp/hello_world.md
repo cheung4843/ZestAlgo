@@ -229,4 +229,29 @@ int main(){
 
 
 ## Practice
-請在下面選擇一些題目做出練習，以確保你有學到相關知識。
+## Practice
+在這篇文章中，你學到了:
+!!! info
+    1. 如何使用 cout與cin
+    2. 接觸變數的概念。
+
+
+那現在你可以試試看以下的題目了。
+!!! success ""
+    ZeroJudge - [a001. 哈囉](https://zerojudge.tw/ShowProblem?problemid=a001)
+
+
+??? abstract "Reference code"
+    ```cpp linenums="1"
+    #include <iostream>
+
+    int main(){
+        string temp;
+        cin >> temp;
+        cout << "hello, " << temp << endl;
+
+        return 0;
+    }
+
+    ```
+    
