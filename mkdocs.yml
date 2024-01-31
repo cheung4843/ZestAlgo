@@ -11,6 +11,7 @@ nav:
       - Operators: fundamental/python/operators.md
       - Selection Structures: fundamental/python/selection_structures.md
       - Repetition Structures: fundamental/python/repetition_structures.md
+      - Lists: fundamental/python/lists.md
     - C++:
       - fundamental/cpp/index.md
       - 0. 環境架設: fundamental/cpp/create_env.md
