@@ -191,7 +191,8 @@ int main(){
 using namespace std;
 
 int main(){
-    int temp1,temp2;
+    int temp1;
+    string temp2;
     cin >> temp1 >> temp2;
     cout << temp1 << "!=" << temp2 << endl;
     return 0;
@@ -205,6 +206,25 @@ int main(){
 
 ```title="output"
 1234!=4321
+```
+
+你會發現一件事情，``cin``是透過空格或者換行來分開的，今天如果想要讀取一行，請參考下方程式。
+
+---
+### 讀取一行
+程式碼如下，其中temp2請改成變數的名稱。
+
+```cpp linenums="1"
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    string temp2;
+    getline(cin,temp2);
+    cout << temp2 << endl;
+    return 0;
+}
 ```
 
 
