@@ -11,7 +11,7 @@ print("cheung4843")
 
 按下執行後，你的控制台(Console)將會印出 `Hello World!` 接著換行，再印出 `Hello Python!`，接著再印出我 `cheung4843`，再換行。
 
-那 `# print("Hello Cat!")` 是什麼?以井字號為開頭的，被稱為註解，他不會在程式中被執行，而他的作用，你以後一定能體會。
+那 `# print("Hello Cat!")` 是什麼?以井字號為開頭的，被稱為註解，他不會在程式中被執行，他可以幫助你理解程式碼，或者讓你的程式碼可讀性更佳。
 
 不曉得你是否有發現 `"Hello World!"` 與 `'Hello Python!'` 的差異?當然除了字母不一樣之外，還有雙引號與單引號的差別，但他們都被稱為**字串(String)**，在 Python 中，你可以使用成對的雙引號與單引號來表達一個字串，但是不能混用，例如 :
 
@@ -73,7 +73,7 @@ my special
 
 ## Variable and Input
 ### Variable
-接下來，來點好玩的。
+接下來，我們來看怎麼使用變數，以及輸入自己想要的東西。
 
 ```python linenums="1"
 x = 4843
@@ -255,14 +255,11 @@ print(a, b)
 !!! success ""
     ZeroJudge - [a001. 哈囉](https://zerojudge.tw/ShowProblem?problemid=a001)
 
-
 ??? abstract "Reference code"
     ```python linenums="1"
     
     word = input()
     print(f'hello, {word}')
     ```
-    
-    
 
 @EditTime : 2024-01-27 17:02

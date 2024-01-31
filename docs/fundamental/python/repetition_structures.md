@@ -258,7 +258,7 @@ while n != 1:
     if n % 2 == 0:
         n = n // 2
     else:
-        n = (3 * n + 1)
+        n = 3 * n + 1
     step += 1
 
 print(1)
@@ -373,6 +373,12 @@ step = 0
     ```
 
 @EditTime : 2024-01-30 18:40
+
+## Bonus: for ... else and while ... else
+`#!python for` 與 `#!python while` 迴圈都可以搭配 `#!python else` 來使用，當迴圈正常結束的時候(沒有 `#!python break` )，就會執行 `#!python else`。
+
+```python linenums="1"
+```
 
 ## Assignment
 !!! success ""
