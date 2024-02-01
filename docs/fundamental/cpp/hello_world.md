@@ -246,8 +246,8 @@ int main(){
     #include <iostream>
 
     int main(){
-        string temp;
-        cin >> temp;
+        string word;
+        cin >> word;
         cout << "hello, " << temp << endl;
 
         return 0;
