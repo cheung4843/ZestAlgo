@@ -24,7 +24,7 @@ int main(){
 1. 程式一定是從``int main(){......}``裡面開始執行的
 2. 最後一定會有個``return 0;`` 代表程式成功結束。
 
-讓我們焦點放在第六行
+讓我們焦點放在第六行:
 
 ```cpp linenums="1" hl_lines="6"
 #include <iostream>
