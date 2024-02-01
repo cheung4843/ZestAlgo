@@ -249,10 +249,7 @@ int main(){
     int main(){
         string word;
         cin >> word;
-
-        cout << "hello, " << temp << endl;
-
-
+        cout << "hello, " << word << endl;
         return 0;
     }
 
