@@ -11,23 +11,23 @@ GNU C++ Compiler (G++)本身是沒有支援Windows的，但我們可以透過使
 ### 1.下載並安裝mingw
 1. 前往[這個連結](https://sourceforge.net/projects/mingw/)安裝mingw
 2. 勾選 ``mingw32-gcc-g++``
-   ![](./media/install1.png)
+   ![](../media/0/install1.png)
 3. ``installation`` > ``apply change``
-   ![](./media/install2.png)
+   ![](../media/0/install2.png)
 4. 按下``apply``安裝
    
-    ![](./media/install3.png)
+    ![](../media/0/install3.png)
 
 
 ### 2. 加入環境變數
 1. 尋找安裝位置，以我為例，是安裝在``C:\MinGW``裡面，找到裡面的``bin``資料夾，點進去並複製路徑。
-    ![](./media/env1.png)
+    ![](../media/0/env1.png)
 2. 搜尋環境變數，並進去編輯環境變數。
-    ![](./media/env2.png)
+    ![](../media/0/env2.png)
 3. 點入 ``進階`` >``環境變數``，並在Path中貼上剛才複製的變數，然後保存退出。
    
-    ![](./media/env3.png)
-   ![](./media/env4.png)
+    ![](../media/0/env3.png)
+   ![](../media/0/env4.png)
 
 
 ### 3. 測試指令
@@ -57,8 +57,8 @@ macos本身就有提供clangd作為編譯器使用，在安裝xcode後應該就�
 前往[這個網站](https://code.visualstudio.com/)下載屬於你系統的visual studio code安裝檔。
 ### 2. 安裝 extension
 1. 點入extension頁面分別安裝``C/C++`` ``clangd`` 這兩個extension，並重啟vscode
-    <video autoplay muted loop controls><source src="../../cpp/media/vscode_ext.mp4" type="video/mp4"></video>
+    <video autoplay muted loop controls><source src="../../media/0/vscode_ext.mp4" type="video/mp4"></video>
 2. 你可能遇到這樣的警告訊息，請按下 ``Disable Intellisence``
-   ![](./media/warning.png)
+   ![](../media/0/warning.png)
 ### 其他
 如果遇到字體非等寬，請尋找一個等寬字體並使用，等寬字體可以讓你的程式碼可讀性更佳。

@@ -14,8 +14,8 @@ nav:
       - Lists: fundamental/python/lists.md
     - C++:
       - fundamental/cpp/index.md
-      - 0. 環境架設: fundamental/cpp/create_env.md
-      - 1. Hello World(輸出與輸入): fundamental/cpp/hello_world.md
+      - 0. 環境架設: fundamental/cpp/0/create_env.md
+      - 1. Hello World(輸出與輸入): fundamental/cpp/1/hello_world.md
   - About: about.md
   - License: license.md
 
