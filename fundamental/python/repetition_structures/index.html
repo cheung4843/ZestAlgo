@@ -671,18 +671,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#practice" class="md-nav__link">
+  <a href="#bonus_for_else_and_while_else" class="md-nav__link">
     <span class="md-ellipsis">
-      Practice
+      Bonus: for ... else and while ... else
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bonus_for_else_and_while_else" class="md-nav__link">
+  <a href="#practice" class="md-nav__link">
     <span class="md-ellipsis">
-      Bonus: for ... else and while ... else
+      Practice
     </span>
   </a>
   
@@ -979,18 +979,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#practice" class="md-nav__link">
+  <a href="#bonus_for_else_and_while_else" class="md-nav__link">
     <span class="md-ellipsis">
-      Practice
+      Bonus: for ... else and while ... else
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bonus_for_else_and_while_else" class="md-nav__link">
+  <a href="#practice" class="md-nav__link">
     <span class="md-ellipsis">
-      Bonus: for ... else and while ... else
+      Practice
     </span>
   </a>
   
@@ -1357,17 +1357,21 @@ f(n)=\begin{cases}\frac{n}{2}, &amp; \text{if } n \text{ is even} \\ 3n+1, &amp;
 <p>內層的 <code>while</code> 迴圈會一直執行，直到 <code>n</code> 不是 <code>factor</code> 的倍數為止。外層的 <code>while</code> 迴圈則是列舉所有的質因數，直到 <code>n</code> 變成 <span class="arithmatex">\(1\)</span> 為止。</p>
 <p>題外話，當初遇到這個題目的時候，想了一下結果一次就<em>AC</em>，是很有成就感的一件事，所以也請你好好努力，逐步培養自信，你也可以的。</p>
 <p>@EditTime : 2024-01-30 17:55</p>
+<h2 id="bonus_for_else_and_while_else">Bonus: for ... else and while ... else<a class="headerlink" href="#bonus_for_else_and_while_else" title="Permanent link">¶</a></h2>
+<p><code class="language-python highlight"><span class="k">for</span></code> 與 <code class="language-python highlight"><span class="k">while</span></code> 迴圈都可以搭配 <code class="language-python highlight"><span class="k">else</span></code> 來使用，當迴圈正常結束的時候(沒有 <code class="language-python highlight"><span class="k">break</span></code> )，就會執行 <code class="language-python highlight"><span class="k">else</span></code>。</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1"></a>
+</span></code></pre></div></td></tr></table></div>
 <h2 id="practice">Practice<a class="headerlink" href="#practice" title="Permanent link">¶</a></h2>
 <div class="admonition success">
 <p>Itsa - <a href="https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6861">[C_MM03-易] 兩數總和</a></p>
 </div>
 <details class="abstract">
 <summary>Reference code</summary>
-<p><div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1">1</a></span>
-<span class="normal"><a href="#__codelineno-34-2">2</a></span>
-<span class="normal"><a href="#__codelineno-34-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2"></a>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
-</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
+<p><div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
+<span class="normal"><a href="#__codelineno-35-2">2</a></span>
+<span class="normal"><a href="#__codelineno-35-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2"></a>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 這題會出現在這裡，單純是因為要重複輸入。</p>
 </details>
@@ -1376,13 +1380,13 @@ f(n)=\begin{cases}\frac{n}{2}, &amp; \text{if } n \text{ is even} \\ 3n+1, &amp;
 </div>
 <details class="abstract">
 <summary>Reference code</summary>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
-<span class="normal"><a href="#__codelineno-35-2">2</a></span>
-<span class="normal"><a href="#__codelineno-35-3">3</a></span>
-<span class="normal"><a href="#__codelineno-35-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2"></a>
-</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">*</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">=</span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1">1</a></span>
+<span class="normal"><a href="#__codelineno-36-2">2</a></span>
+<span class="normal"><a href="#__codelineno-36-3">3</a></span>
+<span class="normal"><a href="#__codelineno-36-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2"></a>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">*</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">=</span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 </details>
 <div class="admonition success">
@@ -1390,31 +1394,31 @@ f(n)=\begin{cases}\frac{n}{2}, &amp; \text{if } n \text{ is even} \\ 3n+1, &amp;
 </div>
 <details class="abstract">
 <summary>Reference code</summary>
-<p><div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-36-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-36-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-36-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-36-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-36-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-36-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-36-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-36-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-36-10">10</a></span>
-<span class="normal"><a href="#__codelineno-36-11">11</a></span>
-<span class="normal"><a href="#__codelineno-36-12">12</a></span>
-<span class="normal"><a href="#__codelineno-36-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2"></a>
-</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
-</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4"></a>    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="__span-36-7"><a id="__codelineno-36-7" name="__codelineno-36-7"></a>            <span class="n">s</span> <span class="o">+=</span> <span class="n">j</span>
-</span><span id="__span-36-8"><a id="__codelineno-36-8" name="__codelineno-36-8"></a>    <span class="k">if</span> <span class="n">s</span> <span class="o">==</span> <span class="n">i</span><span class="p">:</span>
-</span><span id="__span-36-9"><a id="__codelineno-36-9" name="__codelineno-36-9"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
-</span><span id="__span-36-10"><a id="__codelineno-36-10" name="__codelineno-36-10"></a>            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-</span><span id="__span-36-11"><a id="__codelineno-36-11" name="__codelineno-36-11"></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="__span-36-12"><a id="__codelineno-36-12" name="__codelineno-36-12"></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-</span><span id="__span-36-13"><a id="__codelineno-36-13" name="__codelineno-36-13"></a><span class="nb">print</span><span class="p">()</span>
+<p><div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-37-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-37-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-37-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-37-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-37-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-37-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-37-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-37-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-37-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-37-10">10</a></span>
+<span class="normal"><a href="#__codelineno-37-11">11</a></span>
+<span class="normal"><a href="#__codelineno-37-12">12</a></span>
+<span class="normal"><a href="#__codelineno-37-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2"></a>
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4"></a>    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-37-5"><a id="__codelineno-37-5" name="__codelineno-37-5"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+</span><span id="__span-37-6"><a id="__codelineno-37-6" name="__codelineno-37-6"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-37-7"><a id="__codelineno-37-7" name="__codelineno-37-7"></a>            <span class="n">s</span> <span class="o">+=</span> <span class="n">j</span>
+</span><span id="__span-37-8"><a id="__codelineno-37-8" name="__codelineno-37-8"></a>    <span class="k">if</span> <span class="n">s</span> <span class="o">==</span> <span class="n">i</span><span class="p">:</span>
+</span><span id="__span-37-9"><a id="__codelineno-37-9" name="__codelineno-37-9"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+</span><span id="__span-37-10"><a id="__codelineno-37-10" name="__codelineno-37-10"></a>            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span><span id="__span-37-11"><a id="__codelineno-37-11" name="__codelineno-37-11"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-37-12"><a id="__codelineno-37-12" name="__codelineno-37-12"></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span><span id="__span-37-13"><a id="__codelineno-37-13" name="__codelineno-37-13"></a><span class="nb">print</span><span class="p">()</span>
 </span></code></pre></div></td></tr></table></div>
 這是暴力解，會<em>TLE</em>，下一章會介紹如何最佳化，
 但如果使用 C++ 的話，相同邏輯的程式碼是可以<em>AC</em>的。</p>
@@ -1424,26 +1428,22 @@ f(n)=\begin{cases}\frac{n}{2}, &amp; \text{if } n \text{ is even} \\ 3n+1, &amp;
 </div>
 <details class="abstract">
 <summary>Reference code</summary>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-37-1">1</a></span>
-<span class="normal"><a href="#__codelineno-37-2">2</a></span>
-<span class="normal"><a href="#__codelineno-37-3">3</a></span>
-<span class="normal"><a href="#__codelineno-37-4">4</a></span>
-<span class="normal"><a href="#__codelineno-37-5">5</a></span>
-<span class="normal"><a href="#__codelineno-37-6">6</a></span>
-<span class="normal"><a href="#__codelineno-37-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2"></a>
-</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3"></a><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-</span><span id="__span-37-5"><a id="__codelineno-37-5" name="__codelineno-37-5"></a>    <span class="k">if</span> <span class="n">N</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="__span-37-6"><a id="__codelineno-37-6" name="__codelineno-37-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-</span><span id="__span-37-7"><a id="__codelineno-37-7" name="__codelineno-37-7"></a><span class="nb">print</span><span class="p">()</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1">1</a></span>
+<span class="normal"><a href="#__codelineno-38-2">2</a></span>
+<span class="normal"><a href="#__codelineno-38-3">3</a></span>
+<span class="normal"><a href="#__codelineno-38-4">4</a></span>
+<span class="normal"><a href="#__codelineno-38-5">5</a></span>
+<span class="normal"><a href="#__codelineno-38-6">6</a></span>
+<span class="normal"><a href="#__codelineno-38-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2"></a>
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3"></a><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5"></a>    <span class="k">if</span> <span class="n">N</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-38-6"><a id="__codelineno-38-6" name="__codelineno-38-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</span><span id="__span-38-7"><a id="__codelineno-38-7" name="__codelineno-38-7"></a><span class="nb">print</span><span class="p">()</span>
 </span></code></pre></div></td></tr></table></div>
 </details>
 <p>@EditTime : 2024-01-30 18:40</p>
-<h2 id="bonus_for_else_and_while_else">Bonus: for ... else and while ... else<a class="headerlink" href="#bonus_for_else_and_while_else" title="Permanent link">¶</a></h2>
-<p><code class="language-python highlight"><span class="k">for</span></code> 與 <code class="language-python highlight"><span class="k">while</span></code> 迴圈都可以搭配 <code class="language-python highlight"><span class="k">else</span></code> 來使用，當迴圈正常結束的時候(沒有 <code class="language-python highlight"><span class="k">break</span></code> )，就會執行 <code class="language-python highlight"><span class="k">else</span></code>。</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1"></a>
-</span></code></pre></div></td></tr></table></div>
 <h2 id="assignment">Assignment<a class="headerlink" href="#assignment" title="Permanent link">¶</a></h2>
 <div class="admonition success">
 <p>Itsa - <a href="https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6915">[C_MM21-易] 算階乘</a></p>
