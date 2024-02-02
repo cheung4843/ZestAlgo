@@ -16,6 +16,10 @@ nav:
       - fundamental/cpp/index.md
       - 0. 環境架設: fundamental/cpp/0/create_env.md
       - 1. Hello World(輸出與輸入): fundamental/cpp/1/hello_world.md
+      - 2. 變數、型態與相關運算:
+        - fundamental/cpp/2/index.md
+        - 2.1 整數型態: fundamental/cpp/2/interger.md
+        
   - About: about.md
   - License: license.md
 
