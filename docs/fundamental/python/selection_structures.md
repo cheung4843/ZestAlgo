@@ -10,7 +10,7 @@
 
 我們先來看一個簡單的例子:
 
-我們輸入一個整數，輸出他的絕對值。
+輸入一個整數，輸出他的絕對值。
 
 ```python linenums="1"
 num = int(input("Enter a number: "))
