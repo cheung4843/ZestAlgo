@@ -12,6 +12,7 @@ nav:
       - Selection Structures: fundamental/python/selection_structures.md
       - Repetition Structures: fundamental/python/repetition_structures.md
       - Lists: fundamental/python/lists.md
+      - Tuples: fundamental/python/tuples.md
     - C++:
       - fundamental/cpp/index.md
       - 0. 環境架設: fundamental/cpp/create_env.md

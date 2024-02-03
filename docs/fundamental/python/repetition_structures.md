@@ -439,4 +439,10 @@ step = 0
 !!! success ""
     Itsa - [[C_MM49-易] 連續1的倍數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6979)
 
+!!! success ""
+    Itsa - [[C_ST09-易] 星號矩形輸出](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=1283)
+
+!!! success ""
+    Itsa - [[C_ST14-易] 數字直角三角形輸出](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=676)
+
 @EditTime : 2024-01-30 21:51

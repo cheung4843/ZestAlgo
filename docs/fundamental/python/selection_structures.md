@@ -366,4 +366,7 @@ Spring
 !!! success ""
     Itsa - [[C_MM46-易] 複數運算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6970)
 
+!!! success ""
+    Itsa - [[C_AR36-易] 星座查詢](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=1281)
+    
 @EditTime : 2024-01-29 14:38
