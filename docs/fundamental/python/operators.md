@@ -285,7 +285,7 @@ The square of 3.1415926 is 9.87
 @EditTime : 2024-01-27 11:52
 
 ## Bonus: map for input
-再次複習 [Say Hello to Python - Mutiple Input](say_hello.md#multiple_input) 中的例子，我們可以用 `split()` 來將輸入的字串切割成多個字串。
+再次複習 [Variable and Input - Mutiple Input](variable_and_input.md#multiple_input) 中的例子，我們可以用 `split()` 來將輸入的字串切割成多個字串。
 
 但是如果我們想要將這些字串轉換成整數，我們可以怎麼做呢?
 

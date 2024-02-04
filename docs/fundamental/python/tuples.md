@@ -250,6 +250,8 @@ ValueError: tuple.index(x): x not in tuple
 
     未來在學圖形走訪的時候，你會一直看到這種寫法。
 
+    對了， 迴圈變數 `_` 被稱為捨棄變數，表示不需要用到這個變數，只是為了配合迴圈語法而已。
+
 ## Assignment
 
 !!! success ""
