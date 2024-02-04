@@ -454,6 +454,8 @@
       
         
       
+        
+      
     
     
     
@@ -688,6 +690,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#checking_elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking elements
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -852,6 +863,27 @@
   
   <span class="md-ellipsis">
     Tuples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sets
   </span>
   
 
@@ -1102,6 +1134,15 @@
   <a href="#modifying_elements" class="md-nav__link">
     <span class="md-ellipsis">
       Modifying elements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking_elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking elements
     </span>
   </a>
   
@@ -1461,134 +1502,121 @@
 </span></code></pre></div></td></tr></table></div>
 <div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1"></a>TypeError: &#39;str&#39; object does not support item assignment
 </span></code></pre></div></td></tr></table></div>
+<h3 id="checking_elements">Checking elements<a class="headerlink" href="#checking_elements" title="Permanent link">¶</a></h3>
+<p>要檢查串列中是否有某個元素，我們可以使用 <code class="language-python highlight"><span class="ow">in</span></code> 這個運算子。</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
+<span class="normal"><a href="#__codelineno-22-2">2</a></span>
+<span class="normal"><a href="#__codelineno-22-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2"></a><span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">)</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="nb">print</span><span class="p">(</span><span class="mi">6</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1"></a>True
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2"></a>True
+</span></code></pre></div></td></tr></table></div>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>對於長度為 <span class="arithmatex">\(n\)</span> 的無序串列，要檢查某個元素是否存在於串列中，最壞的情況下，需要檢查多少次?</p>
+</div>
+<p>答案是 <span class="arithmatex">\(n\)</span> 次喔，因為一個一個找，直到找到或是找完為止，像是例子中的 <code>6</code>。</p>
+<p>在<em>演算法(Algorithm)</em>的章節中會提到<strong>時間複雜度(Time Complexity)</strong>這個觀念，這裡就先給你一個印象就好了~</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">¶</a></h2>
 <p>來介紹一些常用的串列方法。</p>
 <h3 id="append">append<a class="headerlink" href="#append" title="Permanent link">¶</a></h3>
 <p><code class="language-python highlight"><span class="n">append</span></code> 這個方法可以在串列的最後面新增一個元素。</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
-<span class="normal"><a href="#__codelineno-22-2">2</a></span>
-<span class="normal"><a href="#__codelineno-22-3">3</a></span>
-<span class="normal"><a href="#__codelineno-22-4">4</a></span>
-<span class="normal"><a href="#__codelineno-22-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2"></a><span class="n">numbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
-</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4"></a><span class="hll"><span class="n">numbers</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
-</span></span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
+<span class="normal"><a href="#__codelineno-24-2">2</a></span>
+<span class="normal"><a href="#__codelineno-24-3">3</a></span>
+<span class="normal"><a href="#__codelineno-24-4">4</a></span>
+<span class="normal"><a href="#__codelineno-24-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2"></a><span class="n">numbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4"></a><span class="hll"><span class="n">numbers</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
+</span></span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
-<span class="normal"><a href="#__codelineno-23-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1"></a>[1, 2, 3, 4, 5, 6]
-</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2"></a>[1, 2, 3, 4, 5, 6, [7, 8, 9]]
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span>
+<span class="normal"><a href="#__codelineno-25-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1"></a>[1, 2, 3, 4, 5, 6]
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2"></a>[1, 2, 3, 4, 5, 6, [7, 8, 9]]
 </span></code></pre></div></td></tr></table></div>
 <p>希望第二個 <code>append</code> 沒有嚇到你，它可以新增一個串列，但是這個串列會變成串列中的一個元素。如果你是想要把 <code>7</code>、<code>8</code>、<code>9</code> 這三個元素加到串列中，你可以使用 <code class="language-python highlight"><span class="n">extend</span></code> 這個方法。</p>
 <h3 id="extend">extend<a class="headerlink" href="#extend" title="Permanent link">¶</a></h3>
 <p><code class="language-python highlight"><span class="n">extend</span></code> 這個方法可以在串列的最後面新增另一個串列中的元素。</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
-<span class="normal"><a href="#__codelineno-24-2">2</a></span>
-<span class="normal"><a href="#__codelineno-24-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2"></a><span class="hll"><span class="n">numbers</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">])</span>
-</span></span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span>
+<span class="normal"><a href="#__codelineno-26-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="hll"><span class="n">numbers</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">])</span>
+</span></span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1"></a>[1, 2, 3, 4, 5, 6, 7, 8]
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1"></a>[1, 2, 3, 4, 5, 6, 7, 8]
 </span></code></pre></div></td></tr></table></div>
 <h3 id="pop">pop<a class="headerlink" href="#pop" title="Permanent link">¶</a></h3>
 <p><code class="language-python highlight"><span class="n">pop</span></code> 這個方法可以移除串列中的元素，並回傳被移除的元素。</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
-<span class="normal"><a href="#__codelineno-26-2">2</a></span>
-<span class="normal"><a href="#__codelineno-26-3">3</a></span>
-<span class="normal"><a href="#__codelineno-26-4">4</a></span>
-<span class="normal"><a href="#__codelineno-26-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cherry&quot;</span><span class="p">,</span> <span class="s2">&quot;durian&quot;</span><span class="p">,</span> <span class="s2">&quot;elderberry&quot;</span><span class="p">]</span>
-</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
-</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
-</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
-</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
+<span class="normal"><a href="#__codelineno-28-2">2</a></span>
+<span class="normal"><a href="#__codelineno-28-3">3</a></span>
+<span class="normal"><a href="#__codelineno-28-4">4</a></span>
+<span class="normal"><a href="#__codelineno-28-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cherry&quot;</span><span class="p">,</span> <span class="s2">&quot;durian&quot;</span><span class="p">,</span> <span class="s2">&quot;elderberry&quot;</span><span class="p">]</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
-<span class="normal"><a href="#__codelineno-27-2">2</a></span>
-<span class="normal"><a href="#__codelineno-27-3">3</a></span>
-<span class="normal"><a href="#__codelineno-27-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1"></a>elderberry
-</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2"></a>[&#39;apple&#39;, &#39;banana&#39;, &#39;cherry&#39;, &#39;durian&#39;]
-</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3"></a>banana
-</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4"></a>[&#39;apple&#39;, &#39;cherry&#39;, &#39;durian&#39;]
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span>
+<span class="normal"><a href="#__codelineno-29-2">2</a></span>
+<span class="normal"><a href="#__codelineno-29-3">3</a></span>
+<span class="normal"><a href="#__codelineno-29-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1"></a>elderberry
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2"></a>[&#39;apple&#39;, &#39;banana&#39;, &#39;cherry&#39;, &#39;durian&#39;]
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3"></a>banana
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4"></a>[&#39;apple&#39;, &#39;cherry&#39;, &#39;durian&#39;]
 </span></code></pre></div></td></tr></table></div>
 <p>通常，我們會使用 <code class="language-python highlight"><span class="n">pop</span></code> 來移除串列中的最後一個元素，因為這樣可以避免索引值超出範圍的錯誤，你也可以指定索引值，來移除串列中的元素，但不建議。</p>
 <h3 id="clear">clear<a class="headerlink" href="#clear" title="Permanent link">¶</a></h3>
 <p><code class="language-python highlight"><span class="n">clear</span></code> 這個方法可以移除串列中的所有元素。</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
-<span class="normal"><a href="#__codelineno-28-2">2</a></span>
-<span class="normal"><a href="#__codelineno-28-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2"></a><span class="n">numbers</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
-</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1"></a>[]
-</span></code></pre></div></td></tr></table></div>
-<h3 id="reverse">reverse<a class="headerlink" href="#reverse" title="Permanent link">¶</a></h3>
-<p><code class="language-python highlight"><span class="n">reverse</span></code> 這個方法可以反轉串列。</p>
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
 <span class="normal"><a href="#__codelineno-30-2">2</a></span>
 <span class="normal"><a href="#__codelineno-30-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2"></a><span class="n">numbers</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2"></a><span class="n">numbers</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1"></a>[5, 4, 3, 2, 1]
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1"></a>[]
+</span></code></pre></div></td></tr></table></div>
+<h3 id="reverse">reverse<a class="headerlink" href="#reverse" title="Permanent link">¶</a></h3>
+<p><code class="language-python highlight"><span class="n">reverse</span></code> 這個方法可以反轉串列。</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span>
+<span class="normal"><a href="#__codelineno-32-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2"></a><span class="n">numbers</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1"></a>[5, 4, 3, 2, 1]
 </span></code></pre></div></td></tr></table></div>
 <h3 id="sort">sort<a class="headerlink" href="#sort" title="Permanent link">¶</a></h3>
 <p><code class="language-python highlight"><span class="n">sort</span></code> 這個方法可以排序串列，預設是由小到大排序，如果要由大到小排序，可以指定 <code>reverse=True</code>。</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
-<span class="normal"><a href="#__codelineno-32-2">2</a></span>
-<span class="normal"><a href="#__codelineno-32-3">3</a></span>
-<span class="normal"><a href="#__codelineno-32-4">4</a></span>
-<span class="normal"><a href="#__codelineno-32-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2"></a><span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4"></a><span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
-<span class="normal"><a href="#__codelineno-33-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1"></a>[1, 2, 3, 4, 5]
-</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2"></a>[5, 4, 3, 2, 1]
-</span></code></pre></div></td></tr></table></div>
-<p>甚至你可以設定 <code>key</code>，來決定排序的依據，例如: <code>key=len</code>，就是根據元素 <code>x</code> 的 <code class="language-python highlight"><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> 來排序。</p>
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1">1</a></span>
 <span class="normal"><a href="#__codelineno-34-2">2</a></span>
-<span class="normal"><a href="#__codelineno-34-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;watermelon&quot;</span><span class="p">,</span> <span class="s2">&quot;pineapple&quot;</span><span class="p">]</span>
-</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2"></a><span class="n">fruits</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">)</span>
-</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-34-3">3</a></span>
+<span class="normal"><a href="#__codelineno-34-4">4</a></span>
+<span class="normal"><a href="#__codelineno-34-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2"></a><span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4"></a><span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1"></a>[&#39;apple&#39;, &#39;banana&#39;, &#39;pineapple&#39;, &#39;watermelon&#39;]
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
+<span class="normal"><a href="#__codelineno-35-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1"></a>[1, 2, 3, 4, 5]
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2"></a>[5, 4, 3, 2, 1]
+</span></code></pre></div></td></tr></table></div>
+<p>甚至你可以設定 <code>key</code>，來決定排序的依據，例如: <code>key=len</code>，就是根據元素 <code>x</code> 的 <code class="language-python highlight"><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> 來排序。</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1">1</a></span>
+<span class="normal"><a href="#__codelineno-36-2">2</a></span>
+<span class="normal"><a href="#__codelineno-36-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1"></a><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;watermelon&quot;</span><span class="p">,</span> <span class="s2">&quot;pineapple&quot;</span><span class="p">]</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2"></a><span class="n">fruits</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">)</span>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-37-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1"></a>[&#39;apple&#39;, &#39;banana&#39;, &#39;pineapple&#39;, &#39;watermelon&#39;]
 </span></code></pre></div></td></tr></table></div>
 <h3 id="copy">copy<a class="headerlink" href="#copy" title="Permanent link">¶</a></h3>
 <p><code class="language-python highlight"><span class="n">copy</span></code> 這個方法回傳一個<em>淺複製(Shallow Copy)</em>的串列。</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-36-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-36-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-36-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-36-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-36-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-36-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-36-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-36-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-36-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2"></a><span class="n">numbers_copy</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers_copy</span><span class="p">)</span>
-</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5"></a>
-</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After changing numbers[1]&quot;</span><span class="p">)</span>
-</span><span id="__span-36-7"><a id="__codelineno-36-7" name="__codelineno-36-7"></a>
-</span><span id="__span-36-8"><a id="__codelineno-36-8" name="__codelineno-36-8"></a><span class="hll"><span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
-</span></span><span id="__span-36-9"><a id="__codelineno-36-9" name="__codelineno-36-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers_copy</span><span class="p">)</span>
-</span><span id="__span-36-10"><a id="__codelineno-36-10" name="__codelineno-36-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-37-1">1</a></span>
-<span class="normal"><a href="#__codelineno-37-2">2</a></span>
-<span class="normal"><a href="#__codelineno-37-3">3</a></span>
-<span class="normal"><a href="#__codelineno-37-4">4</a></span>
-<span class="normal"><a href="#__codelineno-37-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1"></a>[1, 2, 3, 4, 5]
-</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2"></a>[1, 2, 3, 4, 5]
-</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3"></a>After changing numbers[1]
-</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4"></a>[1, 2, 3, 4, 5]
-</span><span id="__span-37-5"><a id="__codelineno-37-5" name="__codelineno-37-5"></a>[1, 10, 3, 4, 5]
-</span></code></pre></div></td></tr></table></div>
-<p>這個例子還不能看出淺複製，修改了 <code>numbers</code> 的第二個元素，<code>numbers_copy</code> 不會跟著改變。</p>
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-38-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-38-3"> 3</a></span>
@@ -1598,14 +1626,14 @@
 <span class="normal"><a href="#__codelineno-38-7"> 7</a></span>
 <span class="normal"><a href="#__codelineno-38-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-38-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-38-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="normal"><a href="#__codelineno-38-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 </span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2"></a><span class="n">numbers_copy</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 </span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers_copy</span><span class="p">)</span>
 </span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 </span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5"></a>
 </span><span id="__span-38-6"><a id="__codelineno-38-6" name="__codelineno-38-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After changing numbers[1]&quot;</span><span class="p">)</span>
 </span><span id="__span-38-7"><a id="__codelineno-38-7" name="__codelineno-38-7"></a>
-</span><span id="__span-38-8"><a id="__codelineno-38-8" name="__codelineno-38-8"></a><span class="hll"><span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">6</span>
+</span><span id="__span-38-8"><a id="__codelineno-38-8" name="__codelineno-38-8"></a><span class="hll"><span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
 </span></span><span id="__span-38-9"><a id="__codelineno-38-9" name="__codelineno-38-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers_copy</span><span class="p">)</span>
 </span><span id="__span-38-10"><a id="__codelineno-38-10" name="__codelineno-38-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
@@ -1613,11 +1641,42 @@
 <span class="normal"><a href="#__codelineno-39-2">2</a></span>
 <span class="normal"><a href="#__codelineno-39-3">3</a></span>
 <span class="normal"><a href="#__codelineno-39-4">4</a></span>
-<span class="normal"><a href="#__codelineno-39-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1"></a>[1, [2, 3], 4, 5]
-</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2"></a>[1, [2, 3], 4, 5]
+<span class="normal"><a href="#__codelineno-39-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1"></a>[1, 2, 3, 4, 5]
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2"></a>[1, 2, 3, 4, 5]
 </span><span id="__span-39-3"><a id="__codelineno-39-3" name="__codelineno-39-3"></a>After changing numbers[1]
-</span><span id="__span-39-4"><a id="__codelineno-39-4" name="__codelineno-39-4"></a>[1, [6, 3], 4, 5]
-</span><span id="__span-39-5"><a id="__codelineno-39-5" name="__codelineno-39-5"></a>[1, [6, 3], 4, 5]
+</span><span id="__span-39-4"><a id="__codelineno-39-4" name="__codelineno-39-4"></a>[1, 2, 3, 4, 5]
+</span><span id="__span-39-5"><a id="__codelineno-39-5" name="__codelineno-39-5"></a>[1, 10, 3, 4, 5]
+</span></code></pre></div></td></tr></table></div>
+<p>這個例子還不能看出淺複製，修改了 <code>numbers</code> 的第二個元素，<code>numbers_copy</code> 不會跟著改變。</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-40-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-40-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-40-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-40-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-40-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-40-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-40-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-40-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-40-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-40-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2"></a><span class="n">numbers_copy</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers_copy</span><span class="p">)</span>
+</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+</span><span id="__span-40-5"><a id="__codelineno-40-5" name="__codelineno-40-5"></a>
+</span><span id="__span-40-6"><a id="__codelineno-40-6" name="__codelineno-40-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After changing numbers[1]&quot;</span><span class="p">)</span>
+</span><span id="__span-40-7"><a id="__codelineno-40-7" name="__codelineno-40-7"></a>
+</span><span id="__span-40-8"><a id="__codelineno-40-8" name="__codelineno-40-8"></a><span class="hll"><span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">6</span>
+</span></span><span id="__span-40-9"><a id="__codelineno-40-9" name="__codelineno-40-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers_copy</span><span class="p">)</span>
+</span><span id="__span-40-10"><a id="__codelineno-40-10" name="__codelineno-40-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-41-1">1</a></span>
+<span class="normal"><a href="#__codelineno-41-2">2</a></span>
+<span class="normal"><a href="#__codelineno-41-3">3</a></span>
+<span class="normal"><a href="#__codelineno-41-4">4</a></span>
+<span class="normal"><a href="#__codelineno-41-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1"></a>[1, [2, 3], 4, 5]
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2"></a>[1, [2, 3], 4, 5]
+</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3"></a>After changing numbers[1]
+</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4"></a>[1, [6, 3], 4, 5]
+</span><span id="__span-41-5"><a id="__codelineno-41-5" name="__codelineno-41-5"></a>[1, [6, 3], 4, 5]
 </span></code></pre></div></td></tr></table></div>
 <p>那什麼又是<em>深複製(Deep Copy)</em>呢? 這個就要等到我們學到<strong>物件導向程式設計(Object-Oriented Programming)</strong>的時候，再來跟你介紹，我不應該挖坑的。</p>
 <p>還有更多方法，你可以參考 <a href="https://docs.python.org/3/tutorial/datastructures.html#more-on-lists">Python Documentation - List</a>，但我上面介紹的方法，你至少要會，你也要養成看官方文件的習慣。</p>
@@ -1625,130 +1684,130 @@
 <p><strong>串列綜合運算(List comprehension)</strong>讓你用一行程式碼，就可以建立出擁有某項性質元素的串列。</p>
 <p>舉個例子，輸入一個串列 <code>a</code>，輸出一個串列 <code>b</code>，其中 <code>b[i] = a[i] ** 2</code>，也就是 <code>b</code> 中的元素都是對應 <code>a</code> 元素的平方。</p>
 <p>我們先使用迴圈來實作:</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-40-1">1</a></span>
-<span class="normal"><a href="#__codelineno-40-2">2</a></span>
-<span class="normal"><a href="#__codelineno-40-3">3</a></span>
-<span class="normal"><a href="#__codelineno-40-4">4</a></span>
-<span class="normal"><a href="#__codelineno-40-5">5</a></span>
-<span class="normal"><a href="#__codelineno-40-6">6</a></span>
-<span class="normal"><a href="#__codelineno-40-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3"></a>
-</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4"></a><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
-</span><span id="__span-40-5"><a id="__codelineno-40-5" name="__codelineno-40-5"></a>    <span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
-</span><span id="__span-40-6"><a id="__codelineno-40-6" name="__codelineno-40-6"></a>
-</span><span id="__span-40-7"><a id="__codelineno-40-7" name="__codelineno-40-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-41-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1"></a>[1, 4, 9, 16, 25]
-</span></code></pre></div></td></tr></table></div>
-<p>再來使用串列綜合運算:</p>
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-42-1">1</a></span>
 <span class="normal"><a href="#__codelineno-42-2">2</a></span>
 <span class="normal"><a href="#__codelineno-42-3">3</a></span>
-<span class="normal"><a href="#__codelineno-42-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">a</span><span class="p">]</span>
+<span class="normal"><a href="#__codelineno-42-4">4</a></span>
+<span class="normal"><a href="#__codelineno-42-5">5</a></span>
+<span class="normal"><a href="#__codelineno-42-6">6</a></span>
+<span class="normal"><a href="#__codelineno-42-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[]</span>
 </span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3"></a>
-</span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4"></a><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
+</span><span id="__span-42-5"><a id="__codelineno-42-5" name="__codelineno-42-5"></a>    <span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-42-6"><a id="__codelineno-42-6" name="__codelineno-42-6"></a>
+</span><span id="__span-42-7"><a id="__codelineno-42-7" name="__codelineno-42-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-43-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1"></a>[1, 4, 9, 16, 25]
 </span></code></pre></div></td></tr></table></div>
-<p>非常地優雅，我們再來看一個例子，輸入一個串列 <code>a</code>，輸出一個串列 <code>b</code>，其中 <code>b</code> 的元素都是 <code>a</code> 元素中的偶數。</p>
+<p>再來使用串列綜合運算:</p>
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-44-1">1</a></span>
 <span class="normal"><a href="#__codelineno-44-2">2</a></span>
 <span class="normal"><a href="#__codelineno-44-3">3</a></span>
 <span class="normal"><a href="#__codelineno-44-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">a</span> <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">a</span><span class="p">]</span>
 </span><span id="__span-44-3"><a id="__codelineno-44-3" name="__codelineno-44-3"></a>
 </span><span id="__span-44-4"><a id="__codelineno-44-4" name="__codelineno-44-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-45-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1"></a>[2, 4]
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-45-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1"></a>[1, 4, 9, 16, 25]
 </span></code></pre></div></td></tr></table></div>
-<p>還記得 <a href="../operators/#bonus_map_for_input">Operators - Bonus: map for input</a> 提到的 <code class="language-python highlight"><span class="nb">map</span></code> 嗎?</p>
-<p>先來複習一下，<code class="language-python highlight"><span class="nb">map</span></code> 可以將一個函式套用到一個序列的每一個元素，並回傳一個 <code>map</code> 物件，我們可以使用 <code class="language-python highlight"><span class="nb">list</span></code> 將 <code class="language-python highlight"><span class="nb">map</span></code> 物件轉換成串列。</p>
+<p>非常地優雅，我們再來看一個例子，輸入一個串列 <code>a</code>，輸出一個串列 <code>b</code>，其中 <code>b</code> 的元素都是 <code>a</code> 元素中的偶數。</p>
 <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-46-1">1</a></span>
 <span class="normal"><a href="#__codelineno-46-2">2</a></span>
 <span class="normal"><a href="#__codelineno-46-3">3</a></span>
-<span class="normal"><a href="#__codelineno-46-4">4</a></span>
-<span class="normal"><a href="#__codelineno-46-5">5</a></span>
-<span class="normal"><a href="#__codelineno-46-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span> <span class="s2">&quot;4&quot;</span><span class="p">,</span> <span class="s2">&quot;5&quot;</span><span class="p">]</span>
-</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2"></a><span class="n">b</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-</span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
-</span><span id="__span-46-4"><a id="__codelineno-46-4" name="__codelineno-46-4"></a>
-</span><span id="__span-46-5"><a id="__codelineno-46-5" name="__codelineno-46-5"></a><span class="n">c</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-</span><span id="__span-46-6"><a id="__codelineno-46-6" name="__codelineno-46-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-46-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">a</span> <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3"></a>
+</span><span id="__span-46-4"><a id="__codelineno-46-4" name="__codelineno-46-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-47-1">1</a></span>
-<span class="normal"><a href="#__codelineno-47-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1"></a>&lt;class &#39;map&#39;&gt;
-</span><span id="__span-47-2"><a id="__codelineno-47-2" name="__codelineno-47-2"></a>[1, 2, 3, 4, 5]
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-47-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1"></a>[2, 4]
+</span></code></pre></div></td></tr></table></div>
+<p>還記得 <a href="../operators/#bonus_map_for_input">Operators - Bonus: map for input</a> 提到的 <code class="language-python highlight"><span class="nb">map</span></code> 嗎?</p>
+<p>先來複習一下，<code class="language-python highlight"><span class="nb">map</span></code> 可以將一個函式套用到一個序列的每一個元素，並回傳一個 <code>map</code> 物件，我們可以使用 <code class="language-python highlight"><span class="nb">list</span></code> 將 <code class="language-python highlight"><span class="nb">map</span></code> 物件轉換成串列。</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-48-1">1</a></span>
+<span class="normal"><a href="#__codelineno-48-2">2</a></span>
+<span class="normal"><a href="#__codelineno-48-3">3</a></span>
+<span class="normal"><a href="#__codelineno-48-4">4</a></span>
+<span class="normal"><a href="#__codelineno-48-5">5</a></span>
+<span class="normal"><a href="#__codelineno-48-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span> <span class="s2">&quot;4&quot;</span><span class="p">,</span> <span class="s2">&quot;5&quot;</span><span class="p">]</span>
+</span><span id="__span-48-2"><a id="__codelineno-48-2" name="__codelineno-48-2"></a><span class="n">b</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+</span><span id="__span-48-3"><a id="__codelineno-48-3" name="__codelineno-48-3"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+</span><span id="__span-48-4"><a id="__codelineno-48-4" name="__codelineno-48-4"></a>
+</span><span id="__span-48-5"><a id="__codelineno-48-5" name="__codelineno-48-5"></a><span class="n">c</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span><span id="__span-48-6"><a id="__codelineno-48-6" name="__codelineno-48-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-49-1">1</a></span>
+<span class="normal"><a href="#__codelineno-49-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1"></a>&lt;class &#39;map&#39;&gt;
+</span><span id="__span-49-2"><a id="__codelineno-49-2" name="__codelineno-49-2"></a>[1, 2, 3, 4, 5]
 </span></code></pre></div></td></tr></table></div>
 <p>@EditTime : 2024-02-01 23:21</p>
 <p>那能不能用串列綜合運算來實作呢?</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-48-1">1</a></span>
-<span class="normal"><a href="#__codelineno-48-2">2</a></span>
-<span class="normal"><a href="#__codelineno-48-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span> <span class="s2">&quot;4&quot;</span><span class="p">,</span> <span class="s2">&quot;5&quot;</span><span class="p">]</span>
-</span><span id="__span-48-2"><a id="__codelineno-48-2" name="__codelineno-48-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">a</span><span class="p">]</span>
-</span><span id="__span-48-3"><a id="__codelineno-48-3" name="__codelineno-48-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-50-1">1</a></span>
+<span class="normal"><a href="#__codelineno-50-2">2</a></span>
+<span class="normal"><a href="#__codelineno-50-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span> <span class="s2">&quot;4&quot;</span><span class="p">,</span> <span class="s2">&quot;5&quot;</span><span class="p">]</span>
+</span><span id="__span-50-2"><a id="__codelineno-50-2" name="__codelineno-50-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">a</span><span class="p">]</span>
+</span><span id="__span-50-3"><a id="__codelineno-50-3" name="__codelineno-50-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-49-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1"></a>[1, 2, 3, 4, 5]
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-51-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1"></a>[1, 2, 3, 4, 5]
 </span></code></pre></div></td></tr></table></div>
 <p>答案是肯定的。</p>
 <p>還有很多應用，例如: 串列中的元素都是小寫，我們想要把它們轉換成大寫。</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-50-1">1</a></span>
-<span class="normal"><a href="#__codelineno-50-2">2</a></span>
-<span class="normal"><a href="#__codelineno-50-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1"></a><span class="n">lowercase</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="s2">&quot;e&quot;</span><span class="p">]</span>
-</span><span id="__span-50-2"><a id="__codelineno-50-2" name="__codelineno-50-2"></a><span class="n">uppercase</span> <span class="o">=</span> <span class="p">[</span><span class="n">letter</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">lowercase</span><span class="p">]</span>
-</span><span id="__span-50-3"><a id="__codelineno-50-3" name="__codelineno-50-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">uppercase</span><span class="p">)</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-52-1">1</a></span>
+<span class="normal"><a href="#__codelineno-52-2">2</a></span>
+<span class="normal"><a href="#__codelineno-52-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1"></a><span class="n">lowercase</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="s2">&quot;e&quot;</span><span class="p">]</span>
+</span><span id="__span-52-2"><a id="__codelineno-52-2" name="__codelineno-52-2"></a><span class="n">uppercase</span> <span class="o">=</span> <span class="p">[</span><span class="n">letter</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">lowercase</span><span class="p">]</span>
+</span><span id="__span-52-3"><a id="__codelineno-52-3" name="__codelineno-52-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">uppercase</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-51-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1"></a>[&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;]
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-53-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1"></a>[&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;]
 </span></code></pre></div></td></tr></table></div>
 <p>注意囉，這邊用到的是方法喔。</p>
 <h2 id="nested_lists">Nested Lists<a class="headerlink" href="#nested_lists" title="Permanent link">¶</a></h2>
 <p><strong>巢狀串列(Nested Lists)</strong>，就是串列中的元素也是串列。</p>
 <h3 id="2d">2D<a class="headerlink" href="#2d" title="Permanent link">¶</a></h3>
 <p>先來舉一個你可能聽過的名詞，<strong>二維陣列(2D Array)</strong>，我們可以使用巢狀串列來實作二維陣列，例如兩個 <span class="arithmatex">\(3 \times 3\)</span> 的二維陣列，來進行矩陣加法。</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-52-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-52-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-52-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-52-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-52-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-52-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-52-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-52-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-52-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-52-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1"></a><span class="n">matrix_1</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
-</span><span id="__span-52-2"><a id="__codelineno-52-2" name="__codelineno-52-2"></a><span class="n">matrix_2</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]</span>
-</span><span id="__span-52-3"><a id="__codelineno-52-3" name="__codelineno-52-3"></a>
-</span><span id="__span-52-4"><a id="__codelineno-52-4" name="__codelineno-52-4"></a><span class="n">matrix_3</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
-</span><span id="__span-52-5"><a id="__codelineno-52-5" name="__codelineno-52-5"></a>
-</span><span id="__span-52-6"><a id="__codelineno-52-6" name="__codelineno-52-6"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-</span><span id="__span-52-7"><a id="__codelineno-52-7" name="__codelineno-52-7"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-</span><span id="__span-52-8"><a id="__codelineno-52-8" name="__codelineno-52-8"></a>        <span class="n">matrix_3</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">matrix_1</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">matrix_2</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
-</span><span id="__span-52-9"><a id="__codelineno-52-9" name="__codelineno-52-9"></a>
-</span><span id="__span-52-10"><a id="__codelineno-52-10" name="__codelineno-52-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">matrix_3</span><span class="p">)</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-54-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-54-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-54-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-54-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-54-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-54-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-54-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-54-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-54-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-54-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1"></a><span class="n">matrix_1</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
+</span><span id="__span-54-2"><a id="__codelineno-54-2" name="__codelineno-54-2"></a><span class="n">matrix_2</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]</span>
+</span><span id="__span-54-3"><a id="__codelineno-54-3" name="__codelineno-54-3"></a>
+</span><span id="__span-54-4"><a id="__codelineno-54-4" name="__codelineno-54-4"></a><span class="n">matrix_3</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+</span><span id="__span-54-5"><a id="__codelineno-54-5" name="__codelineno-54-5"></a>
+</span><span id="__span-54-6"><a id="__codelineno-54-6" name="__codelineno-54-6"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+</span><span id="__span-54-7"><a id="__codelineno-54-7" name="__codelineno-54-7"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+</span><span id="__span-54-8"><a id="__codelineno-54-8" name="__codelineno-54-8"></a>        <span class="n">matrix_3</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">matrix_1</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">matrix_2</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+</span><span id="__span-54-9"><a id="__codelineno-54-9" name="__codelineno-54-9"></a>
+</span><span id="__span-54-10"><a id="__codelineno-54-10" name="__codelineno-54-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">matrix_3</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-53-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1"></a>[[10, 10, 10], [10, 10, 10], [10, 10, 10]]
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-55-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1"></a>[[10, 10, 10], [10, 10, 10], [10, 10, 10]]
 </span></code></pre></div></td></tr></table></div>
 <p>我希望 <code>matrix_3</code> 的初始化沒有嚇到你，請你把 <code>[0 for i in range(3)]</code> 當成一個整體 <code>E</code>，再把 <code>[E for j in range(3)]</code> 當成一個整體，這樣就不會覺得很複雜了，<code>i, j</code> 都只是計數用的而已，不要被它們嚇到。</p>
 <h3 id="jagged">Jagged<a class="headerlink" href="#jagged" title="Permanent link">¶</a></h3>
 <p><strong>鋸齒狀串列(Jagged Lists)</strong>，就是允許巢狀串列中的元素的長度不一樣。</p>
 <p>題外話，之前在學 C 的時候，只能用<em>指標</em>來實作，但用起來真的很麻煩。</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-54-1">1</a></span>
-<span class="normal"><a href="#__codelineno-54-2">2</a></span>
-<span class="normal"><a href="#__codelineno-54-3">3</a></span>
-<span class="normal"><a href="#__codelineno-54-4">4</a></span>
-<span class="normal"><a href="#__codelineno-54-5">5</a></span>
-<span class="normal"><a href="#__codelineno-54-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1"></a><span class="n">jagged</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
-</span><span id="__span-54-2"><a id="__codelineno-54-2" name="__codelineno-54-2"></a>
-</span><span id="__span-54-3"><a id="__codelineno-54-3" name="__codelineno-54-3"></a><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">jagged</span><span class="p">:</span>
-</span><span id="__span-54-4"><a id="__codelineno-54-4" name="__codelineno-54-4"></a>    <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
-</span><span id="__span-54-5"><a id="__codelineno-54-5" name="__codelineno-54-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
-</span><span id="__span-54-6"><a id="__codelineno-54-6" name="__codelineno-54-6"></a>    <span class="nb">print</span><span class="p">()</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-56-1">1</a></span>
+<span class="normal"><a href="#__codelineno-56-2">2</a></span>
+<span class="normal"><a href="#__codelineno-56-3">3</a></span>
+<span class="normal"><a href="#__codelineno-56-4">4</a></span>
+<span class="normal"><a href="#__codelineno-56-5">5</a></span>
+<span class="normal"><a href="#__codelineno-56-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1"></a><span class="n">jagged</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
+</span><span id="__span-56-2"><a id="__codelineno-56-2" name="__codelineno-56-2"></a>
+</span><span id="__span-56-3"><a id="__codelineno-56-3" name="__codelineno-56-3"></a><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">jagged</span><span class="p">:</span>
+</span><span id="__span-56-4"><a id="__codelineno-56-4" name="__codelineno-56-4"></a>    <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
+</span><span id="__span-56-5"><a id="__codelineno-56-5" name="__codelineno-56-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+</span><span id="__span-56-6"><a id="__codelineno-56-6" name="__codelineno-56-6"></a>    <span class="nb">print</span><span class="p">()</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-55-1">1</a></span>
-<span class="normal"><a href="#__codelineno-55-2">2</a></span>
-<span class="normal"><a href="#__codelineno-55-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1"></a>1 2 3 
-</span><span id="__span-55-2"><a id="__codelineno-55-2" name="__codelineno-55-2"></a>4 5 
-</span><span id="__span-55-3"><a id="__codelineno-55-3" name="__codelineno-55-3"></a>6 7 8 9 
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ouput</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-57-1">1</a></span>
+<span class="normal"><a href="#__codelineno-57-2">2</a></span>
+<span class="normal"><a href="#__codelineno-57-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1"></a>1 2 3 
+</span><span id="__span-57-2"><a id="__codelineno-57-2" name="__codelineno-57-2"></a>4 5 
+</span><span id="__span-57-3"><a id="__codelineno-57-3" name="__codelineno-57-3"></a>6 7 8 9 
 </span></code></pre></div></td></tr></table></div>
 <p>希望這個迴圈的寫法不會嚇到你，<code>row</code> 是 <code>jagged</code> 中的一個元素，也就是一個串列，<code>elem</code> 是 <code>row</code> 中的一個元素，也就是一個整數。</p>
 <p>Python 的語法真的很靈活，但也要很小心，他提供了很多工具，但如果你不清楚他是怎麼運作的，就會容易會寫出效率低下的程式碼，這也是雙面刃，所以要多多練習，多多思考，你可以的。</p>
@@ -1758,41 +1817,41 @@
 </div>
 <details class="abstract">
 <summary>Reference code</summary>
-<p><div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-56-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-56-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-56-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-56-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-56-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-56-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-56-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-56-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-56-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-56-10">10</a></span>
-<span class="normal"><a href="#__codelineno-56-11">11</a></span>
-<span class="normal"><a href="#__codelineno-56-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1"></a><span class="n">table</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="__span-56-2"><a id="__codelineno-56-2" name="__codelineno-56-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
-</span><span id="__span-56-3"><a id="__codelineno-56-3" name="__codelineno-56-3"></a>    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span id="__span-56-4"><a id="__codelineno-56-4" name="__codelineno-56-4"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-</span><span id="__span-56-5"><a id="__codelineno-56-5" name="__codelineno-56-5"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="__span-56-6"><a id="__codelineno-56-6" name="__codelineno-56-6"></a>            <span class="n">s</span> <span class="o">+=</span> <span class="n">j</span>
-</span><span id="__span-56-7"><a id="__codelineno-56-7" name="__codelineno-56-7"></a>    <span class="k">if</span> <span class="n">s</span> <span class="o">==</span> <span class="n">i</span><span class="p">:</span>
-</span><span id="__span-56-8"><a id="__codelineno-56-8" name="__codelineno-56-8"></a>        <span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</span><span id="__span-56-9"><a id="__codelineno-56-9" name="__codelineno-56-9"></a>
-</span><span id="__span-56-10"><a id="__codelineno-56-10" name="__codelineno-56-10"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-56-11"><a id="__codelineno-56-11" name="__codelineno-56-11"></a>    <span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-</span><span id="__span-56-12"><a id="__codelineno-56-12" name="__codelineno-56-12"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">table</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">]))</span>
+<p><div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-58-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-58-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-58-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-58-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-58-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-58-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-58-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-58-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-58-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-58-10">10</a></span>
+<span class="normal"><a href="#__codelineno-58-11">11</a></span>
+<span class="normal"><a href="#__codelineno-58-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1"></a><span class="n">table</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-58-2"><a id="__codelineno-58-2" name="__codelineno-58-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+</span><span id="__span-58-3"><a id="__codelineno-58-3" name="__codelineno-58-3"></a>    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-58-4"><a id="__codelineno-58-4" name="__codelineno-58-4"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+</span><span id="__span-58-5"><a id="__codelineno-58-5" name="__codelineno-58-5"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-58-6"><a id="__codelineno-58-6" name="__codelineno-58-6"></a>            <span class="n">s</span> <span class="o">+=</span> <span class="n">j</span>
+</span><span id="__span-58-7"><a id="__codelineno-58-7" name="__codelineno-58-7"></a>    <span class="k">if</span> <span class="n">s</span> <span class="o">==</span> <span class="n">i</span><span class="p">:</span>
+</span><span id="__span-58-8"><a id="__codelineno-58-8" name="__codelineno-58-8"></a>        <span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span><span id="__span-58-9"><a id="__codelineno-58-9" name="__codelineno-58-9"></a>
+</span><span id="__span-58-10"><a id="__codelineno-58-10" name="__codelineno-58-10"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-58-11"><a id="__codelineno-58-11" name="__codelineno-58-11"></a>    <span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-58-12"><a id="__codelineno-58-12" name="__codelineno-58-12"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">table</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">]))</span>
 </span></code></pre></div></td></tr></table></div>
 建立一個串列 <code>table</code>，裡面放了 <span class="arithmatex">\(6\)</span> 到 <span class="arithmatex">\(2^{13}\)</span> 之間的完美數，接著輸入一個整數 <span class="arithmatex">\(N\)</span>，輸出 <span class="arithmatex">\(1\)</span> 到 <span class="arithmatex">\(N\)</span> 之間的完美數。</p>
 <p>那麼 <span class="arithmatex">\(2^{13}\)</span> 是怎麼來的?ㄜ，我刷後台測資推敲來的。</p>
 <p><code>join</code> 方法可以將字串串列中的元素用指定的字串連接起來，這邊用空白字串 <code>' '</code> 來連接。</p>
 <p>這種技巧稱為「建表」，事實上完美數很疏散，你甚至可以自己建完表後直接寫死，但這樣的話，程式碼就不具有通用性。</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-57-1">1</a></span>
-<span class="normal"><a href="#__codelineno-57-2">2</a></span>
-<span class="normal"><a href="#__codelineno-57-3">3</a></span>
-<span class="normal"><a href="#__codelineno-57-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1"></a><span class="n">table</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">496</span><span class="p">,</span> <span class="mi">8128</span><span class="p">]</span>
-</span><span id="__span-57-2"><a id="__codelineno-57-2" name="__codelineno-57-2"></a>
-</span><span id="__span-57-3"><a id="__codelineno-57-3" name="__codelineno-57-3"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-</span><span id="__span-57-4"><a id="__codelineno-57-4" name="__codelineno-57-4"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">table</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">))</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-59-1">1</a></span>
+<span class="normal"><a href="#__codelineno-59-2">2</a></span>
+<span class="normal"><a href="#__codelineno-59-3">3</a></span>
+<span class="normal"><a href="#__codelineno-59-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1"></a><span class="n">table</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">496</span><span class="p">,</span> <span class="mi">8128</span><span class="p">]</span>
+</span><span id="__span-59-2"><a id="__codelineno-59-2" name="__codelineno-59-2"></a>
+</span><span id="__span-59-3"><a id="__codelineno-59-3" name="__codelineno-59-3"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-59-4"><a id="__codelineno-59-4" name="__codelineno-59-4"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">table</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">))</span>
 </span></code></pre></div></td></tr></table></div>
 <p>如果就單純解題的話，這樣也是可以的。</p>
 <p>正規的題目都會規範測資範圍，如果你以後上大學後遇到不太靈光的助教沒有標測資範圍，記得電死他們。</p>
@@ -1802,21 +1861,21 @@
 </div>
 <details class="abstract">
 <summary>Reference code</summary>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-58-1">1</a></span>
-<span class="normal"><a href="#__codelineno-58-2">2</a></span>
-<span class="normal"><a href="#__codelineno-58-3">3</a></span>
-<span class="normal"><a href="#__codelineno-58-4">4</a></span>
-<span class="normal"><a href="#__codelineno-58-5">5</a></span>
-<span class="normal"><a href="#__codelineno-58-6">6</a></span>
-<span class="normal"><a href="#__codelineno-58-7">7</a></span>
-<span class="normal"><a href="#__codelineno-58-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1"></a><span class="n">N</span><span class="p">,</span> <span class="n">M</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-</span><span id="__span-58-2"><a id="__codelineno-58-2" name="__codelineno-58-2"></a>
-</span><span id="__span-58-3"><a id="__codelineno-58-3" name="__codelineno-58-3"></a><span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span id="__span-58-4"><a id="__codelineno-58-4" name="__codelineno-58-4"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
-</span><span id="__span-58-5"><a id="__codelineno-58-5" name="__codelineno-58-5"></a>    <span class="k">if</span> <span class="n">M</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">N</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="n">M</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">N</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
-</span><span id="__span-58-6"><a id="__codelineno-58-6" name="__codelineno-58-6"></a>        <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
-</span><span id="__span-58-7"><a id="__codelineno-58-7" name="__codelineno-58-7"></a>
-</span><span id="__span-58-8"><a id="__codelineno-58-8" name="__codelineno-58-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-60-1">1</a></span>
+<span class="normal"><a href="#__codelineno-60-2">2</a></span>
+<span class="normal"><a href="#__codelineno-60-3">3</a></span>
+<span class="normal"><a href="#__codelineno-60-4">4</a></span>
+<span class="normal"><a href="#__codelineno-60-5">5</a></span>
+<span class="normal"><a href="#__codelineno-60-6">6</a></span>
+<span class="normal"><a href="#__codelineno-60-7">7</a></span>
+<span class="normal"><a href="#__codelineno-60-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1"></a><span class="n">N</span><span class="p">,</span> <span class="n">M</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span><span id="__span-60-2"><a id="__codelineno-60-2" name="__codelineno-60-2"></a>
+</span><span id="__span-60-3"><a id="__codelineno-60-3" name="__codelineno-60-3"></a><span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-60-4"><a id="__codelineno-60-4" name="__codelineno-60-4"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+</span><span id="__span-60-5"><a id="__codelineno-60-5" name="__codelineno-60-5"></a>    <span class="k">if</span> <span class="n">M</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">N</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="n">M</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">N</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+</span><span id="__span-60-6"><a id="__codelineno-60-6" name="__codelineno-60-6"></a>        <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-60-7"><a id="__codelineno-60-7" name="__codelineno-60-7"></a>
+</span><span id="__span-60-8"><a id="__codelineno-60-8" name="__codelineno-60-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <p>字串也可以像是串列一樣，使用索引值來存取元素。</p>
 </details>
@@ -1825,16 +1884,16 @@
 </div>
 <details class="abstract">
 <summary>Reference code</summary>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-59-1">1</a></span>
-<span class="normal"><a href="#__codelineno-59-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1"></a><span class="n">arr</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-</span><span id="__span-59-2"><a id="__codelineno-59-2" name="__codelineno-59-2"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-61-1">1</a></span>
+<span class="normal"><a href="#__codelineno-61-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1"></a><span class="n">arr</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span><span id="__span-61-2"><a id="__codelineno-61-2" name="__codelineno-61-2"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
 </span></code></pre></div></td></tr></table></div>
 <p><code>arr.reverse()</code> 也行，但是這樣會改變原本的串列，如果你不想改變原本的串列，就使用 <code>arr[::-1]</code>。</p>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-60-1">1</a></span>
-<span class="normal"><a href="#__codelineno-60-2">2</a></span>
-<span class="normal"><a href="#__codelineno-60-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1"></a><span class="n">arr</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-</span><span id="__span-60-2"><a id="__codelineno-60-2" name="__codelineno-60-2"></a><span class="n">arr</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-</span><span id="__span-60-3"><a id="__codelineno-60-3" name="__codelineno-60-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-62-1">1</a></span>
+<span class="normal"><a href="#__codelineno-62-2">2</a></span>
+<span class="normal"><a href="#__codelineno-62-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1"></a><span class="n">arr</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span><span id="__span-62-2"><a id="__codelineno-62-2" name="__codelineno-62-2"></a><span class="n">arr</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+</span><span id="__span-62-3"><a id="__codelineno-62-3" name="__codelineno-62-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
 </span></code></pre></div></td></tr></table></div>
 </details>
 <div class="admonition success">
@@ -1842,87 +1901,28 @@
 </div>
 <details class="abstract">
 <summary>Reference code</summary>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-61-1">1</a></span>
-<span class="normal"><a href="#__codelineno-61-2">2</a></span>
-<span class="normal"><a href="#__codelineno-61-3">3</a></span>
-<span class="normal"><a href="#__codelineno-61-4">4</a></span>
-<span class="normal"><a href="#__codelineno-61-5">5</a></span>
-<span class="normal"><a href="#__codelineno-61-6">6</a></span>
-<span class="normal"><a href="#__codelineno-61-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1"></a><span class="n">arr</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
-</span><span id="__span-61-2"><a id="__codelineno-61-2" name="__codelineno-61-2"></a><span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span id="__span-61-3"><a id="__codelineno-61-3" name="__codelineno-61-3"></a>
-</span><span id="__span-61-4"><a id="__codelineno-61-4" name="__codelineno-61-4"></a><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
-</span><span id="__span-61-5"><a id="__codelineno-61-5" name="__codelineno-61-5"></a>    <span class="n">ans</span> <span class="o">+=</span> <span class="n">num</span> <span class="o">**</span> <span class="mi">3</span>
-</span><span id="__span-61-6"><a id="__codelineno-61-6" name="__codelineno-61-6"></a>
-</span><span id="__span-61-7"><a id="__codelineno-61-7" name="__codelineno-61-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">ans</span><span class="p">)</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-63-1">1</a></span>
+<span class="normal"><a href="#__codelineno-63-2">2</a></span>
+<span class="normal"><a href="#__codelineno-63-3">3</a></span>
+<span class="normal"><a href="#__codelineno-63-4">4</a></span>
+<span class="normal"><a href="#__codelineno-63-5">5</a></span>
+<span class="normal"><a href="#__codelineno-63-6">6</a></span>
+<span class="normal"><a href="#__codelineno-63-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1"></a><span class="n">arr</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+</span><span id="__span-63-2"><a id="__codelineno-63-2" name="__codelineno-63-2"></a><span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-63-3"><a id="__codelineno-63-3" name="__codelineno-63-3"></a>
+</span><span id="__span-63-4"><a id="__codelineno-63-4" name="__codelineno-63-4"></a><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
+</span><span id="__span-63-5"><a id="__codelineno-63-5" name="__codelineno-63-5"></a>    <span class="n">ans</span> <span class="o">+=</span> <span class="n">num</span> <span class="o">**</span> <span class="mi">3</span>
+</span><span id="__span-63-6"><a id="__codelineno-63-6" name="__codelineno-63-6"></a>
+</span><span id="__span-63-7"><a id="__codelineno-63-7" name="__codelineno-63-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">ans</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <p>我並沒有把 <code>map</code> 物件轉換成串列，因為我只需要一次迭代，所以直接用 <code>map</code> 物件就好。</p>
 <p>來看一行解: 
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-62-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">**</span> <span class="mi">3</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-64-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">**</span> <span class="mi">3</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
 </span></code></pre></div></td></tr></table></div></p>
 <p>參考就好。</p>
 </details>
 <div class="admonition success">
 <p>Itsa - <a href="https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=1906">[C_AR09-易] 兩數差值</a></p>
-</div>
-<details class="abstract">
-<summary>Reference code</summary>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-63-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-63-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-63-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-63-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-63-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-63-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-63-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-63-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-63-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-63-10">10</a></span>
-<span class="normal"><a href="#__codelineno-63-11">11</a></span>
-<span class="normal"><a href="#__codelineno-63-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1"></a><span class="n">arr1</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)))</span>
-</span><span id="__span-63-2"><a id="__codelineno-63-2" name="__codelineno-63-2"></a><span class="n">arr1</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-</span><span id="__span-63-3"><a id="__codelineno-63-3" name="__codelineno-63-3"></a><span class="n">arr2</span> <span class="o">=</span> <span class="n">arr1</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-</span><span id="__span-63-4"><a id="__codelineno-63-4" name="__codelineno-63-4"></a><span class="n">arr2</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span><span id="__span-63-5"><a id="__codelineno-63-5" name="__codelineno-63-5"></a>
-</span><span id="__span-63-6"><a id="__codelineno-63-6" name="__codelineno-63-6"></a><span class="n">max_num</span><span class="p">,</span><span class="n">min_num</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
-</span><span id="__span-63-7"><a id="__codelineno-63-7" name="__codelineno-63-7"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-</span><span id="__span-63-8"><a id="__codelineno-63-8" name="__codelineno-63-8"></a>    <span class="c1"># convert list to number</span>
-</span><span id="__span-63-9"><a id="__codelineno-63-9" name="__codelineno-63-9"></a>    <span class="n">max_num</span> <span class="o">=</span> <span class="n">max_num</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">arr1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</span><span id="__span-63-10"><a id="__codelineno-63-10" name="__codelineno-63-10"></a>    <span class="n">min_num</span> <span class="o">=</span> <span class="n">min_num</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">arr2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</span><span id="__span-63-11"><a id="__codelineno-63-11" name="__codelineno-63-11"></a>
-</span><span id="__span-63-12"><a id="__codelineno-63-12" name="__codelineno-63-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">max_num</span> <span class="o">-</span> <span class="n">min_num</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
-<p>不懂排序沒關係，我們先知道怎麼用就好，以後我會教你原理。</p>
-<p>而這題的重點是，如何將串列轉換成數字。從個位數開始，每次乘 <span class="arithmatex">\(10\)</span>，再加上下一個數字。</p>
-</details>
-<div class="admonition success">
-<p>Itsa - <a href="https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=2200">[C_AR022-易] 字母出現的頻率</a></p>
-</div>
-<details class="abstract">
-<summary>Reference code</summary>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-64-1">1</a></span>
-<span class="normal"><a href="#__codelineno-64-2">2</a></span>
-<span class="normal"><a href="#__codelineno-64-3">3</a></span>
-<span class="normal"><a href="#__codelineno-64-4">4</a></span>
-<span class="normal"><a href="#__codelineno-64-5">5</a></span>
-<span class="normal"><a href="#__codelineno-64-6">6</a></span>
-<span class="normal"><a href="#__codelineno-64-7">7</a></span>
-<span class="normal"><a href="#__codelineno-64-8">8</a></span>
-<span class="normal"><a href="#__codelineno-64-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1"></a><span class="n">string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-</span><span id="__span-64-2"><a id="__codelineno-64-2" name="__codelineno-64-2"></a>
-</span><span id="__span-64-3"><a id="__codelineno-64-3" name="__codelineno-64-3"></a><span class="n">freq</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">26</span>
-</span><span id="__span-64-4"><a id="__codelineno-64-4" name="__codelineno-64-4"></a>
-</span><span id="__span-64-5"><a id="__codelineno-64-5" name="__codelineno-64-5"></a><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
-</span><span id="__span-64-6"><a id="__codelineno-64-6" name="__codelineno-64-6"></a>    <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
-</span><span id="__span-64-7"><a id="__codelineno-64-7" name="__codelineno-64-7"></a>        <span class="n">freq</span><span class="p">[</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)]</span> <span class="o">+=</span> <span class="mi">1</span>
-</span><span id="__span-64-8"><a id="__codelineno-64-8" name="__codelineno-64-8"></a>
-</span><span id="__span-64-9"><a id="__codelineno-64-9" name="__codelineno-64-9"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">freq</span><span class="p">))</span>
-</span></code></pre></div></td></tr></table></div>
-<p>這題需要一個先備知識，<strong><a href="https://zh.wikipedia.org/zh-tw/ASCII">ASCII 碼</a></strong>，<code class="language-python highlight"><span class="nb">ord</span></code> 函式可以取得字元的 ASCII 碼。</p>
-<p>再利用 <code>isalpha</code> 方法，來判斷字元是否為字母，以及 <code>lower</code> 方法，來將字母轉換成小寫，這樣就可以將字母<em>映射</em>到 <code>0</code> 到 <code>25</code> 之間。</p>
-<p>關於字串的主題，後面會再跟你介紹。</p>
-</details>
-<div class="admonition success">
-<p>Itsa - <a href="https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=2435">[C_AR025-易] 計算ASCII字元</a></p>
 </div>
 <details class="abstract">
 <summary>Reference code</summary>
@@ -1936,17 +1936,76 @@
 <span class="normal"><a href="#__codelineno-65-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-65-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-65-10">10</a></span>
-<span class="normal"><a href="#__codelineno-65-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1"></a><span class="n">string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-</span><span id="__span-65-2"><a id="__codelineno-65-2" name="__codelineno-65-2"></a>
-</span><span id="__span-65-3"><a id="__codelineno-65-3" name="__codelineno-65-3"></a><span class="n">freq</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">128</span>
-</span><span id="__span-65-4"><a id="__codelineno-65-4" name="__codelineno-65-4"></a>
+<span class="normal"><a href="#__codelineno-65-11">11</a></span>
+<span class="normal"><a href="#__codelineno-65-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1"></a><span class="n">arr1</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)))</span>
+</span><span id="__span-65-2"><a id="__codelineno-65-2" name="__codelineno-65-2"></a><span class="n">arr1</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+</span><span id="__span-65-3"><a id="__codelineno-65-3" name="__codelineno-65-3"></a><span class="n">arr2</span> <span class="o">=</span> <span class="n">arr1</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</span><span id="__span-65-4"><a id="__codelineno-65-4" name="__codelineno-65-4"></a><span class="n">arr2</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </span><span id="__span-65-5"><a id="__codelineno-65-5" name="__codelineno-65-5"></a>
-</span><span id="__span-65-6"><a id="__codelineno-65-6" name="__codelineno-65-6"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)):</span>
-</span><span id="__span-65-7"><a id="__codelineno-65-7" name="__codelineno-65-7"></a>    <span class="n">freq</span><span class="p">[</span><span class="nb">ord</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="n">i</span><span class="p">])]</span> <span class="o">+=</span> <span class="mi">1</span>
-</span><span id="__span-65-8"><a id="__codelineno-65-8" name="__codelineno-65-8"></a>
-</span><span id="__span-65-9"><a id="__codelineno-65-9" name="__codelineno-65-9"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-</span><span id="__span-65-10"><a id="__codelineno-65-10" name="__codelineno-65-10"></a>    <span class="k">if</span> <span class="n">freq</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="__span-65-11"><a id="__codelineno-65-11" name="__codelineno-65-11"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">freq</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span><span id="__span-65-6"><a id="__codelineno-65-6" name="__codelineno-65-6"></a><span class="n">max_num</span><span class="p">,</span><span class="n">min_num</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+</span><span id="__span-65-7"><a id="__codelineno-65-7" name="__codelineno-65-7"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-65-8"><a id="__codelineno-65-8" name="__codelineno-65-8"></a>    <span class="c1"># convert list to number</span>
+</span><span id="__span-65-9"><a id="__codelineno-65-9" name="__codelineno-65-9"></a>    <span class="n">max_num</span> <span class="o">=</span> <span class="n">max_num</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">arr1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span><span id="__span-65-10"><a id="__codelineno-65-10" name="__codelineno-65-10"></a>    <span class="n">min_num</span> <span class="o">=</span> <span class="n">min_num</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">arr2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span><span id="__span-65-11"><a id="__codelineno-65-11" name="__codelineno-65-11"></a>
+</span><span id="__span-65-12"><a id="__codelineno-65-12" name="__codelineno-65-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">max_num</span> <span class="o">-</span> <span class="n">min_num</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<p>不懂排序沒關係，我們先知道怎麼用就好，以後我會教你原理。</p>
+<p>而這題的重點是，如何將串列轉換成數字。從個位數開始，每次乘 <span class="arithmatex">\(10\)</span>，再加上下一個數字。</p>
+</details>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=2200">[C_AR022-易] 字母出現的頻率</a></p>
+</div>
+<details class="abstract">
+<summary>Reference code</summary>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-66-1">1</a></span>
+<span class="normal"><a href="#__codelineno-66-2">2</a></span>
+<span class="normal"><a href="#__codelineno-66-3">3</a></span>
+<span class="normal"><a href="#__codelineno-66-4">4</a></span>
+<span class="normal"><a href="#__codelineno-66-5">5</a></span>
+<span class="normal"><a href="#__codelineno-66-6">6</a></span>
+<span class="normal"><a href="#__codelineno-66-7">7</a></span>
+<span class="normal"><a href="#__codelineno-66-8">8</a></span>
+<span class="normal"><a href="#__codelineno-66-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1"></a><span class="n">string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span><span id="__span-66-2"><a id="__codelineno-66-2" name="__codelineno-66-2"></a>
+</span><span id="__span-66-3"><a id="__codelineno-66-3" name="__codelineno-66-3"></a><span class="n">freq</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">26</span>
+</span><span id="__span-66-4"><a id="__codelineno-66-4" name="__codelineno-66-4"></a>
+</span><span id="__span-66-5"><a id="__codelineno-66-5" name="__codelineno-66-5"></a><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
+</span><span id="__span-66-6"><a id="__codelineno-66-6" name="__codelineno-66-6"></a>    <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+</span><span id="__span-66-7"><a id="__codelineno-66-7" name="__codelineno-66-7"></a>        <span class="n">freq</span><span class="p">[</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-66-8"><a id="__codelineno-66-8" name="__codelineno-66-8"></a>
+</span><span id="__span-66-9"><a id="__codelineno-66-9" name="__codelineno-66-9"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">freq</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<p>這題需要一個先備知識，<strong><a href="https://zh.wikipedia.org/zh-tw/ASCII">ASCII 碼</a></strong>，<code class="language-python highlight"><span class="nb">ord</span></code> 函式可以取得字元的 ASCII 碼。</p>
+<p>再利用 <code>isalpha</code> 方法，來判斷字元是否為字母，以及 <code>lower</code> 方法，來將字母轉換成小寫，這樣就可以將字母<em>映射</em>到 <code>0</code> 到 <code>25</code> 之間。</p>
+<p>關於字串的主題，後面會再跟你介紹。</p>
+</details>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=2435">[C_AR025-易] 計算ASCII字元</a></p>
+</div>
+<details class="abstract">
+<summary>Reference code</summary>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-67-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-67-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-67-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-67-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-67-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-67-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-67-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-67-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-67-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-67-10">10</a></span>
+<span class="normal"><a href="#__codelineno-67-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1"></a><span class="n">string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span><span id="__span-67-2"><a id="__codelineno-67-2" name="__codelineno-67-2"></a>
+</span><span id="__span-67-3"><a id="__codelineno-67-3" name="__codelineno-67-3"></a><span class="n">freq</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">128</span>
+</span><span id="__span-67-4"><a id="__codelineno-67-4" name="__codelineno-67-4"></a>
+</span><span id="__span-67-5"><a id="__codelineno-67-5" name="__codelineno-67-5"></a>
+</span><span id="__span-67-6"><a id="__codelineno-67-6" name="__codelineno-67-6"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)):</span>
+</span><span id="__span-67-7"><a id="__codelineno-67-7" name="__codelineno-67-7"></a>    <span class="n">freq</span><span class="p">[</span><span class="nb">ord</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="n">i</span><span class="p">])]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-67-8"><a id="__codelineno-67-8" name="__codelineno-67-8"></a>
+</span><span id="__span-67-9"><a id="__codelineno-67-9" name="__codelineno-67-9"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-67-10"><a id="__codelineno-67-10" name="__codelineno-67-10"></a>    <span class="k">if</span> <span class="n">freq</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-67-11"><a id="__codelineno-67-11" name="__codelineno-67-11"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">freq</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
 <p>這題跟上一題很像。</p>
 </details>
@@ -1955,41 +2014,41 @@
 </div>
 <details class="abstract">
 <summary>Reference code</summary>
-<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-66-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-66-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-66-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-66-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-66-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-66-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-66-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-66-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-66-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-66-10">10</a></span>
-<span class="normal"><a href="#__codelineno-66-11">11</a></span>
-<span class="normal"><a href="#__codelineno-66-12">12</a></span>
-<span class="normal"><a href="#__codelineno-66-13">13</a></span>
-<span class="normal"><a href="#__codelineno-66-14">14</a></span>
-<span class="normal"><a href="#__codelineno-66-15">15</a></span>
-<span class="normal"><a href="#__codelineno-66-16">16</a></span>
-<span class="normal"><a href="#__codelineno-66-17">17</a></span>
-<span class="normal"><a href="#__codelineno-66-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1"></a><span class="n">plain_text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-</span><span id="__span-66-2"><a id="__codelineno-66-2" name="__codelineno-66-2"></a>
-</span><span id="__span-66-3"><a id="__codelineno-66-3" name="__codelineno-66-3"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">plain_text</span><span class="p">)</span>
-</span><span id="__span-66-4"><a id="__codelineno-66-4" name="__codelineno-66-4"></a><span class="n">M</span> <span class="o">=</span> <span class="mi">1</span>
-</span><span id="__span-66-5"><a id="__codelineno-66-5" name="__codelineno-66-5"></a><span class="k">while</span> <span class="n">M</span> <span class="o">*</span> <span class="n">M</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">:</span>
-</span><span id="__span-66-6"><a id="__codelineno-66-6" name="__codelineno-66-6"></a>    <span class="n">M</span> <span class="o">+=</span> <span class="mi">1</span>
-</span><span id="__span-66-7"><a id="__codelineno-66-7" name="__codelineno-66-7"></a>
-</span><span id="__span-66-8"><a id="__codelineno-66-8" name="__codelineno-66-8"></a><span class="n">arr</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39; &#39;</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">M</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">M</span><span class="p">)]</span>
-</span><span id="__span-66-9"><a id="__codelineno-66-9" name="__codelineno-66-9"></a>
-</span><span id="__span-66-10"><a id="__codelineno-66-10" name="__codelineno-66-10"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-</span><span id="__span-66-11"><a id="__codelineno-66-11" name="__codelineno-66-11"></a>    <span class="n">arr</span><span class="p">[</span><span class="n">i</span> <span class="o">//</span> <span class="n">M</span><span class="p">][</span><span class="n">i</span> <span class="o">%</span> <span class="n">M</span><span class="p">]</span> <span class="o">=</span> <span class="n">plain_text</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</span><span id="__span-66-12"><a id="__codelineno-66-12" name="__codelineno-66-12"></a>
-</span><span id="__span-66-13"><a id="__codelineno-66-13" name="__codelineno-66-13"></a><span class="n">cipher_text</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="__span-66-14"><a id="__codelineno-66-14" name="__codelineno-66-14"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">M</span><span class="p">):</span>
-</span><span id="__span-66-15"><a id="__codelineno-66-15" name="__codelineno-66-15"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">M</span><span class="p">):</span>
-</span><span id="__span-66-16"><a id="__codelineno-66-16" name="__codelineno-66-16"></a>        <span class="n">cipher_text</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
-</span><span id="__span-66-17"><a id="__codelineno-66-17" name="__codelineno-66-17"></a>
-</span><span id="__span-66-18"><a id="__codelineno-66-18" name="__codelineno-66-18"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">cipher_text</span><span class="p">))</span>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-68-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-68-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-68-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-68-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-68-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-68-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-68-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-68-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-68-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-68-10">10</a></span>
+<span class="normal"><a href="#__codelineno-68-11">11</a></span>
+<span class="normal"><a href="#__codelineno-68-12">12</a></span>
+<span class="normal"><a href="#__codelineno-68-13">13</a></span>
+<span class="normal"><a href="#__codelineno-68-14">14</a></span>
+<span class="normal"><a href="#__codelineno-68-15">15</a></span>
+<span class="normal"><a href="#__codelineno-68-16">16</a></span>
+<span class="normal"><a href="#__codelineno-68-17">17</a></span>
+<span class="normal"><a href="#__codelineno-68-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1"></a><span class="n">plain_text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span><span id="__span-68-2"><a id="__codelineno-68-2" name="__codelineno-68-2"></a>
+</span><span id="__span-68-3"><a id="__codelineno-68-3" name="__codelineno-68-3"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">plain_text</span><span class="p">)</span>
+</span><span id="__span-68-4"><a id="__codelineno-68-4" name="__codelineno-68-4"></a><span class="n">M</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-68-5"><a id="__codelineno-68-5" name="__codelineno-68-5"></a><span class="k">while</span> <span class="n">M</span> <span class="o">*</span> <span class="n">M</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">:</span>
+</span><span id="__span-68-6"><a id="__codelineno-68-6" name="__codelineno-68-6"></a>    <span class="n">M</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-68-7"><a id="__codelineno-68-7" name="__codelineno-68-7"></a>
+</span><span id="__span-68-8"><a id="__codelineno-68-8" name="__codelineno-68-8"></a><span class="n">arr</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39; &#39;</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">M</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">M</span><span class="p">)]</span>
+</span><span id="__span-68-9"><a id="__codelineno-68-9" name="__codelineno-68-9"></a>
+</span><span id="__span-68-10"><a id="__codelineno-68-10" name="__codelineno-68-10"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+</span><span id="__span-68-11"><a id="__codelineno-68-11" name="__codelineno-68-11"></a>    <span class="n">arr</span><span class="p">[</span><span class="n">i</span> <span class="o">//</span> <span class="n">M</span><span class="p">][</span><span class="n">i</span> <span class="o">%</span> <span class="n">M</span><span class="p">]</span> <span class="o">=</span> <span class="n">plain_text</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span><span id="__span-68-12"><a id="__codelineno-68-12" name="__codelineno-68-12"></a>
+</span><span id="__span-68-13"><a id="__codelineno-68-13" name="__codelineno-68-13"></a><span class="n">cipher_text</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-68-14"><a id="__codelineno-68-14" name="__codelineno-68-14"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">M</span><span class="p">):</span>
+</span><span id="__span-68-15"><a id="__codelineno-68-15" name="__codelineno-68-15"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">M</span><span class="p">):</span>
+</span><span id="__span-68-16"><a id="__codelineno-68-16" name="__codelineno-68-16"></a>        <span class="n">cipher_text</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
+</span><span id="__span-68-17"><a id="__codelineno-68-17" name="__codelineno-68-17"></a>
+</span><span id="__span-68-18"><a id="__codelineno-68-18" name="__codelineno-68-18"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">cipher_text</span><span class="p">))</span>
 </span></code></pre></div></td></tr></table></div>
 <p>矩陣轉置，所以 <code>arr[j][i]</code> 變成 <code>arr[i][j]</code>。</p>
 </details>

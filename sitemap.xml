@@ -2,72 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/about/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/license/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/fundamental/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/fundamental/cpp/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/fundamental/cpp/create_env/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/fundamental/cpp/hello_world/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/fundamental/python/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/fundamental/python/lists/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/fundamental/python/operators/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/fundamental/python/repetition_structures/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/fundamental/python/say_hello/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/fundamental/python/selection_structures/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cheung4843.github.io/LMcpsBook/fundamental/python/sets/</loc>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cheung4843.github.io/LMcpsBook/fundamental/python/tuples/</loc>
-         <lastmod>2024-02-03</lastmod>
+         <lastmod>2024-02-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
