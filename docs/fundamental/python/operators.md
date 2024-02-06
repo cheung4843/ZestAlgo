@@ -285,7 +285,7 @@ The square of 3.1415926 is 9.87
 @EditTime : 2024-01-27 11:52
 
 ## Bonus: map for input
-再次複習 [Say Hello to Python - Mutiple Input](say_hello.md#multiple_input) 中的例子，我們可以用 `split()` 來將輸入的字串切割成多個字串。
+再次複習 [Variable and Input - Mutiple Input](variable_and_input.md#multiple_input) 中的例子，我們可以用 `split()` 來將輸入的字串切割成多個字串。
 
 但是如果我們想要將這些字串轉換成整數，我們可以怎麼做呢?
 
@@ -329,7 +329,7 @@ print(a + b + c)
 有了本章的基礎後，其實已經可以做很多題目了，我們來做一些練習題吧!
 
 !!! success ""
-    Itsa - [[C_MM01-易] 計算梯型面積](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=2913)
+    Itsa - [[C_MM01-易] 計算梯型面積](https://e-tutor.itsa.org.tw/mod/programming/view.php?a=2913)
 
 ??? abstract "Reference code"
     ```python linenums="1"
@@ -339,7 +339,7 @@ print(a + b + c)
     ```
 
 !!! success ""
-    Itsa - [[C_MM02-易] 計算三角形面積](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=2914)
+    Itsa - [[C_MM02-易] 計算三角形面積](https://e-tutor.itsa.org.tw/mod/programming/view.php?a=2914)
 
 ??? abstract "Reference code"
     ```python linenums="1"
@@ -350,7 +350,7 @@ print(a + b + c)
     ```
 
 !!! success ""
-    Itsa - [[C_MM04-易] 計算總和、乘積、差、商和餘數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=2916)
+    Itsa - [[C_MM04-易] 計算總和、乘積、差、商和餘數](https://e-tutor.itsa.org.tw/mod/programming/view.php?a=2916)
 
 ??? abstract "Reference code"
     ```python linenums="1"
@@ -364,7 +364,7 @@ print(a + b + c)
     ```
 
 !!! success ""
-    Itsa - [[C_MM06-易] 英哩轉公里](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6870)
+    Itsa - [[C_MM06-易] 英哩轉公里](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6870)
 
 ??? abstract "Reference code"
     ```python linenums="1"
@@ -376,22 +376,22 @@ print(a + b + c)
 
 ## Assignment
 !!! success ""
-    Itsa - [[C_MM07-易] 計算平方值與立方值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6873)
+    Itsa - [[C_MM07-易] 計算平方值與立方值](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6873)
 
 !!! success ""
-    Itsa - [[C_MM08-易] 計算兩數和的平方值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6876)
+    Itsa - [[C_MM08-易] 計算兩數和的平方值](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6876)
 
 !!! success ""
-    Itsa - [[C_MM10-易] 攝氏溫度轉華式溫度](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6882)
+    Itsa - [[C_MM10-易] 攝氏溫度轉華式溫度](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6882)
 
 !!! success ""
-    Itsa - [[C_MM11-易] 購票計算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6885)
+    Itsa - [[C_MM11-易] 購票計算](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6885)
 
 !!! success ""
-    Itsa - [[C_MM12-易] 相遇時間計算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6888)
+    Itsa - [[C_MM12-易] 相遇時間計算](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6888)
 
 !!! success ""
-    Itsa - [[C_MM14-易] 計算時間的組合](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6894)
+    Itsa - [[C_MM14-易] 計算時間的組合](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6894)
 
 @EditTime : 2024-01-28 22:03
 

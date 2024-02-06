@@ -340,9 +340,15 @@ step = 0
 
 @EditTime : 2024-01-30 17:55
 
+## Bonus: for ... else and while ... else
+`#!python for` 與 `#!python while` 迴圈都可以搭配 `#!python else` 來使用，當迴圈正常結束的時候(沒有 `#!python break` )，就會執行 `#!python else`。
+
+```python linenums="1"
+```
+
 ## Practice
 !!! success ""
-    Itsa - [[C_MM03-易] 兩數總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6861)
+    Itsa - [[C_MM03-易] 兩數總和](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6861)
 
 
 ??? abstract "Reference code"
@@ -355,7 +361,7 @@ step = 0
     這題會出現在這裡，單純是因為要重複輸入。
 
 !!! success ""
-    Itsa - [[C_MM26-易] 輸出 1x1、2x2、...、NxN之結果](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6928)
+    Itsa - [[C_MM26-易] 輸出 1x1、2x2、...、NxN之結果](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6928)
 
 
 ??? abstract "Reference code"
@@ -367,7 +373,7 @@ step = 0
     ```
 
 !!! success ""
-    Itsa - [[C_MM33-易] 找1~N的完美數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6943)
+    Itsa - [[C_MM33-易] 找1~N的完美數](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6943)
 
 
 ??? abstract "Reference code"
@@ -390,7 +396,7 @@ step = 0
     但如果使用 C++ 的話，相同邏輯的程式碼是可以*AC*的。
 
 !!! success ""
-    Itsa - [[C_MM34-易] 因數問題](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6945)
+    Itsa - [[C_MM34-易] 因數問題](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6945)
 
 ??? abstract "Reference code"
     ```python linenums="1"
@@ -405,38 +411,41 @@ step = 0
 
 @EditTime : 2024-01-30 18:40
 
-## Bonus: for ... else and while ... else
-`#!python for` 與 `#!python while` 迴圈都可以搭配 `#!python else` 來使用，當迴圈正常結束的時候(沒有 `#!python break` )，就會執行 `#!python else`。
-
-```python linenums="1"
-```
-
 ## Assignment
 !!! success ""
-    Itsa - [[C_MM21-易] 算階乘](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6915)
+    Itsa - [[C_MM21-易] 算階乘](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6915)
 
 !!! success ""
-    Itsa - [[C_MM25-易] 計算正整數被3整除之數值之總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6925)
+    Itsa - [[C_MM25-易] 計算正整數被3整除之數值之總和](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6925)
 
 !!! success ""
-    Itsa - [[C_MM27-易] 計算兩整數間所有整數的總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6931)
+    Itsa - [[C_MM27-易] 計算兩整數間所有整數的總和](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6931)
 
 !!! success ""
-    Itsa - [[C_MM28-易] 計算1到N之間屬於5和7的倍數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6933)
+    Itsa - [[C_MM28-易] 計算1到N之間屬於5和7的倍數](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6933)
 
 !!! success ""
-    Itsa - [[C_MM29-易] 最大質數問題](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6935)
+    Itsa - [[C_MM29-易] 最大質數問題](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6935)
 
 !!! success ""
-    Itsa - [[C_MM30-易] 質數判別](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6937)
+    Itsa - [[C_MM30-易] 質數判別](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6937)
 
 !!! success ""
-    Itsa - [[C_MM31-易] 計算1~N內能被2跟3整除，但不能被12整除的整數總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6939)
+    Itsa - [[C_MM31-易] 計算1~N內能被2跟3整除，但不能被12整除的整數總和](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6939)
 
 !!! success ""
-    Itsa - [[C_MM40-易] 1~N之間的總和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6957)
+    Itsa - [[C_MM40-易] 1~N之間的總和](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6957)
 
 !!! success ""
-    Itsa - [[C_MM49-易] 連續1的倍數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6979)
+    Itsa - [[C_MM49-易] 連續1的倍數](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6979)
+
+!!! success ""
+    Itsa - [[C_ST09-易] 星號矩形輸出](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=1287)
+
+!!! success ""
+    Itsa - [[C_ST11-易] 星號菱形輸出](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=1287)
+
+!!! success ""
+    Itsa - [[C_ST14-易] 數字直角三角形輸出](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=1285)
 
 @EditTime : 2024-01-30 21:51

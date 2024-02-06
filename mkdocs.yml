@@ -8,10 +8,13 @@ nav:
     - Python:
       - fundamental/python/index.md
       - Say Hello to Python: fundamental/python/say_hello.md
+      - Variables and Input: fundamental/python/variable_and_input.md
       - Operators: fundamental/python/operators.md
       - Selection Structures: fundamental/python/selection_structures.md
       - Repetition Structures: fundamental/python/repetition_structures.md
       - Lists: fundamental/python/lists.md
+      - Tuples: fundamental/python/tuples.md
+      - Sets: fundamental/python/sets.md
     - C++:
       - fundamental/cpp/index.md
       - 0. 環境架設: fundamental/cpp/0/create_env.md
@@ -22,6 +25,8 @@ nav:
         
   - About: about.md
   - License: license.md
+  - Blog:
+    - blog/index.md
 
 markdown_extensions:
   - toc:
@@ -115,5 +120,11 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-
-
+plugins:
+  - search
+  - blog:
+      blog_toc: true
+      post_date_format: full
+      archive_name: Archive
+      categories_name: Categories
+      
