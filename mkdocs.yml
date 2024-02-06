@@ -21,6 +21,8 @@ nav:
       - 1. Hello World(輸出與輸入): fundamental/cpp/hello_world.md
   - About: about.md
   - License: license.md
+  - Blog:
+    - blog/index.md
 
 markdown_extensions:
   - toc:
@@ -114,5 +116,11 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-
-
+plugins:
+  - search
+  - blog:
+      blog_toc: true
+      post_date_format: full
+      archive_name: Archive
+      categories_name: Categories
+      
