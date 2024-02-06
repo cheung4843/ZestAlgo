@@ -124,3 +124,9 @@ plugins:
       archive_name: Archive
       categories_name: Categories
       
+extra: # footer social
+  social:
+    - icon: fontawesome/brands/discord 
+      link: https://discord.gg/SupybNcAnw
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/groups/456124661687816
