@@ -286,7 +286,7 @@ Spring
 
 ## Practice
 !!! success ""
-    Itsa - [[C_MM09-易] 計算 i 次方的值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6879)
+    Itsa - [[C_MM09-易] 計算 i 次方的值](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6879)
 
 ??? abstract "Reference code"
 
@@ -298,7 +298,7 @@ Spring
         print(1 << i)
     ```
 !!! success ""
-    Itsa - [[C_MM13-易] 停車費計算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6891)
+    Itsa - [[C_MM13-易] 停車費計算](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6891)
 
 ??? abstract "Reference code"
 
@@ -321,7 +321,7 @@ Spring
     ```
 
 !!! success ""
-    Itsa - [[C_MM15-易] 判斷座標是否在正方形的範圍內](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6897)
+    Itsa - [[C_MM15-易] 判斷座標是否在正方形的範圍內](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6897)
 
 ??? abstract "Reference code"
 
@@ -337,36 +337,36 @@ Spring
 
 ## Assignment
 !!! success ""
-    Itsa - [[C_MM16-易] 判斷座標是否在圓形的範圍內](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6900)
+    Itsa - [[C_MM16-易] 判斷座標是否在圓形的範圍內](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6900)
 
 !!! success ""
-    Itsa - [[C_MM19-易] 電話費計算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6909)
+    Itsa - [[C_MM19-易] 電話費計算](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6909)
 
 !!! success ""
-    Itsa - [[C_MM24-易] 計算薪水](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6922)
+    Itsa - [[C_MM24-易] 計算薪水](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6922)
 
 !!! success ""
-    Itsa - [[C_MM32-易] Armstrong數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6941)
+    Itsa - [[C_MM32-易] Armstrong數](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6941)
 
 !!! success ""
-    Itsa - [[C_MM35-易] 平、閏年判定](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6947)
+    Itsa - [[C_MM35-易] 平、閏年判定](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6947)
 
 !!! success ""
-    Itsa - [[C_MM36-易] 季節判定](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6949)
+    Itsa - [[C_MM36-易] 季節判定](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6949)
 
 !!! success ""
-    Itsa - [[C_MM37-易] 判斷座標位於何處](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6951)
+    Itsa - [[C_MM37-易] 判斷座標位於何處](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6951)
 
 !!! success ""
-    Itsa - [[C_MM38-易] 判斷3整數是否能構成三角形之三邊長](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6953)
+    Itsa - [[C_MM38-易] 判斷3整數是否能構成三角形之三邊長](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6953)
 
 !!! success ""
-    Itsa - [[C_MM39-易] 判斷是何種三角形](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6955)
+    Itsa - [[C_MM39-易] 判斷是何種三角形](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6955)
 
 !!! success ""
-    Itsa - [[C_MM46-易] 複數運算](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6970)
+    Itsa - [[C_MM46-易] 複數運算](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6970)
 
 !!! success ""
-    Itsa - [[C_AR36-易] 星座查詢](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=1281)
+    Itsa - [[C_AR36-易] 星座查詢](https://e-tutor.itsa.org.tw/mod/programming/view.php?a=1281)
     
 @EditTime : 2024-01-29 14:38

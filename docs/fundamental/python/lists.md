@@ -531,7 +531,7 @@ Python 的語法真的很靈活，但也要很小心，他提供了很多工具�
 
 ## Practice
 !!! success ""
-    Itsa - [[C_MM33-易] 找1~N的完美數](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6943)
+    Itsa - [[C_MM33-易] 找1~N的完美數](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6943)
 
 
 ??? abstract "Reference code"
@@ -570,7 +570,7 @@ Python 的語法真的很靈活，但也要很小心，他提供了很多工具�
     正規的題目都會規範測資範圍，如果你以後上大學後遇到不太靈光的助教沒有標測資範圍，記得電死他們。
 
 !!! success ""
-    Itsa - [[C_MM44-易] The Numbers](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6965)
+    Itsa - [[C_MM44-易] The Numbers](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6965)
 
 ??? abstract "Reference code"
     ```python linenums="1"
@@ -588,7 +588,7 @@ Python 的語法真的很靈活，但也要很小心，他提供了很多工具�
     字串也可以像是串列一樣，使用索引值來存取元素。
 
 !!! success ""
-    Itsa - [[C_AR01-易] 一維陣列反轉 I](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=274)
+    Itsa - [[C_AR01-易] 一維陣列反轉 I](https://e-tutor.itsa.org.tw/mod/programming/view.php?a=274)
 
 ??? abstract "Reference code"
     ```python linenums="1"
@@ -605,7 +605,7 @@ Python 的語法真的很靈活，但也要很小心，他提供了很多工具�
     ```
 
 !!! success ""
-    Itsa - [[C_AR03-易] 計算陣列中所有元素的立方和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=1291)
+    Itsa - [[C_AR03-易] 計算陣列中所有元素的立方和](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=1291)
 
 ??? abstract "Reference code"
     ```python linenums="1"
@@ -628,7 +628,7 @@ Python 的語法真的很靈活，但也要很小心，他提供了很多工具�
     參考就好。
 
 !!! success ""
-    Itsa - [[C_AR09-易] 兩數差值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=1906)
+    Itsa - [[C_AR09-易] 兩數差值](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=1906)
 
 ??? abstract "Reference code"
     ```python linenums="1"
@@ -651,7 +651,7 @@ Python 的語法真的很靈活，但也要很小心，他提供了很多工具�
     而這題的重點是，如何將串列轉換成數字。從個位數開始，每次乘 $10$，再加上下一個數字。
 
 !!! success ""
-    Itsa - [[C_AR022-易] 字母出現的頻率](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=2200)
+    Itsa - [[C_AR022-易] 字母出現的頻率](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=2200)
 
 ??? abstract "Reference code"
     ```python linenums="1"
@@ -673,7 +673,7 @@ Python 的語法真的很靈活，但也要很小心，他提供了很多工具�
     關於字串的主題，後面會再跟你介紹。
 
 !!! success ""
-    Itsa - [[C_AR025-易] 計算ASCII字元](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=2435)
+    Itsa - [[C_AR025-易] 計算ASCII字元](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=2435)
 
 ??? abstract "Reference code"
     ```python linenums="1"
@@ -693,7 +693,7 @@ Python 的語法真的很靈活，但也要很小心，他提供了很多工具�
     這題跟上一題很像。
 
 !!! success ""
-    Itsa - [[C_AR029-難] 文字編碼](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=1219)
+    Itsa - [[C_AR029-難] 文字編碼](https://e-tutor.itsa.org.tw/mod/programming/view.php?a=1219)
 
 ??? abstract "Reference code"
     ```python linenums="1"
@@ -722,39 +722,39 @@ Python 的語法真的很靈活，但也要很小心，他提供了很多工具�
 
 ## Assignment
 !!! success ""
-    Itsa - [[C_MM42-中] 求(-1)^(n+1)x[1/(2n-1)]的和](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=6961)
+    Itsa - [[C_MM42-中] 求(-1)^(n+1)x[1/(2n-1)]的和](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6961)
 
 !!! success ""
-    Itsa - [[C_AR02-易] 一維陣列反轉 II](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=1289)
+    Itsa - [[C_AR02-易] 一維陣列反轉 II](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=1289)
 
 !!! success ""
-    Itsa - [[C_AR10-中] 新通話費率](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=1912)
+    Itsa - [[C_AR10-中] 新通話費率](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=1912)
 
 !!! success ""
-    Itsa - [[C_AR021-易] 成績統計](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=2196)
+    Itsa - [[C_AR021-易] 成績統計](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=2196)
 
 !!! success ""
-    Itsa - [[C_AR023-易] 字根與子字串](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=2203)
+    Itsa - [[C_AR023-易] 字根與子字串](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=2203)
 
 !!! success ""
-    Itsa - [[C_AR031-中] 一維矩陣表示二維平面空間](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=2606)
+    Itsa - [[C_AR031-中] 一維矩陣表示二維平面空間](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=2606)
 
 !!! success ""
-    Itsa - [[C_AR33-易] 轉置矩陣](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=2634)
+    Itsa - [[C_AR33-易] 轉置矩陣](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=2634)
 
 !!! success ""
-    Itsa - [[C_AR34-易] 身分證驗證器](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=2638)
+    Itsa - [[C_AR34-易] 身分證驗證器](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=2638)
 
 !!! success ""
-    Itsa - [[C_AR35-易] 生肖問題](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=1280)
+    Itsa - [[C_AR35-易] 生肖問題](https://e-tutor.itsa.org.tw/mod/programming/view.php?a=1280)
 
 !!! success ""
-    Itsa - [[C_AR41-易] 一整數序列所含之整數個數及平均值](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=1433)
+    Itsa - [[C_AR41-易] 一整數序列所含之整數個數及平均值](https://e-tutor.itsa.org.tw/mod/programming/view.php?a=1433)
 
 !!! success ""
-    Itsa - [[C_AR46-易] 陣列平方和問題](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=3071)
+    Itsa - [[C_AR46-易] 陣列平方和問題](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=3071)
 
 !!! success ""
-    Itsa - [[C_AR48-易] 數字加密](https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?a=1447)
+    Itsa - [[C_AR48-易] 數字加密](https://e-tutor.itsa.org.tw/mod/programming/view.php?a=1447)
 
 @EditTime : 2024-02-03 21:30
