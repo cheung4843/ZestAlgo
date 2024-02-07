@@ -7,15 +7,20 @@
 * python 3.12.1
 * mkdocs 1.5.3
 * mkdocs-material 9.5.5
+* mkdocs-git-revision-date-localized-plugin 1.2.4
 
-請先確保電腦有安裝 python 3.12.1 或以上的版本，接著安裝 mkdocs 與 mkdocs-material。
+請先確保電腦有安裝 python 3.12.1 或以上的版本，接著安裝其他必要套件。
 
 ```bash
 pip install mkdocs
 pip install mkdocs-material
+pip install mkdocs-git-revision-date-localized-plugin
 ```
 
 ## 協作規範
+請先至[協作請求通知](https://github.com/cheung4843/LMcpsBook/discussions/16)，告訴我您的計畫，並等待我們的回覆。
+
+因為我們希望能夠保持對新手友善的文章風格，所以希望您能將文章寫得盡可能的簡單易懂，並且能夠提供一些範例程式碼，以及一些簡單的練習題。
 
 ### 1. 資料夾規範
 ```
@@ -88,7 +93,7 @@ LMcps Book
 * add: file name 1, file name 2,...etc
 * modified: file name 1, file name 2, ... etc
 * delete: file name 1 , file name 2, ... etc
-* feat: file name 1, file name 2, ... etc
+* feat: feature description
 
 
 例如: 

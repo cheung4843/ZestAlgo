@@ -124,4 +124,10 @@ plugins:
       post_date_format: full
       archive_name: Archive
       categories_name: Categories
+  - git-revision-date-localized:
+      enable_creation_date: true
+  # - git-authors
+  # - git-committers:
+  #     repository: cheung4843/LMcpsBook
+  #     branch: main
       
