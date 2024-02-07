@@ -1,6 +1,7 @@
 site_name: LMcps Book
 site_url: https://cheung4843.github.io/LMcpsBook/
 repo_url: https://github.com/cheung4843/LMcpsBook
+edit_uri: edit/main/docs/
 nav:
   - Home: index.md
   - Fundamental: 
@@ -52,8 +53,8 @@ theme:
     repo: fontawesome/brands/github-alt
   features:
     - announce.dismiss
-    # - content.action.edit
-    # - content.action.view
+    - content.action.edit
+    - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.tooltips
