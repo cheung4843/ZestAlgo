@@ -16,6 +16,8 @@ nav:
       - Lists: fundamental/python/lists.md
       - Tuples: fundamental/python/tuples.md
       - Sets: fundamental/python/sets.md
+      - Dictionaries: fundamental/python/dictionaries.md
+      - Functions: fundamental/python/functions.md
     - C++:
       - fundamental/cpp/index.md
       - 0. 環境架設: fundamental/cpp/create_env.md
