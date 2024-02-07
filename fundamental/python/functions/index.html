@@ -14,7 +14,7 @@
         <link rel="prev" href="../dictionaries/">
       
       
-        <link rel="next" href="../../cpp/">
+        <link rel="next" href="../classes/">
       
       
       <link rel="icon" href="../../../imgs/lmcps_brand.png">
@@ -482,6 +482,8 @@
       
         
       
+        
+      
     
     
     
@@ -775,10 +777,109 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#define_a_function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define a Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Define a Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default_argument_values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default Argument Values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lambda_function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lambda Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factory_function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factory Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested_function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assignment
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1201,6 +1302,84 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#define_a_function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define a Function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Define a Function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default_argument_values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default Argument Values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lambda_function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lambda Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factory_function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factory Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested_function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assignment
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1234,6 +1413,539 @@
 
 <h1 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">¶</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p>往下之前，請你回想 <a href="../repetition_structures/#nested_loop">Repetition Structures - Nested Loop</a> 中的例子:</p>
+<p>輸入一個正整數 <span class="arithmatex">\(n\)</span>，輸出 <span class="arithmatex">\([1, n]\)</span> 間的最大質數。</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="hll">    <span class="n">is_prime</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="hll">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+</span></span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="hll">        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="hll">            <span class="n">is_prime</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="hll">            <span class="k">break</span>
+</span></span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="k">if</span> <span class="n">is_prime</span><span class="p">:</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> is the largest prime in [1, </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">]&quot;</span><span class="p">)</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>        <span class="k">break</span>
+</span></code></pre></div></td></tr></table></div>
+<p>這個程式碼的功能是正確的，但是程式碼的可讀性不高，因為程式碼的長度太長，並且程式碼的邏輯不夠清晰。</p>
+<p>我們可以把判斷質數的部分抽出來，並且將他包裝成一個函式:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">def</span> <span class="nf">is_prime</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>        <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a>            <span class="k">return</span> <span class="kc">False</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>    <span class="k">return</span> <span class="kc">True</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="hll"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="hll">    <span class="k">if</span> <span class="n">is_prime</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+</span></span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="hll">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> is the largest prime in [1, </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">]&quot;</span><span class="p">)</span>
+</span></span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="hll">        <span class="k">break</span>
+</span></span></code></pre></div></td></tr></table></div>
+<p>這樣的好處是，我們可以將相同的程式碼重複使用，並且可以讓程式碼更加簡潔。</p>
+<p>那如果我想要進一步程式碼封裝成一個接受正整數 <span class="arithmatex">\(n\)</span> 的函式，並且回傳 <span class="arithmatex">\([1, n]\)</span> 間的最大質數呢?</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">def</span> <span class="nf">is_prime</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>        <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>            <span class="k">return</span> <span class="kc">False</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>    <span class="k">return</span> <span class="kc">True</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="k">def</span> <span class="nf">largest_prime</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a>        <span class="k">if</span> <span class="n">is_prime</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a>            <span class="k">return</span> <span class="n">i</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">largest_prime</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="si">}</span><span class="s2"> is the largest prime in [1, </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">]&quot;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<p>不曉得你有沒有感受到，當程式碼越來越長，我們就越需要函式來幫助我們將程式碼分割成更小的部分，這樣我們就可以更容易的閱讀程式碼。</p>
+<p>這個引子告訴我們，函式是一個可以將程式碼包裝成一個獨立的單位，並且可以重複使用的工具。</p>
+<h2 id="define_a_function">Define a Function<a class="headerlink" href="#define_a_function" title="Permanent link">¶</a></h2>
+<p>函式的定義是以 <code class="language-python highlight"><span class="k">def</span></code> 開頭，後面接著函式的名稱，以及括號內的<strong>參數(Parameter)</strong>，縮排內的程式碼就是函式的內容。</p>
+<p>你可以選擇是否要在函式中加上 <code class="language-python highlight"><span class="k">return</span></code> 來回傳值，如果沒有，函式則會回傳 <code class="language-python highlight"><span class="kc">None</span></code>。</p>
+<p>舉個例子，定義一個函式 <code class="language-python highlight"><span class="n">greet</span></code>，他接受一個參數 <code class="language-python highlight"><span class="n">name</span></code>，並印出 <code>Hello, {name}</code>:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="hll"><span class="nb">print</span><span class="p">(</span><span class="n">greet</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">))</span>
+</span></span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>Hello, World
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>None
+</span></code></pre></div></td></tr></table></div>
+<p><code>greet("World")</code> 會先印出 <code>Hello, World</code>，接著回傳 <code>None</code>。</p>
+<p>字串 <code>"World"</code> 被稱為<strong>引數(Argument)</strong>，而 <code>name</code> 則被稱為<strong>參數(Parameter)</strong>。但也不用太拘泥。</p>
+<p>再舉個例子，定義一個函式 <code class="language-python highlight"><span class="n">freq</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> 接受一個數字字串 <code>x</code> ，回傳 <code>0-9</code> 的出現次數，以序對的方式回傳:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">def</span> <span class="nf">freq</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">:</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>    <span class="n">table</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">10</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>    <span class="k">for</span> <span class="n">digit</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>        <span class="n">table</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">digit</span><span class="p">)]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a>    <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;114514&quot;</span><span class="p">,</span> <span class="s2">&quot;111445&quot;</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">freq</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">==</span> <span class="n">freq</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a>True
+</span></code></pre></div></td></tr></table></div>
+<p>我們可以在參數後面加上 <code class="language-python highlight"><span class="p">:</span></code> 來指定參數的型別，並且在函式後面加上 <code class="language-python highlight"><span class="o">-&gt;</span></code> 來指定回傳值的型別。</p>
+<h3 id="default_argument_values">Default Argument Values<a class="headerlink" href="#default_argument_values" title="Permanent link">¶</a></h3>
+<p>有時候我們會希望函式的參數有預設值，這樣在呼叫函式時就不需要填入引數。</p>
+<p>例如，函式 <code>max_of(x, k=1)</code> 接受兩個參數 <code>x</code> 串列與 <code>k</code> 數字，回傳 <code>x</code> 中最大的 <code>k</code> 個數字，以串列的方式回傳，而 <code>k</code> 的預設值為 <code>1</code>:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">7</a></span>
+<span class="normal"><a href="#__codelineno-7-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">def</span> <span class="nf">max_of</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a>    <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="n">k</span><span class="p">]</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">max_of</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">max_of</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">max_of</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">3</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a>[9]
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a>[9, 8]
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a>[9, 8, 5]
+</span></code></pre></div></td></tr></table></div>
+<p>再舉一個例子，函式 <code>weight_score(math, english, programming, math_weight=0.25, english_weight=0.25, programming_weight=0.5)</code> 接受三個參數 <code>math</code>, <code>english</code>, <code>programming</code> 以及三個預設值 <code>math_weight=0.25</code>, <code>english_weight=0.25</code>, <code>programming_weight=0.5</code>，回傳加權分數:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span>
+<span class="normal"><a href="#__codelineno-9-5">5</a></span>
+<span class="normal"><a href="#__codelineno-9-6">6</a></span>
+<span class="normal"><a href="#__codelineno-9-7">7</a></span>
+<span class="normal"><a href="#__codelineno-9-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">def</span> <span class="nf">weight_score</span><span class="p">(</span><span class="n">math</span><span class="p">,</span> <span class="n">english</span><span class="p">,</span> <span class="n">programming</span><span class="p">,</span> <span class="n">math_weight</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">english_weight</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">programming_weight</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a>    <span class="k">return</span> <span class="n">math</span> <span class="o">*</span> <span class="n">math_weight</span> <span class="o">+</span> <span class="n">english</span> <span class="o">*</span> <span class="n">english_weight</span> <span class="o">+</span> <span class="n">programming</span> <span class="o">*</span> <span class="n">programming_weight</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="n">sean_score</span> <span class="o">=</span> <span class="n">weight_score</span><span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="n">yaris_score</span> <span class="o">=</span> <span class="n">weight_score</span><span class="p">(</span><span class="n">math</span><span class="o">=</span><span class="mi">82</span><span class="p">,</span> <span class="n">math_weight</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">english</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="n">english_weight</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">programming</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a>                           <span class="n">programming_weight</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">sean_score</span><span class="p">,</span> <span class="n">yaris_score</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a>92.5 91.6
+</span></code></pre></div></td></tr></table></div>
+<p>有預設值的參數必須放在沒有預設值的參數後面。但如果你在呼叫函式的時候，指定了參數的名稱，則可以不用遵守這個規則。</p>
+<p>其實還有一些神奇的用法，但就不在這裡討論了。</p>
+<h3 id="lambda_function">Lambda Function<a class="headerlink" href="#lambda_function" title="Permanent link">¶</a></h3>
+<p>還記得 <code>map</code> 嗎? 他可以將一個函式應用到一個串列上。</p>
+<p>先回憶一下，我們可以這樣使用 <code>map</code>:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span>
+<span class="normal"><a href="#__codelineno-11-5">5</a></span>
+<span class="normal"><a href="#__codelineno-11-6">6</a></span>
+<span class="normal"><a href="#__codelineno-11-7">7</a></span>
+<span class="normal"><a href="#__codelineno-11-8">8</a></span>
+<span class="normal"><a href="#__codelineno-11-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">lst</span><span class="p">)))</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7"></a>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="n">song_name</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="s2">&quot;Really&quot;</span><span class="p">,</span> <span class="s2">&quot;Want&quot;</span><span class="p">,</span> <span class="s2">&quot;to&quot;</span><span class="p">,</span> <span class="s2">&quot;Stay&quot;</span><span class="p">,</span> <span class="s2">&quot;At&quot;</span><span class="p">,</span> <span class="s2">&quot;Your&quot;</span><span class="p">,</span> <span class="s2">&quot;House&quot;</span><span class="p">]</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">len</span><span class="p">,</span> <span class="n">song_name</span><span class="p">)))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a>[1, 4, 9, 16, 25]
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a>[1, 6, 4, 2, 4, 2, 4, 5]
+</span></code></pre></div></td></tr></table></div>
+<p><a href="https://youtu.be/KvMY1uzSC1E?si=McX5qpTCm9q4z8hX">I Really Want to Stay At Your House” by Rosa Walton</a></p>
+<p>這種接受函式為參數的函式被稱為<strong>高階函式(Higher-Order Function)</strong>。</p>
+<p>但是，如果函式只會被使用一次，我們可以使用 <code>lambda</code> 來定義一個匿名函式:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="n">lst</span><span class="p">)))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1"></a>[1, 4, 9, 16, 25]
+</span></code></pre></div></td></tr></table></div>
+<p>再舉個例子，用過 <code>min</code> 嗎? 他可以找出一個串列中的最小值，我們也可以自訂規則，例如有一個座標串列 <code>points</code>，我們可以這樣找出最靠近原點的點:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="n">points</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)]</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">**</span> <span class="mi">2</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1"></a>(1, 3)
+</span></code></pre></div></td></tr></table></div>
+<p>再舉個例子，兩個串列 <code>a</code> 與 <code>b</code>，我們可以這樣計算兩個串列的內積:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1"></a>32
+</span></code></pre></div></td></tr></table></div>
+<h2 id="factory_function">Factory Function<a class="headerlink" href="#factory_function" title="Permanent link">¶</a></h2>
+<p>有時候我們會希望函式回傳另一個函式，這樣的函式被稱為<strong>工廠函式(Factory Function)</strong>。</p>
+<p>舉個例子，定義一個函式 <code class="language-python highlight"><span class="n">make_power_fun</span><span class="p">(</span><span class="n">n</span><span class="p">)</span></code> ，他接受一個數字 <code>n</code>，回傳一個函式，這個函式接受一個數字 <code>x</code>，回傳 <code>x</code> 的 <code>n</code> 次方:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span>
+<span class="normal"><a href="#__codelineno-19-3">3</a></span>
+<span class="normal"><a href="#__codelineno-19-4">4</a></span>
+<span class="normal"><a href="#__codelineno-19-5">5</a></span>
+<span class="normal"><a href="#__codelineno-19-6">6</a></span>
+<span class="normal"><a href="#__codelineno-19-7">7</a></span>
+<span class="normal"><a href="#__codelineno-19-8">8</a></span>
+<span class="normal"><a href="#__codelineno-19-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="k">def</span> <span class="nf">make_power_fun</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2"></a>    <span class="k">return</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="n">n</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3"></a>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4"></a>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5"></a><span class="n">power_fun_2</span> <span class="o">=</span> <span class="n">make_power_fun</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6"></a><span class="n">power_fun_3</span> <span class="o">=</span> <span class="n">make_power_fun</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7"></a>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">power_fun_2</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">power_fun_3</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1"></a>9
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2"></a>81
+</span></code></pre></div></td></tr></table></div>
+<p>這樣的好處是，我們可以在不同的地方使用不同的 <code>n</code>，而不需要重複定義函式。</p>
+<h2 id="nested_function">Nested Function<a class="headerlink" href="#nested_function" title="Permanent link">¶</a></h2>
+<p>函式可以被定義在另一個函式的內部，這樣的函式被稱為<strong>巢狀函式(Nested Function)</strong>。</p>
+<p>例如，函式 <code>collect_anagrams(words, target)</code> 接受一個字串串列 <code>words</code> 與一個字串 <code>target</code>，回傳 <code>words</code> 中與互為 <code>target</code> 是<em>相同字母異序詞</em>的串列:</p>
+<p>於是我在函式的內部先定義了一個<em>輔助函式(Helper Function)</em> <code class="language-python highlight"><span class="n">is_anagram</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span></code>，他接受兩個字串 <code>x</code> 與 <code>y</code>，回傳 <code>x</code> 與 <code>y</code> 是否為相同字母異序詞:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span>
+<span class="normal"><a href="#__codelineno-21-3">3</a></span>
+<span class="normal"><a href="#__codelineno-21-4">4</a></span>
+<span class="normal"><a href="#__codelineno-21-5">5</a></span>
+<span class="normal"><a href="#__codelineno-21-6">6</a></span>
+<span class="normal"><a href="#__codelineno-21-7">7</a></span>
+<span class="normal"><a href="#__codelineno-21-8">8</a></span>
+<span class="normal"><a href="#__codelineno-21-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="k">def</span> <span class="nf">collect_anagrams</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2"></a>    <span class="k">def</span> <span class="nf">is_anagram</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3"></a>        <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4"></a>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5"></a>    <span class="k">return</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">is_anagram</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">target</span><span class="p">)]</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6"></a>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7"></a>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8"></a><span class="n">strs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;now&quot;</span><span class="p">,</span> <span class="s2">&quot;won&quot;</span><span class="p">,</span> <span class="s2">&quot;own&quot;</span><span class="p">,</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span> <span class="s2">&quot;on&quot;</span><span class="p">,</span> <span class="s2">&quot;www&quot;</span><span class="p">]</span>
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">collect_anagrams</span><span class="p">(</span><span class="n">strs</span><span class="p">,</span> <span class="s2">&quot;onw&quot;</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1"></a>[&#39;now&#39;, &#39;won&#39;, &#39;own&#39;]
+</span></code></pre></div></td></tr></table></div>
+<p>這個在刷 LeeCode 時會常常用到。</p>
+<h2 id="recursion">Recursion<a class="headerlink" href="#recursion" title="Permanent link">¶</a></h2>
+<p>來到本章的重頭戲，<strong>遞迴(Recursion)</strong>。</p>
+<p>遞迴是一種函式呼叫自己的技巧，這樣的函式被稱為<strong>遞迴函式(Recursive Function)</strong>。</p>
+<p>先來個經典的例子，計算 <span class="arithmatex">\(n!\)</span>，迴圈的寫法是這樣的:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span>
+<span class="normal"><a href="#__codelineno-23-3">3</a></span>
+<span class="normal"><a href="#__codelineno-23-4">4</a></span>
+<span class="normal"><a href="#__codelineno-23-5">5</a></span>
+<span class="normal"><a href="#__codelineno-23-6">6</a></span>
+<span class="normal"><a href="#__codelineno-23-7">7</a></span>
+<span class="normal"><a href="#__codelineno-23-8">8</a></span>
+<span class="normal"><a href="#__codelineno-23-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2"></a>    <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4"></a>        <span class="n">result</span> <span class="o">*=</span> <span class="n">i</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5"></a>    <span class="k">return</span> <span class="n">result</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6"></a>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7"></a>
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
+<span class="normal"><a href="#__codelineno-24-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1"></a>1
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2"></a>120
+</span></code></pre></div></td></tr></table></div>
+<p>記得高中數學課本上的定義嗎?</p>
+<div class="arithmatex">\[
+\text{factorial}(n) = \begin{cases} 1 &amp; \text{if } n = 0 \text{, base case}\\ n \times \text{factorial}(n-1) &amp; \text{if } n &gt; 0 \text{, recursive case}\end{cases}
+\]</div>
+<p>這樣的定義就可以直接翻譯成程式碼:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span>
+<span class="normal"><a href="#__codelineno-25-2">2</a></span>
+<span class="normal"><a href="#__codelineno-25-3">3</a></span>
+<span class="normal"><a href="#__codelineno-25-4">4</a></span>
+<span class="normal"><a href="#__codelineno-25-5">5</a></span>
+<span class="normal"><a href="#__codelineno-25-6">6</a></span>
+<span class="normal"><a href="#__codelineno-25-7">7</a></span>
+<span class="normal"><a href="#__codelineno-25-8">8</a></span>
+<span class="normal"><a href="#__codelineno-25-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3"></a>        <span class="k">return</span> <span class="mi">1</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5"></a>        <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6"></a>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7"></a>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1"></a>1
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2"></a>120
+</span></code></pre></div></td></tr></table></div>
+<p>當 <code>n == 0</code> 時，我們稱為<em>基本情況(Base Case)</em>，這是遞迴的終止條件，當 <code>n &gt; 0</code> 時，我們稱為<em>遞迴情況(Recursive Case)</em>，這是遞迴的執行條件。</p>
+<p>每一個遞迴函式都應該有一個基本情況，這樣的遞迴才會終止，否則就會陷入無窮遞迴，咦?有沒有很熟悉?還記得無窮迴圈嗎?</p>
+<p>再舉個例子，計算費氏數列的第 <span class="arithmatex">\(n\)</span> 項，迴圈的寫法是這樣的:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<span class="normal"><a href="#__codelineno-27-2">2</a></span>
+<span class="normal"><a href="#__codelineno-27-3">3</a></span>
+<span class="normal"><a href="#__codelineno-27-4">4</a></span>
+<span class="normal"><a href="#__codelineno-27-5">5</a></span>
+<span class="normal"><a href="#__codelineno-27-6">6</a></span>
+<span class="normal"><a href="#__codelineno-27-7">7</a></span>
+<span class="normal"><a href="#__codelineno-27-8">8</a></span>
+<span class="normal"><a href="#__codelineno-27-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2"></a>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3"></a>    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4"></a>        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5"></a>    <span class="k">return</span> <span class="n">a</span>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6"></a>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7"></a>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">fibonacci</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">fibonacci</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
+<span class="normal"><a href="#__codelineno-28-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1"></a>0
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2"></a>55
+</span></code></pre></div></td></tr></table></div>
+<p>同樣的，還記得高中數學課本上的定義嗎?</p>
+<div class="arithmatex">\[
+\text{fibonacci}(n) = \begin{cases} 0 &amp; \text{if } n = 0 \text{, base case}\\ 1 &amp; \text{if } n = 1 \text{, base case}\\ \text{fibonacci}(n-1) + \text{fibonacci}(n-2) &amp; \text{if } n &gt; 1 \text{, recursive case}\end{cases}
+\]</div>
+<p>這樣的定義就可以直接翻譯成程式碼:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-29-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-29-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-29-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-29-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-29-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-29-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-29-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-29-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-29-10">10</a></span>
+<span class="normal"><a href="#__codelineno-29-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3"></a>        <span class="k">return</span> <span class="mi">0</span>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4"></a>    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5"></a>        <span class="k">return</span> <span class="mi">1</span>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7"></a>        <span class="k">return</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8"></a>
+</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9"></a>
+</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">fibonacci</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+</span><span id="__span-29-11"><a id="__codelineno-29-11" name="__codelineno-29-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">fibonacci</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
+<span class="normal"><a href="#__codelineno-30-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1"></a>0
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2"></a>55
+</span></code></pre></div></td></tr></table></div>
+<p>但是，遞迴的效率通常比迴圈低，因為遞迴會造成大量的函式呼叫，而且容易造成大量的重複計算。</p>
+<p>再來一個經典的例子，計算整數 <code>a, b</code> 的最大公因數，你可能有聽過輾轉相除法，又稱為<strong>歐幾里得演算法(Euclidean algorithm)</strong>，他的定義是這樣的:</p>
+<div class="arithmatex">\[
+\text{gcd}(a, b) = \begin{cases} a &amp; \text{if } b = 0 \text{, base case}\\ \text{gcd}(b, a \mod b) &amp; \text{if } b &gt; 0 \text{, recursive case}\end{cases}
+\]</div>
+<p>直接寫成程式碼:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-31-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-31-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-31-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-31-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-31-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-31-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-31-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-31-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-31-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1"></a><span class="k">def</span> <span class="nf">gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2"></a>    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3"></a>        <span class="k">return</span> <span class="n">a</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5"></a>        <span class="k">return</span> <span class="n">gcd</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span><span class="p">)</span>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6"></a>
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7"></a>
+</span><span id="__span-31-8"><a id="__codelineno-31-8" name="__codelineno-31-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">gcd</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">18</span><span class="p">))</span>
+</span><span id="__span-31-9"><a id="__codelineno-31-9" name="__codelineno-31-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">gcd</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+</span><span id="__span-31-10"><a id="__codelineno-31-10" name="__codelineno-31-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">gcd</span><span class="p">(</span><span class="mi">4843</span><span class="p">,</span> <span class="mi">1234</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span>
+<span class="normal"><a href="#__codelineno-32-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1"></a>6
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2"></a>6
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3"></a>1
+</span></code></pre></div></td></tr></table></div>
+<p>這個要寫成<strong>迭代(Iterative)</strong>版本還比較難。</p>
+<p>關於遞迴，就先講到這裡，未來進入演算法的章節時，會再深入討論，而且會有更多的例子。</p>
+<h2 id="practice">Practice<a class="headerlink" href="#practice" title="Permanent link">¶</a></h2>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6976">[C_MM48-易] F91</a></p>
+</div>
+<details class="abstract">
+<summary>Reference code</summary>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-33-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-33-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-33-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-33-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-33-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-33-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-33-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-33-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-33-10">10</a></span>
+<span class="normal"><a href="#__codelineno-33-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="k">def</span> <span class="nf">f91</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3"></a>        <span class="k">return</span> <span class="n">f91</span><span class="p">(</span><span class="n">f91</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">11</span><span class="p">))</span>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4"></a>    <span class="k">elif</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">101</span><span class="p">:</span>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5"></a>        <span class="k">return</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">10</span>
+</span><span id="__span-33-6"><a id="__codelineno-33-6" name="__codelineno-33-6"></a>
+</span><span id="__span-33-7"><a id="__codelineno-33-7" name="__codelineno-33-7"></a>
+</span><span id="__span-33-8"><a id="__codelineno-33-8" name="__codelineno-33-8"></a><span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-33-9"><a id="__codelineno-33-9" name="__codelineno-33-9"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+</span><span id="__span-33-10"><a id="__codelineno-33-10" name="__codelineno-33-10"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">n</span><span class="p">:</span>
+</span><span id="__span-33-11"><a id="__codelineno-33-11" name="__codelineno-33-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">f91</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+<p>你仔細觀察一下，其實可以寫成這樣:</p>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-34-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-34-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-34-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-34-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-34-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-34-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-34-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-34-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-34-10">10</a></span>
+<span class="normal"><a href="#__codelineno-34-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="k">def</span> <span class="nf">f91</span><span class="p">(</span><span class="n">z</span><span class="p">):</span> 
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2"></a>    <span class="k">if</span> <span class="n">z</span> <span class="o">&gt;=</span> <span class="mi">101</span><span class="p">:</span> 
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3"></a>        <span class="k">return</span> <span class="n">z</span> <span class="o">-</span> <span class="mi">10</span> 
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4"></a>    <span class="k">else</span><span class="p">:</span> 
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5"></a>        <span class="k">return</span> <span class="mi">91</span> 
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6"></a>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7"></a>
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8"></a><span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> 
+</span><span id="__span-34-9"><a id="__codelineno-34-9" name="__codelineno-34-9"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span> 
+</span><span id="__span-34-10"><a id="__codelineno-34-10" name="__codelineno-34-10"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">n</span><span class="p">:</span> 
+</span><span id="__span-34-11"><a id="__codelineno-34-11" name="__codelineno-34-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">f91</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> 
+</span></code></pre></div></td></tr></table></div>
+</details>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/mod/programming/view.php?id=13606">[C_RU13-易] 大一點的Fibonacci</a></p>
+</div>
+<details class="abstract">
+<summary>Reference code</summary>
+<p><div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-35-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-35-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-35-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-35-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-35-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-35-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-35-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-35-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-35-10">10</a></span>
+<span class="normal"><a href="#__codelineno-35-11">11</a></span>
+<span class="normal"><a href="#__codelineno-35-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1"></a><span class="n">MAX</span> <span class="o">=</span> <span class="mi">47</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2"></a><span class="n">fibonacci</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">MAX</span>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3"></a><span class="n">fibonacci</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4"></a>
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">MAX</span><span class="p">):</span>
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6"></a>    <span class="n">fibonacci</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">fibonacci</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">fibonacci</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span>
+</span><span id="__span-35-7"><a id="__codelineno-35-7" name="__codelineno-35-7"></a>
+</span><span id="__span-35-8"><a id="__codelineno-35-8" name="__codelineno-35-8"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-35-9"><a id="__codelineno-35-9" name="__codelineno-35-9"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span><span id="__span-35-10"><a id="__codelineno-35-10" name="__codelineno-35-10"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-35-11"><a id="__codelineno-35-11" name="__codelineno-35-11"></a>        <span class="k">break</span>
+</span><span id="__span-35-12"><a id="__codelineno-35-12" name="__codelineno-35-12"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">fibonacci</span><span class="p">[</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
+</span></code></pre></div></td></tr></table></div>
+這種寫法叫做<strong>動態規劃(Dynamic Programming)</strong>，未來會再討論，而且會很頭痛。</p>
+</details>
+<h2 id="assignment">Assignment<a class="headerlink" href="#assignment" title="Permanent link">¶</a></h2>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/mod/programming/view.php?id=2654">[C_MM103-易] 費式數列</a></p>
+</div>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/mod/programming/view.php?id=3589">[C_MM143-易] 求Emirp</a></p>
+</div>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/mod/programming/view.php?id=3626">[C_MM144-易] 求組合數C(n,r)</a></p>
+</div>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/mod/programming/view.php?id=30757">題目10. 輾轉相除法</a></p>
+</div>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/mod/programming/view.php?a=3552">[C_RU10-中] 爬樓梯</a></p>
+</div>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/mod/programming/view.php?a=6422">[C_RU14-易] 好高的水晶塔</a></p>
+</div>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/mod/programming/view.php?id=29334">[C_RU23-易] 遞迴練習2f(n)=f(n-1)+2</a></p>
+</div>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/mod/programming/view.php?id=29335">[C_RU24-易] 遞迴練習f(n)＝2f(n-1)/(1+2f(n-1))</a></p>
+</div>
+<div class="admonition success">
+<p>Itsa - <a href="https://e-tutor.itsa.org.tw/mod/programming/view.php?id=29336">[C_RU25-易] 遞迴練習f(n)＝3f(n-1)+g(n-1)﹐g(n)＝-f(n-1)+g(n-1)</a></p>
+</div>
 
 
 
@@ -1318,13 +2030,13 @@
         
         
           
-          <a href="../../cpp/" class="md-footer__link md-footer__link--next" aria-label="下一頁: C++">
+          <a href="../classes/" class="md-footer__link md-footer__link--next" aria-label="下一頁: Classes">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一頁
               </span>
               <div class="md-ellipsis">
-                C++
+                Classes
               </div>
             </div>
             <div class="md-footer__button md-icon">
