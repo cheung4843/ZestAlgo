@@ -26,6 +26,7 @@ nav:
       - 2. 變數、型態與相關運算:
         - fundamental/cpp/2/index.md
         - 2.1 整數型態: fundamental/cpp/2/interger.md
+        - 2.2 浮點數（小數）型態: fundamental/cpp/2/floating.md
         
   - About: about.md
   - License: license.md
