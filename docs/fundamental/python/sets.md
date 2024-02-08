@@ -264,4 +264,16 @@ print(len(a))
     ```
     這裡應該能感受 `discard()` 的用處，題目要求不區分大小寫，所以我們先把字串轉成小寫，然後再把空白字元移除(不管有沒有)，最後再檢查兩個集合是否相等。
 
+!!! success ""
+    Itsa - [[C_ST82-易] 交集](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=15560)
+
+!!! success ""
+    Itsa - [[C_ST83-易] 聯集](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=15562)
+
+!!! success ""
+    Itsa - [[C_ST84-易] 差集](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=15564)
+
+!!! success ""
+    Itsa - [[C_AR192-易] 判断任意字串中的字元是否有重複](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=29927)
+
 @EditTime : 2024-02-06 23:16

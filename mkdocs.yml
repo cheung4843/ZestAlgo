@@ -1,6 +1,7 @@
 site_name: LMcps Book
 site_url: https://cheung4843.github.io/LMcpsBook/
 repo_url: https://github.com/cheung4843/LMcpsBook
+edit_uri: edit/main/docs/
 nav:
   - Home: index.md
   - Fundamental: 
@@ -15,6 +16,9 @@ nav:
       - Lists: fundamental/python/lists.md
       - Tuples: fundamental/python/tuples.md
       - Sets: fundamental/python/sets.md
+      - Dictionaries: fundamental/python/dictionaries.md
+      - Functions: fundamental/python/functions.md
+      - Classes: fundamental/python/classes.md
     - C++:
       - fundamental/cpp/index.md
       - 0. 環境架設: fundamental/cpp/0/create_env.md
@@ -56,8 +60,8 @@ theme:
     repo: fontawesome/brands/github-alt
   features:
     - announce.dismiss
-    # - content.action.edit
-    # - content.action.view
+    - content.action.edit
+    - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.tooltips
@@ -127,4 +131,10 @@ plugins:
       post_date_format: full
       archive_name: Archive
       categories_name: Categories
+  - git-revision-date-localized:
+      enable_creation_date: true
+  # - git-authors
+  # - git-committers:
+  #     repository: cheung4843/LMcpsBook
+  #     branch: main
       
