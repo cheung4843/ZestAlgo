@@ -27,6 +27,7 @@ nav:
         - fundamental/cpp/2/index.md
         - 2.1 整數型態: fundamental/cpp/2/interger.md
         - 2.2 浮點數（小數）型態: fundamental/cpp/2/floating.md
+        - 2.3 字元: fundamental/cpp/2/char.md
         
   - About: about.md
   - License: license.md
