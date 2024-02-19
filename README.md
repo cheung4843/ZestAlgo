@@ -1,6 +1,6 @@
 # ZestAlgo Book
 
-[Book link](https://cheung4843.github.io/LMcpsBook/)
+[Book link](https://cheung4843.github.io/ZestAlgo/)
 
 
 ## 環境設定
