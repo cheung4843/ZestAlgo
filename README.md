@@ -1,5 +1,5 @@
 # ZestAlgo Book
-[![](docs\imgs\ZestAlgo_y.png)](https://cheung4843.github.io/ZestAlgo/)
+[![](docs/imgs/ZestAlgo_y.png)](https://cheung4843.github.io/ZestAlgo/)
 
 Click the image to visit the website.
 

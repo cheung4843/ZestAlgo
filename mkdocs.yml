@@ -71,8 +71,8 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-  logo: imgs\Zest.png
-  favicon: imgs\Zest.png
+  logo: imgs/Zest.png
+  favicon: imgs/Zest.png
   palette:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
