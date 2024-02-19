@@ -1,6 +1,6 @@
-site_name: LMcps Book
-site_url: https://cheung4843.github.io/LMcpsBook/
-repo_url: https://github.com/cheung4843/LMcpsBook
+site_name: ZestAlgo Book
+site_url: https://cheung4843.github.io/ZestAlgo/
+repo_url: https://github.com/cheung4843/ZestAlgo
 edit_uri: edit/main/docs/
 nav:
   - Home: index.md
@@ -77,6 +77,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      # primary: custom
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
@@ -93,10 +94,10 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-
-    
+    # - primary: custom
   accent: yellow
-  primary: light blue
+  primary: orange
+      
   highlightjs: true
   hljs_languages:
     - yaml
@@ -130,7 +131,7 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
   # - git-authors
-  # - git-committers:
-  #     repository: cheung4843/LMcpsBook
-  #     branch: main
+  - git-committers:
+      repository: cheung4843/ZestAlgo
+      branch: main
       

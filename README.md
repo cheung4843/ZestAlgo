@@ -1,4 +1,4 @@
-# LMcps Book
+# ZestAlgo Book
 
 [Book link](https://cheung4843.github.io/LMcpsBook/)
 
@@ -8,6 +8,7 @@
 * mkdocs 1.5.3
 * mkdocs-material 9.5.5
 * mkdocs-git-revision-date-localized-plugin 1.2.4
+* mkdocs-git-committers-plugin-2 2.2.3
 
 請先確保電腦有安裝 python 3.12.1 或以上的版本，接著安裝其他必要套件。
 
@@ -15,6 +16,7 @@
 pip install mkdocs
 pip install mkdocs-material
 pip install mkdocs-git-revision-date-localized-plugin
+pip install mkdocs-git-committers-plugin-2
 ```
 
 ## 協作規範
