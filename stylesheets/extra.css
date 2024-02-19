@@ -1,3 +1,10 @@
+/* primary: custom */
+:root {
+  --md-primary-fg-color:        #2E3440;
+  --md-primary-fg-color--light: #4C566A;
+  --md-primary-fg-color--dark:  #3B4252;
+}
+
 /* Apply the style to bold elements */
 strong {
     color: #EBCB8B !important;
