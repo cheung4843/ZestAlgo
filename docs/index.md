@@ -1,12 +1,12 @@
 # Hello ZestAlgo Book!
 ## Welcome to ZestAlgo
-<!-- <div align=center><img src=imgs\lmcps.png width=300 heigh=300></div> -->
+<div align=center><img src=imgs\ZestAlgo_y.png width=300 heigh=300></div>
 <!-- 黎明資訊社(LMcps)創立於2018年，指導者為李惠文老師。 -->
 
 本書的正確打開方式是**暗色模式**。
 
 ```py linenums="1"
-print("Hello LMcps Book!")
+print("Hello ZestAlgo Book!")
 print("Welcome to LMcps!")
 ```
 

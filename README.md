@@ -1,7 +1,7 @@
 # ZestAlgo Book
+[![](docs\imgs\ZestAlgo_y.png)](https://cheung4843.github.io/ZestAlgo/)
 
-[Book link](https://cheung4843.github.io/ZestAlgo/)
-
+Click the image to visit the website.
 
 ## 環境設定
 * python 3.12.1
