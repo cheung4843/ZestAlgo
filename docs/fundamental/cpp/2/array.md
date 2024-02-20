@@ -30,7 +30,7 @@ int main(){
 
 那讓我們回到一開始的問題，宣告100000個變數，我們只要這樣做，並存取它。
 
-```c++ linenums="1"
+```c++ linenums="1" title="第一種宣告方式"
 
 #include <iostream>
 
@@ -41,6 +41,24 @@ int main(){
     int a[100000];
 
     a[0] = 1; //write into memory
+
+    cout << a[0] << endl;
+
+    return 0;
+}
+
+```
+
+
+```c++ linenums="1" title="第二種宣告方式"
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    int a[] = {1,2,3,4,5};
 
     cout << a[0] << endl;
 
