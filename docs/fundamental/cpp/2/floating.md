@@ -177,7 +177,5 @@ $$ 正負（紅色的部份）* (1.藍色得部份)*2^(黃色的部份剪上特�
 C/C++除了提供了兩種精度的浮點數，分別為``float``和``double``，分別對應單精度與雙精度，還有提供更大範圍的精度，一般而言，double就已經很夠用了，但如果你需要更大的精準度，或者更大的範圍，你可以使用``long double``。
 
 
-## 練習
-
 !!! success "reference"
     1. https://en.cppreference.com/w/cpp/language/types#Range_of_values

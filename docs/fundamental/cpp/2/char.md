@@ -90,7 +90,5 @@ int main(){
 
 ```
 
-## 練習
-
 !!! success "reference"
     1.  [https://www.commfront.com/pages/ascii-chart](https://www.commfront.com/pages/ascii-chart)
