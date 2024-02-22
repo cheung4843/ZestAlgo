@@ -30,7 +30,7 @@ nav:
         - 2.3 字元: fundamental/cpp/2/char.md
         - 2.4 陣列: fundamental/cpp/2/array.md
         - 2.5 字串: fundamental/cpp/2/string.md
-        - 2.6 練習: fundamental/cpp/2/practive.md
+        - 2.6 練習: fundamental/cpp/2/practice.md
         
   - About: about.md
   - License: license.md
