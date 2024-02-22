@@ -2,7 +2,25 @@
 
 在經過前面的篇章，相信你對變數型態已經有一定的了解了！接下來我們將練習相關題目，以確保你真的有學進去！
 
+!!! warning "先試著寫寫看，不會的先試著透過網路查詢並理解，真的不行或者寫完再來看詳解！"
+
 ## 簡單加法
+
+```c++ linenums="1" title="範例程式"
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a, b;
+    cin >> a >> b;
+    cout << a + b << endl;
+
+    return 0;
+}
+
+
+```
 
 ## [糟糕，我發燒了！](https://zerojudge.tw/ShowProblem?problemid=d051)
 
