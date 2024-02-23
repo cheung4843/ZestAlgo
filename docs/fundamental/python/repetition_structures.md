@@ -346,6 +346,8 @@ step = 0
 ```python linenums="1"
 ```
 
+to be continued...
+
 ## Practice
 !!! success ""
     Itsa - [[C_MM03-易] 兩數總和](https://e-tutor.itsa.org.tw/mod/programming/view.php?id=6861)

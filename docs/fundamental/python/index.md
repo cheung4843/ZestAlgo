@@ -3,8 +3,10 @@
 
 在每一章的最後都會放上一些練習題，請嘗試完成他們!
 
-你會在文章中看到很多歌曲，這些多半是我在撰寫文章的時候我剛好在聽的歌曲。
+你會在文章中看到很多歌，這些多半是我在撰寫文章的時候剛好在聽的歌。
 
 [Tears For Fears - Everybody Wants To Rule The World](https://www.youtube.com/watch?v=tSBWmxwT8So)
+
+因為這個專案正在早期開發階段，所以動畫與圖片將會在未來加入。
 
 最後，祝你學習愉快!
