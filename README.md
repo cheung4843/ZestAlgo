@@ -19,6 +19,16 @@ pip install mkdocs-git-revision-date-localized-plugin
 pip install mkdocs-git-committers-plugin-2
 ```
 
+請先參考 [MkDocs](https://www.mkdocs.org/) 與 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 了解基本的使用方式。 
+
+請記住最重要的指令:
+
+```bash
+mkdocs serve
+```
+
+這個指令會啟動一個本地伺服器，並且會自動更新網頁，只要你修改了任何檔案。
+
 ## 協作規範
 請先至[協作請求通知](https://github.com/cheung4843/LMcpsBook/discussions/16)，告訴我您的計畫，並等待我們的回覆。
 
@@ -90,13 +100,13 @@ LMcps Book
 
 
 ### 3. Commit 規範
-第一行根據操作類型分為四種，分別為 `add`、`modified`、`delete`、`feat`，第二行為說明修改的詳細內容。
+第一行根據操作類型分為五種，分別為 `add`、`modified`、`delete`、`feat, fix`，第二行為說明修改的詳細內容。
 
 * add: file name 1, file name 2,...etc
 * modified: file name 1, file name 2, ... etc
 * delete: file name 1 , file name 2, ... etc
 * feat: feature description
-
+* fix: fix description
 
 例如: 
 

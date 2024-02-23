@@ -31,9 +31,14 @@ nav:
         - 2.4 陣列: fundamental/cpp/2/array.md
         - 2.5 字串: fundamental/cpp/2/string.md
         - 2.6 練習: fundamental/cpp/2/practice.md
-        
-  - About: about.md
-  - License: license.md
+  - Algorithm:
+    - algorithm/index.md
+  - Data Structure:
+    - data_structure/index.md
+  - Useful Packages:
+    - useful_packages/index.md
+    - Tkinter:
+      - useful_packages/tkinter/index.md
   - Blog:
     - blog/index.md
 
@@ -45,11 +50,11 @@ markdown_extensions:
   # MathJax
   - pymdownx.arithmatex:
       generic: true
-  # callout:
+  # callout
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  # 程式碼高亮
+  # code highlight
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -61,9 +66,12 @@ markdown_extensions:
 
 theme:
   name: material
+  custom_dir: overrides
   icon:
     repo: fontawesome/brands/github-alt
   features:
+    # header above the content
+    - header.autohide
     - announce.dismiss
     - content.action.edit
     - content.action.view
@@ -141,6 +149,8 @@ plugins:
       enable_creation_date: true
   # - git-authors
   - git-committers:
+      # disabled when building, don't care the error that show in your editor
+      enabled: !ENV [CI, false]
       repository: cheung4843/ZestAlgo
       branch: main
       

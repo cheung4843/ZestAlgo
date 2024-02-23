@@ -194,7 +194,7 @@ print(music_info)
 
 [Lazer Boomerang - Time To Pretend (Official Audio)](https://youtu.be/IXisGwqkJPo?si=QcUtwDoFKqJxyJ0E)
 
-我們可以修改串列中的值，這稱為 **可變動的(mutable)**，而字串則不行，這稱為 **不可變動的(immutable)**。
+我們可以修改串列中的值，這稱為**可變動的(mutable)**，而字串則不行，這稱為**不可變動的(immutable)**。
 
 ```python linenums="1"
 sad_cat = "😿"
