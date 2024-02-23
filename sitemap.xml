@@ -6,12 +6,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cheung4843.github.io/ZestAlgo/about/</loc>
-         <lastmod>2024-02-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cheung4843.github.io/ZestAlgo/license/</loc>
+         <loc>https://cheung4843.github.io/ZestAlgo/algorithm/</loc>
          <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -27,6 +22,11 @@
     </url>
     <url>
          <loc>https://cheung4843.github.io/ZestAlgo/blog/2024/02/19/%E7%B6%B2%E7%AB%99%E7%9A%84%E6%96%B0%E5%90%8D%E5%AD%97/</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cheung4843.github.io/ZestAlgo/data_structure/</loc>
          <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
