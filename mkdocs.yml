@@ -23,13 +23,14 @@ nav:
       - fundamental/cpp/index.md
       - 0. 環境架設: fundamental/cpp/create_env.md
       - 1. Hello World(輸出與輸入): fundamental/cpp/hello_world.md
+  - Algorithm:
+    - algorithm/index.md
+  - Data Structure:
+    - data_structure/index.md
   - Useful Packages:
     - useful_packages/index.md
     - Tkinter:
       - useful_packages/tkinter/index.md
-      
-  - About: about.md
-  - License: license.md
   - Blog:
     - blog/index.md
 
