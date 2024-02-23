@@ -36,11 +36,11 @@ markdown_extensions:
   # MathJax
   - pymdownx.arithmatex:
       generic: true
-  # callout:
+  # callout
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  # 程式碼高亮
+  # code highlight
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -52,9 +52,12 @@ markdown_extensions:
 
 theme:
   name: material
+  custom_dir: overrides
   icon:
     repo: fontawesome/brands/github-alt
   features:
+    # header above the content
+    - header.autohide
     - announce.dismiss
     - content.action.edit
     - content.action.view
@@ -132,6 +135,8 @@ plugins:
       enable_creation_date: true
   # - git-authors
   - git-committers:
+      # disabled when building, don't care the error that show in your editor
+      enabled: !ENV [CI, false]
       repository: cheung4843/ZestAlgo
       branch: main
       
