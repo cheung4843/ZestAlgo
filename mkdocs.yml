@@ -25,6 +25,7 @@ nav:
       - 1. Hello World(輸出與輸入): fundamental/cpp/hello_world.md
   - Algorithm:
     - algorithm/index.md
+    - What is Algorithm: algorithm/what_is_algo.md
   - Data Structure:
     - data_structure/index.md
   - Useful Packages:
@@ -54,6 +55,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  # Diagrams
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   
 
 theme:
