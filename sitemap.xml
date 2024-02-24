@@ -16,6 +16,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://cheung4843.github.io/ZestAlgo/algorithm/basic_algo/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cheung4843.github.io/ZestAlgo/algorithm/basic_algo/binary_search/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cheung4843.github.io/ZestAlgo/algorithm/basic_algo/linear_search/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://cheung4843.github.io/ZestAlgo/blog/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>
@@ -46,12 +61,52 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cheung4843.github.io/ZestAlgo/fundamental/cpp/create_env/</loc>
+         <loc>https://cheung4843.github.io/ZestAlgo/fundamental/cpp/0/create_env/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cheung4843.github.io/ZestAlgo/fundamental/cpp/hello_world/</loc>
+         <loc>https://cheung4843.github.io/ZestAlgo/fundamental/cpp/1/hello_world/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cheung4843.github.io/ZestAlgo/fundamental/cpp/2/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cheung4843.github.io/ZestAlgo/fundamental/cpp/2/array/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cheung4843.github.io/ZestAlgo/fundamental/cpp/2/char/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cheung4843.github.io/ZestAlgo/fundamental/cpp/2/floating/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cheung4843.github.io/ZestAlgo/fundamental/cpp/2/interger/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cheung4843.github.io/ZestAlgo/fundamental/cpp/2/practice/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cheung4843.github.io/ZestAlgo/fundamental/cpp/2/practive/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cheung4843.github.io/ZestAlgo/fundamental/cpp/2/string/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
