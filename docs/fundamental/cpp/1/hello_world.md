@@ -230,6 +230,7 @@ int main(){
 
 ## Practice
 
+
 在這篇文章中，你學到了:
 !!! info
     1. 如何使用 cout與cin
@@ -249,9 +250,7 @@ int main(){
         string word;
         cin >> word;
         cout << "hello, " << word << endl;
-
         return 0;
     }
 
     ```
-    
