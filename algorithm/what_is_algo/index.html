@@ -1059,6 +1059,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Big O Notation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculating_big_o" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Big O
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common_big_o" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Big O
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other_notations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Notations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice
+    </span>
+  </a>
+  
 </li>
       
     </ul>
@@ -1527,6 +1569,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Big O Notation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculating_big_o" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Big O
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common_big_o" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Big O
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other_notations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Notations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice
+    </span>
+  </a>
+  
 </li>
       
     </ul>
@@ -1636,7 +1720,7 @@ F --&gt; B;</code></pre>
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a>hello, Algorithm!
 </span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a>hello, Algorithm!
 </span></code></pre></div></td></tr></table></div>
-<p>我定義 <span class="arithmatex">\(f(n)=n^{2}+2n+3\)</span> 來代表輸入 <span class="arithmatex">\(n\)</span>，會印出 <code>hello, Algorithm!</code> 的次數，</p>
+<p>定義 <span class="arithmatex">\(f(n)=n^{2}+2n+3\)</span> 來代表輸入 <span class="arithmatex">\(n\)</span>，會印出 <code>hello, Algorithm!</code> 的次數，</p>
 <p>而 <span class="arithmatex">\(f(2)=11\)</span>，也就是說當 <span class="arithmatex">\(n=2\)</span> 時，我們的演算法會印出 <code>hello, Algorithm!</code> <span class="arithmatex">\(11\)</span> 次。</p>
 <p>這稱為<strong>時間複雜度(Time Complexity)</strong>，而既然有時間複雜度，那當然也有<strong>空間複雜度(Space Complexity)</strong>，這是指演算法執行時所需要的記憶體空間，例如: 陣列的大小、變數的數量等等。</p>
 <p>再舉一個例子，反轉一個串列，提供了兩種解法:</p>
@@ -1682,7 +1766,7 @@ F --&gt; B;</code></pre>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>[5, 4, 3, 2, 1]
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>[5, 4, 3, 2, 1]
 </span></code></pre></div></td></tr></table></div>
-<p>我定義 <span class="arithmatex">\(g(n)\)</span> 來代表輸入 <span class="arithmatex">\(n\)</span>，演算法所需要的額外空間，例如 <span class="arithmatex">\(g(n)=n\)</span>，也就是說當 <span class="arithmatex">\(n=5\)</span> 時，我們的演算法會需要 <span class="arithmatex">\(5\)</span> 個空間，或者說是需要大小為 <span class="arithmatex">\(5\)</span> 的串列。</p>
+<p>定義 <span class="arithmatex">\(g(n)\)</span> 來代表輸入 <span class="arithmatex">\(n\)</span>，演算法所需要的額外空間，例如 <span class="arithmatex">\(g(n)=n\)</span>，也就是說當 <span class="arithmatex">\(n=5\)</span> 時，我們的演算法會需要 <span class="arithmatex">\(5\)</span> 個空間，或者說是需要大小為 <span class="arithmatex">\(5\)</span> 的串列。</p>
 <p>試著比較上述兩個反轉串列的演算法:</p>
 <table>
 <thead>
@@ -1711,7 +1795,7 @@ F --&gt; B;</code></pre>
 <h2 id="big_o_notation">Big O Notation<a class="headerlink" href="#big_o_notation" title="Permanent link">¶</a></h2>
 <p>這時候就要介紹<strong>大 O 符號(Big O Notation)</strong>了，它是<strong>漸近符號(Asymptotic Notation)</strong>的一種，用來描述一個演算法在「最壞情況」下的時間複雜度，所以說它是一種<em>上界(Upper Bound)</em>，也通常指輸入資料的規模趨近無窮大時的行為，也就是 <span class="arithmatex">\(n\)</span> 很大的時候。</p>
 <p>例如: 當 <span class="arithmatex">\(n \to \infty\)</span>，<span class="arithmatex">\(f(n)=n^{2}+2n+3\)</span> 的行為就是 <span class="arithmatex">\(\mathcal{O}(n^{2})\)</span>，因為當 <span class="arithmatex">\(n\)</span> 很大的時候，<span class="arithmatex">\(n^{2}\)</span> 會遠遠大於 <span class="arithmatex">\(2n+3\)</span>，所以可以忽略掉 <span class="arithmatex">\(2n+3\)</span>。</p>
-<p>我們來看正式定義:</p>
+<p>我們來看較為正式的定義:</p>
 <div class="admonition quote">
 <p class="admonition-title">Big O</p>
 <div class="arithmatex">\[f(n) \text{ and } g(n) \text{ are two functions.}\]</div>
@@ -1719,9 +1803,156 @@ F --&gt; B;</code></pre>
 </div>
 <p>先別急著關掉啦，先用中文解釋一下:</p>
 <p><span class="arithmatex">\(f(n)\)</span> 和 <span class="arithmatex">\(g(n)\)</span> 是兩個函數，若且唯若存在常數 <span class="arithmatex">\(c\)</span> 和 <span class="arithmatex">\(n_0\)</span>，對於所有大於等於 <span class="arithmatex">\(n_0\)</span> 的 <span class="arithmatex">\(n\)</span>，使得 <span class="arithmatex">\(f(n)\)</span> 小於等於 <span class="arithmatex">\(c*g(n)\)</span>。</p>
-<p>其中 <span class="arithmatex">\(\mathcal{O}(g(n))\)</span> 是一個函數集合，它包含了所有以 <span class="arithmatex">\(g(n)\)</span> 為上界的函數，而 <span class="arithmatex">\(f(n)=\mathcal{O(g(n))}\)</span> 與 <span class="arithmatex">\(f(n) \in \mathcal{O(g(n))}\)</span> 都是代表 <span class="arithmatex">\(f(n)\)</span> 屬於 <span class="arithmatex">\(\mathcal{O}(g(n))\)</span> 的一員，看你習慣用哪一個符號。</p>
-<p>我覺得這樣還不夠清楚，我們直接看例子:</p>
-<p>我定義 <span class="arithmatex">\(f(n)=2n+1,g(n)=n\)</span>，以及 <span class="arithmatex">\(c=3,h(n)=3g(n)=3n\)</span>，我們來看 <span class="arithmatex">\(f(n)\)</span> 是否屬於 <span class="arithmatex">\(\mathcal{O}(g(n))\)</span>，請看下圖:</p>
+<p>其中 <span class="arithmatex">\(\mathcal{O}(g(n))\)</span> 是一個函數集合，它包含了所有以 <span class="arithmatex">\(c*g(n)\)</span> 為上界的函數，而 <span class="arithmatex">\(f(n)=\mathcal{O}(g(n))\)</span> 與 <span class="arithmatex">\(f(n) \in \mathcal{O}(g(n))\)</span> 都是代表 <span class="arithmatex">\(f(n)\)</span> 屬於 <span class="arithmatex">\(\mathcal{O}(g(n))\)</span> 的一員，看你習慣用哪一種符號。</p>
+<p>但覺得這樣還不夠清楚，我們直接來看例子:</p>
+<p>定義 <span class="arithmatex">\(f(n)=2n+1,g(n)=n\)</span>，以及 <span class="arithmatex">\(c=3,h(n)=c*g(n)=3n\)</span>，來看 <span class="arithmatex">\(f(n)\)</span> 是否屬於 <span class="arithmatex">\(\mathcal{O}(g(n))\)</span>，請看下圖:</p>
+<p><img alt="" src="../media/1_what_is_algo_1.png" /></p>
+<p><span class="arithmatex">\(h(n)\)</span> 與 <span class="arithmatex">\(f(n)\)</span> 交於 <span class="arithmatex">\((1,3)\)</span>，那麼 <span class="arithmatex">\(n_0=1\)</span>，且當 <span class="arithmatex">\(n \ge n_0\)</span> 時，<span class="arithmatex">\(f(n)\)</span> 會小於等於 <span class="arithmatex">\(h(n)\)</span>，根據定義，我們找的到 <span class="arithmatex">\(c\)</span> 和 <span class="arithmatex">\(n_0\)</span>，所以 <span class="arithmatex">\(f(n)=\mathcal{O}(g(n))=\mathcal{O}(n)\)</span>。</p>
+<p>再舉一個例子，定義 <span class="arithmatex">\(f(n)=n+2, g(n)=n^{2}, c=1,g(n)=cg(n)\)</span>，直接看圖:</p>
+<p><img alt="" src="../media/1_what_is_algo_2.png" /></p>
+<p><span class="arithmatex">\(g(n)\)</span> 與 <span class="arithmatex">\(f(n)\)</span> 交於 <span class="arithmatex">\((2,4)\)</span>，那麼 <span class="arithmatex">\(n_0=2\)</span>，且當 <span class="arithmatex">\(n \ge n_0\)</span> 時，<span class="arithmatex">\(f(n)\)</span> 會小於等於 <span class="arithmatex">\(c*g(n)\)</span>，根據定義，我們找的到 <span class="arithmatex">\(c\)</span> 和 <span class="arithmatex">\(n_0\)</span>，所以 <span class="arithmatex">\(f(n)=\mathcal{O}(g(n))=\mathcal{O}(n^{2})\)</span>。</p>
+<p>在這個例子中，<span class="arithmatex">\(n+2=\mathcal{O}(n^2)\)</span>，但你可以從第一個例子中類推出 <span class="arithmatex">\(n+2=\mathcal{O}(n)\)</span>，根據定義，前者也是對的，但我們應該選擇更接近的上界 <span class="arithmatex">\(\mathcal{O}(n)\)</span> ，因為更能表現 <span class="arithmatex">\(n+2\)</span> 的行為，當然，<span class="arithmatex">\(n+2=O(n\log_{}n)=O(n^2)=O(n^3)=O(n!)\cdots\)</span> 也都是對的。</p>
+<h3 id="calculating_big_o">Calculating Big O<a class="headerlink" href="#calculating_big_o" title="Permanent link">¶</a></h3>
+<p>那麼如何計算一個函數的大 <span class="arithmatex">\(\mathcal{O}\)</span> 符號呢?只要記住以下原則:</p>
+<ol>
+<li>忽略常數與係數，例如: <span class="arithmatex">\(f(n)=114514\)</span>，那麼 <span class="arithmatex">\(f(n)=\mathcal{O}(1)\)</span>，比較特別的是因為輸入資料的規模不會影響 <span class="arithmatex">\(f(n)\)</span> 的值，<span class="arithmatex">\(\mathcal{O}(1)\)</span> 又稱為<em>常數時間</em>。</li>
+<li>只保留最高次項，例如: <span class="arithmatex">\(f(n)=n^2+2n+3\)</span>，那麼 <span class="arithmatex">\(f(n)=\mathcal{O}(n^2)\)</span>。</li>
+<li>不在乎對數的底數，例如: <span class="arithmatex">\(f(n)=n\log_{2}n\)</span>，那麼 <span class="arithmatex">\(f(n)=\mathcal{O}(n\log_{}n)\)</span>。</li>
+</ol>
+<h3 id="common_big_o">Common Big O<a class="headerlink" href="#common_big_o" title="Permanent link">¶</a></h3>
+<p>以下是一些常見的大 <span class="arithmatex">\(\mathcal{O}\)</span> 符號:</p>
+<ol>
+<li><span class="arithmatex">\(\mathcal{O}(1)\)</span>: 常數時間，例如: 存取陣列的元素</li>
+<li><span class="arithmatex">\(\mathcal{O}(\log_{}n)\)</span>: 對數時間，例如: <em>二元搜尋法(Binary Search)</em></li>
+<li><span class="arithmatex">\(\mathcal{O}(n)\)</span>: 線性時間，例如: 找出陣列中的最大值</li>
+<li><span class="arithmatex">\(\mathcal{O}(n\log_{}n)\)</span>: 線性對數時間，例如: <em>快速排序(Quick Sort)</em></li>
+<li><span class="arithmatex">\(\mathcal{O}(n^2)\)</span>: 平方時間，例如: <em>泡沫排序(Bubble Sort)</em></li>
+<li><span class="arithmatex">\(\mathcal{O}(n^3)\)</span>: 立方時間，例如: <em>矩陣乘法</em></li>
+<li><span class="arithmatex">\(\mathcal{O}(2^n)\)</span>: 指數時間，例如: <em>遞迴費氏數列(Fibonacci Sequence)</em></li>
+<li><span class="arithmatex">\(\mathcal{O}(n!)\)</span>: 階乘時間，例如: <em>旅行推銷員問題(Travelling Salesman Problem)</em></li>
+</ol>
+<p><img alt="" src="../media/1_what_is_algo_3.png" /></p>
+<p>這個參考就好喔，看過去就好，不用背。</p>
+<h2 id="other_notations">Other Notations<a class="headerlink" href="#other_notations" title="Permanent link">¶</a></h2>
+<p>除了大 <span class="arithmatex">\(\mathcal{O}\)</span> 符號外，還有其他的漸近符號:</p>
+<ol>
+<li>Big Omega: <span class="arithmatex">\(\Omega(g(n))\)</span>，用來描述一個演算法在「最佳情況」下的時間複雜度，也就是<em>下界(Lower Bound)</em>。</li>
+<li>Big Theta: <span class="arithmatex">\(\Theta(g(n))\)</span>，用來描述一個演算法在「平均情況」下的時間複雜度，也就是<em>上界(Upper Bound)</em>和<em>下界(Lower Bound)</em>的交集。</li>
+</ol>
+<p>但大 <span class="arithmatex">\(\mathcal{O}\)</span> 符號就夠用了，這兩個符號不用太過於深究。</p>
+<p>來個總結吧:</p>
+<div class="arithmatex">\[\text{if } f(n)=3n+2 \text{ then:}\]</div>
+<div class="arithmatex">\[\underbrace{1 \lt \log_{}n \lt \sqrt{n} \lt n^{\frac{2}{3}}}_\text{lower bound, including Ω(n)} \lt \overbrace{n}^\text{Average bound, Θ(n)} \lt  \underbrace{n\log_{}n \lt n^2 \lt n^3 \lt \cdots \lt 2^n \lt \cdots \lt n^n}_\text{upper bound, including O(n)}\]</div>
+<p>一樣，看看就好，只是為了讓你知道還有其他的符號。</p>
+<p>看了那麼多，休息一下，聽首歌吧!</p>
+<p><a href="https://www.youtube.com/watch?v=dvgZkm1xWPE">Coldplay - Viva La Vida</a></p>
+<h2 id="practice">Practice<a class="headerlink" href="#practice" title="Permanent link">¶</a></h2>
+<div class="admonition question">
+<p class="admonition-title">Practice 1</p>
+<p>請問下方程式的時間複雜度是多少?
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span>
+<span class="normal"><a href="#__codelineno-4-6">6</a></span>
+<span class="normal"><a href="#__codelineno-4-7">7</a></span>
+<span class="normal"><a href="#__codelineno-4-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a>        <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div></p>
+</div>
+<details class="note">
+<summary>Answer 1</summary>
+<p><span class="arithmatex">\(0+1+2+\cdots+(n-1)=\sum_{i=0}^{n-1}i=\frac{(n-1)n}{2}=\frac{n^2-n}{2}=\mathcal{O}(n^2)\)</span></p>
+<p>這個複雜度在介紹排序演算法時會再次提到。</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Practice 2</p>
+<p>請問下方程式的時間複雜度是多少?
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span>
+<span class="normal"><a href="#__codelineno-5-6">6</a></span>
+<span class="normal"><a href="#__codelineno-5-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">64</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="k">while</span> <span class="n">i</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div></p>
+</div>
+<details class="note">
+<summary>Answer 2</summary>
+<p>很直觀的，<span class="arithmatex">\(i^2=n\)</span>，所以 <span class="arithmatex">\(i=\sqrt{n}\)</span>，所以時間複雜度是 <span class="arithmatex">\(\mathcal{O}(\sqrt{n})\)</span>。</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Practice 3</p>
+<p>請問函式 <code>search</code> 的最佳、最壞、平均時間複雜度是多少?
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)):</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a>        <span class="k">if</span> <span class="n">lst</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a>            <span class="k">return</span> <span class="n">i</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5"></a>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7"></a>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div></p>
+</div>
+<details class="note">
+<summary>Answer 3</summary>
+<p>最佳狀況就是第一個元素就是目標，最壞狀況就是目標不存在或是他是最後一個元素，平均狀況就是目標在串列的中間，所以時間複雜度是 <span class="arithmatex">\(\mathcal{O}(1),\mathcal{O}(n),\mathcal{O}(n/2)\)</span>。</p>
+<p>這個函式就是<em>線性搜尋法(Linear Search)</em>，在後面的章節會再次提到。</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Practice 4</p>
+<p>請問函式 <code>factorial</code> 的時間複雜度是多少?
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a>        <span class="k">return</span> <span class="mi">1</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a>    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div></p>
+</div>
+<details class="note">
+<summary>Answer 4</summary>
+<p>別害怕，這是一個遞迴函式，畫出流程圖:</p>
+<pre class="mermaid"><code>graph LR
+    A["factorial(2)"] --&gt;|"2 != 0"| B["2 * factorial(1)"]
+    B --&gt;|"1 != 0"| C["1 * factorial(0)"]
+    C --&gt;|"0 == 0"| D["1"]
+    D --&gt;|return| C
+    C --&gt;|return| B
+    B --&gt;|return| A</code></pre>
+<p>直到 <span class="arithmatex">\(n=0\)</span> 時，才會結束遞迴，接著向上返回，所以時間複雜度是 <span class="arithmatex">\(\mathcal{O}(n)\)</span>。</p>
+</details>
 
 
 
@@ -1744,7 +1975,7 @@ F --&gt; B;</code></pre>
     <span class="md-icon" title="最後更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 23, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2024</span>
   </span>
 
     
@@ -1754,11 +1985,34 @@ F --&gt; B;</code></pre>
     <span class="md-icon" title="建立日期">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 23, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2024</span>
   </span>
 
     
     
+    
+      
+  <span class="md-source-file__fact">
+    
+      
+  <span class="md-icon" title="貢獻者">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </span>
+  <span>GitHub</span>
+
+    
+    <nav>
+      
+        <a href="https://github.com/cheung4843" class="md-author" title="@cheung4843">
+          
+          <img src="https://avatars.githubusercontent.com/u/46809977?v=4&size=72" alt="cheung4843">
+        </a>
+      
+      
+      
+    </nav>
+  </span>
+
     
   </aside>
 
