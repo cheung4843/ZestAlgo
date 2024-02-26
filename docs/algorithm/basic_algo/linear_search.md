@@ -14,20 +14,44 @@
 
 直接來看程式碼，定義 `linear_search(lst, target)` 函式，這個函式接受一個串列 `lst` 和一個目標值 `target`，回傳目標值在串列中的索引，如果目標值不存在就回傳 `-1`。
 
-``` python linenums='1'
-def linear_search(lst, target):
-    for i in range(len(lst)):
-        if lst[i] == target:
-            return i
+=== "Python"
+    ``` python linenums='1' title="linear_search.py"
+    def linear_search(lst, target):
+        for i in range(len(lst)):
+            if lst[i] == target:
+                return i
 
-    return -1
+        return -1
 
 
-a = [4, 8, 4, 3, 1, 2, 3, 0]
-print(linear_search(a, 4))
-print(linear_search(a, 0))
-print(linear_search(a, 10))
-```
+    a = [4, 8, 4, 3, 1, 2, 3, 0]
+    print(linear_search(a, 4))
+    print(linear_search(a, 0))
+    print(linear_search(a, 10))
+    ```
+=== "C++"
+    ``` cpp linenums='1' title="linear_search.cpp"
+    #include <iostream>
+    #include <vector>
+    using namespace std;
+
+    int linear_search(vector<int> &lst, int target) {
+        for (int i = 0; i < lst.size(); i++) {
+            if (lst[i] == target) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    int main() {
+        vector<int> a = {4, 8, 4, 3, 1, 2, 3, 0};
+        cout << linear_search(a, 4) << endl;
+        cout << linear_search(a, 0) << endl;
+        cout << linear_search(a, 10) << endl;
+    }
+    ```
 
 ``` title="Output" linenums="1"
 0

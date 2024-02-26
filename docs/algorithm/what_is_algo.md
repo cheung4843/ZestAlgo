@@ -11,7 +11,11 @@
 
 這樣就好了，並不用對定義太過於嚴格，會寫更重要，**演算法就是一個解決問題的方法**。
 
-你可能有聽過流程圖，這是一個很好用來視覺化演算法的方法，例如之前在 [Repetiton Structures](../fundamental/python/repetition_structures.md) 有提到的 Collatz Conjecture，我們可以用流程圖來表示:
+你可能有聽過流程圖，這是一個很好用來視覺化演算法的方法，例如之前在 [Repetiton Structures - While loop](../fundamental/python/repetition_structures.md#while_loop) 有提到的 Collatz Conjecture，我們可以用流程圖來表示:
+
+$$
+f(n)=\begin{cases}\frac{n}{2}, & \text{if } n \text{ is even} \\ 3n+1, & \text{if } n \text{ is odd}\end{cases}
+$$
 
 ``` mermaid
 graph LR
@@ -66,11 +70,11 @@ hello, Algorithm!
 hello, Algorithm!
 ```
 
-定義 $f(n)=n^{2}+2n+3$ 來代表輸入 $n$，會印出 `hello, Algorithm!` 的次數，
+定義 $f(n)=n^{2}+2n+3$ 來代表輸入 $n$，會印出 `hello, Algorithm!` 的次數之間的關係。
 
 而 $f(2)=11$，也就是說當 $n=2$ 時，我們的演算法會印出 `hello, Algorithm!` $11$ 次。
 
-這稱為**時間複雜度(Time Complexity)**，而既然有時間複雜度，那當然也有**空間複雜度(Space Complexity)**，這是指演算法執行時所需要的記憶體空間，例如: 陣列的大小、變數的數量等等。
+稱 $f(n)$ 為這個演算法的**時間複雜度(Time Complexity)**，而既然有時間複雜度，那當然也有**空間複雜度(Space Complexity)**，這是指演算法執行時所需要的記憶體空間，例如: 陣列的大小、變數的數量等等。
 
 再舉一個例子，反轉一個串列，提供了兩種解法:
 
@@ -116,7 +120,10 @@ print(reverse_list2([1, 2, 3, 4, 5]))
 
 這樣的比較方式，可以幫助我們選擇適合的演算法，並且評估演算法的好壞，但是這樣還稍嫌麻煩，有沒有更清楚且簡單的方法呢?
 
+為接下來的內容先打個預防針，因為數學符號有點多，如果真的看不懂，可以直接跳到 [Calculating Big O](#calculating_big_o)，但還是請你試著多看幾次，我相信你可以。
+
 ## Big O Notation
+### Definition
 這時候就要介紹**大 O 符號(Big O Notation)**了，它是**漸近符號(Asymptotic Notation)**的一種，用來描述一個演算法在「最壞情況」下的時間複雜度，所以說它是一種*上界(Upper Bound)*，也通常指輸入資料的規模趨近無窮大時的行為，也就是 $n$ 很大的時候。
 
 例如: 當 $n \to \infty$，$f(n)=n^{2}+2n+3$ 的行為就是 $\mathcal{O}(n^{2})$，因為當 $n$ 很大的時候，$n^{2}$ 會遠遠大於 $2n+3$，所以可以忽略掉 $2n+3$。
@@ -131,19 +138,25 @@ print(reverse_list2([1, 2, 3, 4, 5]))
 
 先別急著關掉啦，先用中文解釋一下:
 
-$f(n)$ 和 $g(n)$ 是兩個函數，若且唯若存在常數 $c$ 和 $n_0$，對於所有大於等於 $n_0$ 的 $n$，使得 $f(n)$ 小於等於 $c*g(n)$。
+$f(n)$ 和 $g(n)$ 是兩個函數，若且唯若**存在常數 $c$ 和 $n_0$**，對於所有*大於等於* $n_0$ 的 $n$，使得 $f(n)$ *小於等於* $c*g(n)$，那麼 $f(n)$ 就屬於 $\mathcal{O}(g(n))$。
 
-其中 $\mathcal{O}(g(n))$ 是一個函數集合，它包含了所有以 $c*g(n)$ 為上界的函數，而 $f(n)=\mathcal{O}(g(n))$ 與 $f(n) \in \mathcal{O}(g(n))$ 都是代表 $f(n)$ 屬於 $\mathcal{O}(g(n))$ 的一員，看你習慣用哪一種符號。
+其中 $\mathcal{O}(g(n))$ 是一個*函數集合*，它包含了所有以 $c*g(n)$ 為上界的函數，而 $f(n)=\mathcal{O}(g(n))$ 與 $f(n) \in \mathcal{O}(g(n))$ 都是代表 $f(n)$ 屬於 $\mathcal{O}(g(n))$ 的一員，看你習慣用哪一種符號。
 
-但覺得這樣還不夠清楚，我們直接來看例子:
+還是不太懂，那我用更白話的方式還有我們熟悉的 $f(x)$ 來解釋:
 
-定義 $f(n)=2n+1,g(n)=n$，以及 $c=3,h(n)=c*g(n)=3n$，來看 $f(n)$ 是否屬於 $\mathcal{O}(g(n))$，請看下圖:
+有兩個函數 $f(x)$ 和 $g(x)$ 在二維的座標平面上，我如果找的到**一個倍數 $c$ 和一條鉛直線 $x=n_0$**，使得 $f(x)$ *在鉛直線右方($x \ge n_0$)*，$f(x)$ 的圖形都在 $c*g(x)$ 的*下方*，那麼 $f(x)$ 就屬於 $\mathcal{O}(g(x))$。
+
+注意看強調的文字喔，白話的解釋應該能讓你在腦海中有畫面。
+
+但覺得這樣還不夠清楚，我們直接來看例子，我相信你能看懂!
+
+定義 $f(n)=2n+1, \ g(n)=n$，以及 $c=3, \ h(n)=c*g(n)=3n$，來看 $f(n)$ 是否屬於 $\mathcal{O}(g(n))$，請看下圖:
 
 ![](./media/1_what_is_algo_1.png)
 
 $h(n)$ 與 $f(n)$ 交於 $(1,3)$，那麼 $n_0=1$，且當 $n \ge n_0$ 時，$f(n)$ 會小於等於 $h(n)$，根據定義，我們找的到 $c$ 和 $n_0$，所以 $f(n)=\mathcal{O}(g(n))=\mathcal{O}(n)$。
 
-再舉一個例子，定義 $f(n)=n+2, g(n)=n^{2}, c=1,g(n)=cg(n)$，直接看圖:
+再舉一個例子，定義 $f(n)=n+2,\ g(n)=n^{2},\ c=1,g(n)=cg(n)$，直接看圖:
 
 ![](./media/1_what_is_algo_2.png)
 
@@ -209,6 +222,8 @@ $$\underbrace{1 \lt \log_{}n \lt \sqrt{n} \lt n^{\frac{2}{3}}}_\text{lower bound
     ```
 
 ??? note "Answer 1"
+    內層迴圈的執行次數取決於外層迴圈的 `i` 值，因此，第一次執行 $0$ 次，第二次執行 $1$ 次，第三次執行 $2$ 次，以此類推，所以時間複雜度是:
+
     $0+1+2+\cdots+(n-1)=\sum_{i=0}^{n-1}i=\frac{(n-1)n}{2}=\frac{n^2-n}{2}=\mathcal{O}(n^2)$
 
     這個複雜度在介紹排序演算法時會再次提到。
@@ -227,7 +242,7 @@ $$\underbrace{1 \lt \log_{}n \lt \sqrt{n} \lt n^{\frac{2}{3}}}_\text{lower bound
     ```
 
 ??? note "Answer 2"
-    很直觀的，$i^2=n$，所以 $i=\sqrt{n}$，所以時間複雜度是 $\mathcal{O}(\sqrt{n})$。
+    $i^2=n$，所以 $i=\sqrt{n}$，所以時間複雜度是 $\mathcal{O}(\sqrt{n})$。
 
 
 !!! question "Practice 3"
