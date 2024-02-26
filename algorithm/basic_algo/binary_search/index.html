@@ -1368,6 +1368,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#why_it_works" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it works?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#find_the_insert_position" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find the insert position
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1844,6 +1862,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#why_it_works" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it works?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#find_the_insert_position" class="md-nav__link">
+    <span class="md-ellipsis">
+      Find the insert position
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1909,6 +1945,8 @@
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>[1, 4, 9, 16, 25]
 </span></code></pre></div></td></tr></table></div>
 <p>最後一個例子是想跟你強調，<em>函數也可以用二元搜尋法</em>，例如想要找第一個 <span class="arithmatex">\(f(x) \ge 10\)</span> 的整數 <span class="arithmatex">\(x\)</span>，我們可以用二元搜尋法找到 <span class="arithmatex">\(x=4\)</span>。</p>
+<p>那麼 <code>['I', 'n', 't', 'e', 'r', 's', 't', 'e', 'l', 'l', 'a', 'r']</code> 能用二元搜尋法嗎?答案應該是不能啦，但如果你找的到一個神奇的函式 <span class="arithmatex">\(Magic(x)\)</span>，可以將這個序列經過映射後變成單調的，那算你厲害，但是，又要找什麼呢?</p>
+<p><a href="https://www.youtube.com/watch?v=UDVtMYqUAyw">Interstellar Main Theme - Extra Extended - Soundtrack by Hans Zimmer</a></p>
 <h2 id="complexity">Complexity<a class="headerlink" href="#complexity" title="Permanent link">¶</a></h2>
 <p>玩過猜數字嗎?你每猜一次，我會告訴你猜的數字是太大還是太小，讓你從 <span class="arithmatex">\([1, 100]\)</span> 間猜一個數字，怎麼猜會最有效率?如果你第一次就猜 <span class="arithmatex">\(50\)</span>，我告訴你猜的數字太大，你就可以知道答案一定在 <span class="arithmatex">\([1, 49]\)</span> 之間，這樣你就可以<em>省下一半</em>的時間，你可以再猜 <span class="arithmatex">\(25\)</span>，而我告訴你猜的數字太小，那麼答案一定在 <span class="arithmatex">\([26, 49]\)</span> 之間，你又省下一半的時間，這就是二元搜尋法的精神。</p>
 <video muted controls autoplay loop>
@@ -1934,6 +1972,9 @@
 </video>
 
 <p>再來看程式碼:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python</label><label for="__tabbed_1_2">C++</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="language-python highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">binary_search.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
@@ -1949,25 +1990,137 @@
 <span class="normal"><a href="#__codelineno-2-13">13</a></span>
 <span class="normal"><a href="#__codelineno-2-14">14</a></span>
 <span class="normal"><a href="#__codelineno-2-15">15</a></span>
-<span class="normal"><a href="#__codelineno-2-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>    <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">:</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a>        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>        <span class="k">if</span> <span class="n">lst</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="hll">    <span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="hll">    <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">:</span>
+</span></span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="hll">        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+</span></span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a>        <span class="k">if</span> <span class="n">lst</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
 </span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a>            <span class="k">return</span> <span class="n">mid</span>
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a>        <span class="k">elif</span> <span class="n">lst</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">:</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a>            <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a>        <span class="k">else</span><span class="p">:</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a>            <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="hll">            <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="hll">            <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a>
 </span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
 </span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a>
 </span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
 </span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">binary_search</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">binary_search</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">binary_search</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="nb">print</span><span class="p">(</span><span class="n">binary_search</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="mi">13</span><span class="p">))</span>
 </span></code></pre></div></td></tr></table></div>
-<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>2
+</div>
+<div class="tabbed-block">
+<div class="language-cpp highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">binary_search.cpp</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span>
+<span class="normal"><a href="#__codelineno-3-23">23</a></span>
+<span class="normal"><a href="#__codelineno-3-24">24</a></span>
+<span class="normal"><a href="#__codelineno-3-25">25</a></span>
+<span class="normal"><a href="#__codelineno-3-26">26</a></span>
+<span class="normal"><a href="#__codelineno-3-27">27</a></span>
+<span class="normal"><a href="#__codelineno-3-28">28</a></span>
+<span class="normal"><a href="#__codelineno-3-29">29</a></span>
+<span class="normal"><a href="#__codelineno-3-30">30</a></span>
+<span class="normal"><a href="#__codelineno-3-31">31</a></span>
+<span class="normal"><a href="#__codelineno-3-32">32</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="kt">int</span><span class="w"> </span><span class="nf">binary_search</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">lst</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="hll"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span></span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="hll"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lst</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span></span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="hll"><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">right</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span></span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="hll"><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">right</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">left</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</span></span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lst</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">mid</span><span class="p">;</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lst</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="hll"><span class="w">            </span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span></span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="hll"><span class="w">            </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span></span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20"></a>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22"></a><span class="p">}</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23"></a>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">};</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">binary_search</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">binary_search</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">binary_search</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">binary_search</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span><span class="w"> </span><span class="mi">13</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30"></a>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>2
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>1
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a>9
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a>-1
+</span></code></pre></div></td></tr></table></div>
+<p>如果找到 <code>target</code>，就回傳他的索引，否則回傳 <code>-1</code>。</p>
+<p>先幫我留意一下，找 <code>1</code> 的時候是回傳從左到右第二個 <code>1</code> 的索引值，那如果我想要找到從左到右第一個 <code>1</code> 的索引值呢?這個我們後面會討論。</p>
+<h2 id="why_it_works">Why it works?<a class="headerlink" href="#why_it_works" title="Permanent link">¶</a></h2>
+<p>事實上在實作二元搜尋法時，有很多細節需要注意:</p>
+<p>首先注意到 <code>left, right</code> 的初始值，<code>left</code> 是 <code>0</code>，而 <code>right</code> 是 <code>len(lst) - 1</code>，這是因為我們的搜索範圍是 <code>[left, right]</code>，這是一個<strong>閉區間</strong>，也就是說 <code>left</code> 與 <code>right</code> 也都可能是答案。</p>
+<p>注意到我們的中止條件是 <code>left &gt; right</code>，而不是 <code>left &gt;= right</code>，也請你多看幾次下方的動畫，只有白色的區域才是我們要尋找的範圍，而他的邊界由 <code>left</code> 與 <code>right</code> 來決定，如上所述，這是一個<strong>閉區間</strong> <code>[left, right]</code>，兩個端點 <code>left</code> 與 <code>right</code> 也在我們的搜索範圍內；考慮到 <code>left == right</code> 的情況，這時候我們的搜索範圍是 <code>[left, left]</code>，也就是只剩下一個元素，這也是合法的區間，也需要檢查。</p>
+<video muted controls autoplay loop>
+  <source src="../../basic_algo/media/binary_search_4.mp4" type="video/mp4">
+</video>
+
+<p>還有一個細節是 <code>mid</code> 的計算，使用 <code>(left + right) // 2</code> 來尋找區間中點並且向下取整，如果是使用 C++ 來實作，可以使用 <code>left + (right - left) / 2</code> 來避免<em>溢位(Overflow)</em>的問題，但在 Python 中不需要擔心這個問題，再次讚嘆。</p>
+<p>再來看為什麼 <code>left = mid + 1</code> 與 <code>right = mid - 1</code>，這是因為我們已經知道 <code>mid</code> 不是我們要找的元素，因此要將他排除在搜索範圍之外；因此 <code>[mid + 1, right]</code> 或 <code>[left, mid - 1]</code> 是我們的新搜索範圍。你可能有看過其他寫法，一邊不變，一邊變。</p>
+<p>事實上連 <code>lst[mid] &lt; target</code> 這個也可以討論，但我覺得你會很頭痛，上面這幾個排列組合湊起來會用哭你，所以我們就不討論了。</p>
+<p>好了，我介紹完<em>最簡單</em>的版本了，我們來看一些例子，後面會介紹一些變形。</p>
+<h2 id="find_the_insert_position">Find the insert position<a class="headerlink" href="#find_the_insert_position" title="Permanent link">¶</a></h2>
+<p>在上面的例子中，如果我們找不到目標元素，我們會回傳 <code>-1</code>，但有時候我們會想要知道目標元素應該插入的位置，該怎麼修改程式碼呢?</p>
+<p>讓我們先看幾個動畫:</p>
+<p>尋找比 <code>1</code> 還小的元素 <code>-1</code>:</p>
+<video muted controls autoplay loop>
+  <source src="../../basic_algo/media/binary_search_5.mp4" type="video/mp4">
+</video>
+
+<p>尋找雖然大於等於 <code>1</code> 以及小於等於 <code>12</code>，但不存在於串列中的元素 <code>6</code>:</p>
+<video muted controls autoplay loop>
+  <source src="../../basic_algo/media/binary_search_6.mp4" type="video/mp4">
+</video>
+
+<p>尋找比 <code>12</code> 還大的元素 <code>4843</code>:</p>
+<video muted controls autoplay loop>
+  <source src="../../basic_algo/media/binary_search_7.mp4" type="video/mp4">
+</video>
 
 
 
@@ -1990,7 +2143,7 @@
     <span class="md-icon" title="最後更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 26, 2024</span>
   </span>
 
     
