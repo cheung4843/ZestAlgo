@@ -140,6 +140,8 @@ print(reverse_list2([1, 2, 3, 4, 5]))
 
 $f(n)$ 和 $g(n)$ 是兩個函數，若且唯若**存在常數 $c$ 和 $n_0$**，對於所有*大於等於* $n_0$ 的 $n$，使得 $f(n)$ *小於等於* $c*g(n)$，那麼 $f(n)$ 就屬於 $\mathcal{O}(g(n))$。
 
+[MOB CHOIR - Exist](https://www.youtube.com/watch?v=UvnI1Sk5w2w)
+
 其中 $\mathcal{O}(g(n))$ 是一個*函數集合*，它包含了所有以 $c*g(n)$ 為上界的函數，而 $f(n)=\mathcal{O}(g(n))$ 與 $f(n) \in \mathcal{O}(g(n))$ 都是代表 $f(n)$ 屬於 $\mathcal{O}(g(n))$ 的一員，看你習慣用哪一種符號。
 
 還是不太懂，那我用更白話的方式還有我們熟悉的 $f(x)$ 來解釋:
