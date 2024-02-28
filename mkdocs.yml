@@ -38,6 +38,10 @@ nav:
       - algorithm/basic_algo/index.md
       - Linear Search: algorithm/basic_algo/linear_search.md
       - Binary Search: algorithm/basic_algo/binary_search.md
+      - Two Pointers: algorithm/basic_algo/two_pointers.md
+      - Sliding Window: algorithm/basic_algo/sliding_window.md
+      - Counter: algorithm/basic_algo/counter.md
+      - Recursion: algorithm/basic_algo/recursion.md
 
   - Data Structure:
     - data_structure/index.md
