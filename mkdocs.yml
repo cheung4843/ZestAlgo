@@ -85,6 +85,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  # Snippets
+  - pymdownx.snippets:
+      base_path: 'docs/'
   
 
 theme:
