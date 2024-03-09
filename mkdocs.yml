@@ -2,6 +2,9 @@ site_name: ZestAlgo Book
 site_url: https://cheung4843.github.io/ZestAlgo/
 repo_url: https://github.com/cheung4843/ZestAlgo
 edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2024 Cheung4843
+
 nav:
   - Home: index.md
   - Fundamental: 
@@ -37,10 +40,10 @@ nav:
     - Basic Algorithm:
       - algorithm/basic_algo/index.md
       - Linear Search: algorithm/basic_algo/linear_search.md
-      - Binary Search: algorithm/basic_algo/binary_search.md
       - Two Pointers: algorithm/basic_algo/two_pointers.md
       - Sliding Window: algorithm/basic_algo/sliding_window.md
       - Counter: algorithm/basic_algo/counter.md
+      - Binary Search: algorithm/basic_algo/binary_search.md
       - Recursion: algorithm/basic_algo/recursion.md
 
   - Data Structure:

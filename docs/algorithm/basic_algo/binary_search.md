@@ -4,6 +4,7 @@
 
 !!! success "Requirements"
     1. [What is an Algorithm?](../what_is_algo.md)
+    2. [Two Pointers](two_pointers.md)
     
 由這章開始逐漸變得困難，所以你可以依據需求來選擇閱讀:
 

@@ -27,10 +27,10 @@ pip install mkdocs-git-committers-plugin-2
 mkdocs serve
 ```
 
-這個指令會啟動一個本地伺服器，並且會自動更新網頁，只要你修改了任何檔案。
+這個指令會啟動一個本地伺服器，只要你修改了任何檔案，就會自動更新網頁。
 
 ## 協作規範
-請先至[協作請求通知](https://github.com/cheung4843/LMcpsBook/discussions/16)，告訴我您的計畫，並等待我們的回覆。
+請先至[協作請求通知](https://github.com/cheung4843/LMcpsBook/discussions/16)，敘述您的計畫，並等待我們的回覆。
 
 因為我們希望能夠保持對新手友善的文章風格，所以希望您能將文章寫得盡可能的簡單易懂，並且能夠提供一些範例程式碼，以及一些簡單的練習題。
 
@@ -100,7 +100,7 @@ LMcps Book
 
 
 ### 3. Commit 規範
-第一行根據操作類型分為五種，分別為 `add`、`modified`、`delete`、`feat, fix`，第二行為說明修改的詳細內容。
+第一行根據操作類型分為五種，分別為 `add`、`modified`、`delete`、`feat`、`fix`，第二行為說明修改的詳細內容。
 
 * add: file name 1, file name 2,...etc
 * modified: file name 1, file name 2, ... etc
@@ -116,6 +116,8 @@ modified: say_hello.md
 ```
 
 留意: `feat` 是指新增功能，例如可以使用MathJax，或是允許快速查看原始碼等。
+
+**若您覺得太麻煩的話，可以不用寫上更改的檔案名稱，但是請記得寫上您做了什麼。**
 
 ## 貢獻者
 
