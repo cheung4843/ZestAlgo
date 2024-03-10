@@ -1,3 +1,4 @@
-*.html linguist-detectable=false
+# *.html linguist-detectable=false
+docs/** -linguist-detectable
 *.py linguist-detectable=true
 *.cpp linguist-detectable=true
