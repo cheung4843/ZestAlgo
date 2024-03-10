@@ -11,7 +11,7 @@
 
 這樣就好了，並不用對定義太過於嚴格，會寫更重要，**演算法就是一個解決問題的方法**。
 
-你可能有聽過流程圖，這是一個很好用來視覺化演算法的方法，例如之前在 [Repetiton Structures - While loop](../fundamental/python/repetition_structures.md#while_loop) 有提到的 Collatz Conjecture，我們可以用流程圖來表示:
+你可能有聽過流程圖，這是一個很好用來視覺化演算法的工具，例如之前在 [Repetiton Structures - While loop](../fundamental/python/repetition_structures.md#while_loop) 有提到的 [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture)，我們可以用流程圖來表示:
 
 $$
 f(n)=\begin{cases}\frac{n}{2}, & \text{if } n \text{ is even} \\ 3n+1, & \text{if } n \text{ is odd}\end{cases}
@@ -105,7 +105,7 @@ print(reverse_list2([1, 2, 3, 4, 5]))
 [5, 4, 3, 2, 1]
 ```
 
-定義 $g(n)$ 來代表輸入 $n$，演算法所需要的額外空間，例如 $g(n)=n$，也就是說當 $n=5$ 時，我們的演算法會需要 $5$ 個空間，或者說是需要大小為 $5$ 的串列。
+定義 $g(n)$ 來代表輸入 $n$，演算法所需要的額外空間(或說是輔助空間)，例如 $g(n)=n$，也就是說當 $n=5$ 時，我們的演算法會需要額外的 $5$ 個空間，或者說是需要大小為 $5$ 的串列。
 
 試著比較上述兩個反轉串列的演算法:
 
@@ -176,18 +176,18 @@ $g(n)$ 與 $f(n)$ 交於 $(2,4)$，那麼 $n_0=2$，且當 $n \ge n_0$ 時，$f(
 ### Common Big O
 以下是一些常見的大 $\mathcal{O}$ 符號:
 
-1. $\mathcal{O}(1)$: 常數時間，例如: 存取陣列的元素
+1. $\mathcal{O}(1)$: 常數時間，例如: 存取陣列的元素、交換兩個變數(Swap)
 2. $\mathcal{O}(\log_{}n)$: 對數時間，例如: *二元搜尋法(Binary Search)*
-3. $\mathcal{O}(n)$: 線性時間，例如: 找出陣列中的最大值
+3. $\mathcal{O}(n)$: 線性時間，例如: *摩爾投票算法(Boyer–Moore majority vote algorithm)*
 4. $\mathcal{O}(n\log_{}n)$: 線性對數時間，例如: *快速排序(Quick Sort)*
 5. $\mathcal{O}(n^2)$: 平方時間，例如: *泡沫排序(Bubble Sort)*
-6. $\mathcal{O}(n^3)$: 立方時間，例如: *矩陣乘法*
+6. $\mathcal{O}(n^3)$: 立方時間，例如: 矩陣乘法
 7. $\mathcal{O}(2^n)$: 指數時間，例如: *遞迴費氏數列(Fibonacci Sequence)*
 8. $\mathcal{O}(n!)$: 階乘時間，例如: *旅行推銷員問題(Travelling Salesman Problem)*
 
 ![](./media/1_what_is_algo_3.png)
 
-這個參考就好喔，看過去就好，不用背。
+這個參考就好喔，看過去就好，不用背，但應該可以讓你體會糟糕的演算法會有多恐怖，你可能會寫出直到宇宙終結都還在跑的程式(XD)。
 
 ## Other Notations
 除了大 $\mathcal{O}$ 符號外，還有其他的漸近符號:
