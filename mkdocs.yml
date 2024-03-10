@@ -34,6 +34,8 @@ nav:
         - 2.4 陣列: fundamental/cpp/2/array.md
         - 2.5 字串: fundamental/cpp/2/string.md
         - 2.6 練習: fundamental/cpp/2/practice.md
+      - 3.流程控制:
+        - fundamental/cpp/3/index.md
   - Algorithm:
     - algorithm/index.md
     - What is Algorithm: algorithm/what_is_algo.md
