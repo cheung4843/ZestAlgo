@@ -1,4 +1,4 @@
 # *.html linguist-detectable=false
 docs/** -linguist-detectable
-*.py linguist-detectable=true
-*.cpp linguist-detectable=true
+*.py linguist-language=Python
+*.cpp linguist-language=C++
